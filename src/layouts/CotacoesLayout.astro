@@ -15,6 +15,8 @@ import usaFlag from '../assets/img/USAFLAG.png';
 import esFlag from '../assets/img/ESFLAG.png';
 import cnFlag from '../assets/img/CNFLAG.png';
 import faviconIco from '../assets/img/favicon2.ico';
+
+const apiBaseUrl = import.meta.env.PUBLIC_API_BASE_URL || '';
 ---
 
 <!DOCTYPE html>
@@ -40,6 +42,9 @@ import faviconIco from '../assets/img/favicon2.ico';
                 window.__preferredLang = 'pt';
             }
         })();
+    </script>
+    <script is:inline>
+        window.__API_BASE_URL = {JSON.stringify(apiBaseUrl)} || undefined;
     </script>
     <title>Instituto Amarte</title>
     <link rel="icon" href={faviconIco} type="image/x-icon" />
