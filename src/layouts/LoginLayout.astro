@@ -1,0 +1,85 @@
+---
+import '../styles/style.css';
+import faviconIco from '../assets/img/favicon2.ico';
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script is:inline>
+        (() => {
+            try {
+                const lang = localStorage.getItem('preferredLang') || 'pt';
+                window.__preferredLang = lang;
+                document.documentElement.setAttribute('data-preferred-lang', lang);
+                if (lang !== 'pt') {
+                    document.documentElement.setAttribute('data-lang-pending', '1');
+                }
+                document.documentElement.lang =
+                    lang === 'en' ? 'en-US' :
+                    lang === 'es' ? 'es-ES' :
+                    lang === 'cn' ? 'zh-CN' :
+                    'pt-BR';
+            } catch (_) {
+                window.__preferredLang = 'pt';
+            }
+        })();
+    </script>
+    <title>{title}</title>
+    <link rel="icon" href={faviconIco} type="image/x-icon" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <style is:inline>
+        /* Garante que o body não herde alturas estranhas ou overflows do menu */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100%;
+        }
+        .input-icon-wrapper input { padding-left: 45px !important; }
+        .input-icon-wrapper i {
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            position: absolute;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="auth-body-sophisticated">
+    <main class="auth-wrapper">
+        <slot />
+    </main>
+
+    <script is:inline src="/scripts/translations.js"></script>
+    <script is:inline src="/scripts/main.js"></script>
+    
+    <script is:inline>
+        // Mantendo apenas o essencial para a página de login
+        document.querySelectorAll('.lang-select').forEach(img => {
+            img.addEventListener('click', () => {
+                const lang = img.getAttribute('data-lang');
+                if (typeof setLanguage === 'function') {
+                    setLanguage(lang);
+                    document.querySelectorAll('.lang-select').forEach(i => i.classList.remove('active'));
+                    img.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

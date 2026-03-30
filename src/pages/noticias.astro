@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+    <section class="page-header-sophisticated" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <span class="section-tag-white" data-i18n="news_tag">Informação Estratégica</span>
+            <h1 data-i18n="news_title">Giro de Notícias</h1>
+            <p data-i18n="news_subtitle">Monitoramento das pautas que impactam o agronegócio e a propriedade.</p>
+        </div>
+    </section>
+
+    <div class="about-content">
+        
+        <div class="intro-text-sophisticated">
+            <p data-i18n="news_intro">
+                Em um mundo de narrativas, a informação técnica é a melhor defesa. Abaixo, apresentamos uma curadoria das principais atualizações do setor, selecionadas para manter você, produtor e parceiro, sempre à frente dos fatos.
+            </p>
+        </div>
+
+        <div class="divider-center"><i class="fas fa-newspaper"></i></div>
+
+        <div class="feed-header-center">
+            <h2 class="section-title-center" data-i18n="latest_updates">Últimas Atualizações</h2>
+            <p class="feed-source-label" data-i18n="sources_label">Fontes: Gazeta do Povo, Compre Rural, BrasilAgro</p>
+        </div>
+
+        <div class="news-grid-sophisticated" id="news-container">
+            <div class="loading-container-styled">
+                <i class="fas fa-circle-notch fa-spin"></i> <span data-i18n="loading">Carregando Feed...</span>
+            </div>
+        </div>
+
+    </div>
+</Layout>

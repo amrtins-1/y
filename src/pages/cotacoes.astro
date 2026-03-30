@@ -1,0 +1,1456 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CotacoesLayout from "../layouts/CotacoesLayout.astro";
+import { DADOS_MERCADO } from "../data/cotacoes.js";
+import HISTORICO from "../data/historico.json";
+import CotacoesBackground from '../assets/img/cotacoesimg.jpg';
+
+type Status = "up" | "down" | "equal" | "unknown";
+type DadoCotacao = {
+  valor?: string;
+  status?: string;
+  label?: string;
+};
+type ItemCotacao = Record<string, DadoCotacao>;
+type SecaoCotacao = Record<string, ItemCotacao>;
+type CategoriaCotacao = Record<string, SecaoCotacao>;
+type RaiasCotacao = Record<string, CategoriaCotacao>;
+type CardTable = {
+  id: string;
+  title: string;
+  subtitle: string;
+  columns: string[];
+  rows: Array<{ busca: string; cells: string[]; status?: Status }>;
+};
+type Row = {
+  id: string;
+  categoria: string;
+  secao: string;
+  secaoKey: string;
+  itemKey: string;
+  colunaKey: string;
+  label: string;
+  referencia: string;
+  valorRaw: string;
+  valorFmt: string;
+  status: Status;
+  busca: string;
+};
+type TickerMovement = {
+  id: string;
+  categoria: string;
+  label: string;
+  valueNow: number;
+  valuePrev: number;
+  deltaAbs: number;
+  deltaPct: number;
+  direction: "up" | "down";
+};
+
+const { atualizacao } = DADOS_MERCADO;
+const raias = DADOS_MERCADO.raias as RaiasCotacao;
+
+const categoryMap: Record<string, string> = {
+  boi: "Pecuária de Corte",
+  soja: "Complexo Soja",
+  milho: "Milho",
+  cafe: "Café",
+  arroz: "Arroz",
+  algodao: "Algodão",
+  trigo: "Trigo",
+  feijao: "Feijão",
+  suinos: "Suinocultura",
+  frango: "Avicultura",
+  ovos: "Postura",
+  acucar_etanol: "Cana/Açúcar/Etanol",
+  leite: "Leite e Laticínios",
+  laranja: "Citricultura",
+  mandioca: "Mandioca",
+  dolar: "Câmbio e Macro",
+  amendoim: "Amendoim",
+  cacau: "Cacau",
+  sorgo: "Sorgo",
+};
+
+const ordemCategorias = ["boi", "soja", "milho", "cafe", "dolar", "acucar_etanol"];
+const categoriasDisponiveis = Object.keys(raias ?? {});
+const categoriasOrdenadas = [
+  ...ordemCategorias.filter((c) => categoriasDisponiveis.includes(c)),
+  ...categoriasDisponiveis.filter((c) => !ordemCategorias.includes(c)),
+];
+
+const commodityMatchers: Record<string, RegExp[]> = {
+  boi: [/\bboi\b/, /\bvaca\b/, /\bbezerro\b/, /\barroba\b/, /\bpecuar/],
+  cafe: [/\bcafe\b/, /\bicafe\b/],
+  soja: [/\bsoja\b/, /\bfarelo\b/, /\boleo\b.*\bsoja\b/],
+  milho: [/\bmilho\b/],
+  algodao: [/\balgodao\b/],
+  acucar_etanol: [/\bacucar\b/, /\betanol\b/, /\bcana\b/],
+  laranja: [/\blaranja\b/, /\bsuco\b.*\blar/],
+  cacau: [/\bcacau\b/],
+  sorgo: [/\bsorgo\b/],
+  leite: [/\bleite\b/, /\blact/],
+  suinos: [/\bsuino\b/, /\bporco\b/],
+  frango: [/\bfrango\b/, /\bave\b/],
+  ovos: [/\bovo\b/],
+  arroz: [/\barroz\b/],
+  feijao: [/\bfeijao\b/],
+  trigo: [/\btrigo\b/],
+  amendoim: [/\bamendoim\b/],
+  mandioca: [/\bmandioca\b/],
+  dolar: [/\bdolar\b/, /\bcambio\b/, /\busd\b/, /\breal\b/],
+};
+
+function slugText(text = ""): string {
+  return String(text)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "_")
+    .replace(/_+/g, "_")
+    .replace(/^_+|_+$/g, "");
+}
+
+function prettyKey(value = ""): string {
+  const text = value.replace(/^_+|_+$/g, "").replace(/_/g, " ").trim();
+  if (!text) return "-";
+  return text.replace(/\s+/g, " ");
+}
+
+function resolveCardIcon(prefix: string, title = "", subtitle = ""): string {
+  const content = `${title} ${subtitle}`.toLowerCase();
+
+  if (/\bboi\b|\bvaca\b|\bbezerro\b|\barroba\b/.test(content)) return "fa-cow";
+  if (/\bsuino\b|\bporco\b/.test(content)) return "fa-bacon";
+  if (/\bfrango\b|\bave\b/.test(content)) return "fa-drumstick-bite";
+  if (/\bovo\b/.test(content)) return "fa-egg";
+  if (/\bcafe\b/.test(content)) return "fa-mug-hot";
+  if (/\bsoja\b|\bfarelo\b|\boleo\b/.test(content)) return "fa-seedling";
+  if (/\bmilho\b|\bsorgo\b/.test(content)) return "fa-wheat-awn";
+  if (/\barroz\b|\btrigo\b|\bfeijao\b/.test(content)) return "fa-wheat-awn";
+  if (/\bacucar\b|\betanol\b|\bcana\b/.test(content)) return "fa-industry";
+  if (/\bleite\b|\blactic/.test(content)) return "fa-glass-water";
+  if (/\blaranja\b|\bcitr/.test(content)) return "fa-lemon";
+  if (/\bmandioca\b/.test(content)) return "fa-seedling";
+  if (/\bdolar\b|\bcambio\b|\busd\b|\bmacro\b/.test(content)) return "fa-dollar-sign";
+
+  const byCategory: Record<string, string> = {
+    boi: "fa-cow",
+    soja: "fa-seedling",
+    milho: "fa-wheat-awn",
+    cafe: "fa-mug-hot",
+    arroz: "fa-wheat-awn",
+    algodao: "fa-seedling",
+    trigo: "fa-wheat-awn",
+    feijao: "fa-seedling",
+    suinos: "fa-bacon",
+    frango: "fa-drumstick-bite",
+    ovos: "fa-egg",
+    acucar_etanol: "fa-industry",
+    leite: "fa-glass-water",
+    laranja: "fa-lemon",
+    mandioca: "fa-seedling",
+    dolar: "fa-dollar-sign",
+    amendoim: "fa-seedling",
+    cacau: "fa-seedling",
+    sorgo: "fa-wheat-awn",
+  };
+
+  return byCategory[prefix] || "fa-chart-column";
+}
+
+function normalizeDisplayText(value = ""): string {
+  let text = String(value || "").replace(/\s+/g, " ").trim();
+  if (!text || text === "-") return text || "-";
+
+  const direct: Array<[RegExp, string]> = [
+    [/\bprecos\b/gi, "Preços"],
+    [/\bpreco\b/gi, "Preço"],
+    [/\bvariacao\b/gi, "Variação"],
+    [/\breferencia\b/gi, "Referência"],
+    [/\breferencias\b/gi, "Referências"],
+    [/\bfisico\b/gi, "Físico"],
+    [/\breposicao\b/gi, "Reposição"],
+    [/\bdesmama\b/gi, "Desmama"],
+    [/\bacucar\b/gi, "Açúcar"],
+    [/\balgodao\b/gi, "Algodão"],
+    [/\bcafe\b/gi, "Café"],
+    [/\bfeijao\b/gi, "Feijão"],
+    [/\bsuinos\b/gi, "Suínos"],
+    [/\bboi\b/gi, "Boi"],
+    [/\bvaca\b/gi, "Vaca"],
+    [/\bcabeca\b/gi, "Cabeça"],
+    [/\bpraca\b/gi, "Praça"],
+    [/\bpracas\b/gi, "Praças"],
+    [/\bcepea\b/gi, "CEPEA"],
+    [/\besalq\b/gi, "ESALQ"],
+    [/\bnybot\b/gi, "NYBOT"],
+    [/\bcme\b/gi, "CME"],
+    [/\bb3\b/gi, "B3"],
+    [/\bice\b/gi, "ICE"],
+    [/\brkgton\b/gi, "R$/Kg/Ton"],
+    [/\brkg\b/gi, "R$/Kg"],
+    [/\brlitro\b/gi, "R$/Litro"],
+    [/\brsc\b/gi, "R$/Sc"],
+    [/\br30 dz\b/gi, "R$/30 Dz"],
+  ];
+  direct.forEach(([pattern, replacement]) => {
+    text = text.replace(pattern, replacement);
+  });
+
+  text = text
+    .split(/(\s+|\/|-|\(|\)|,)/)
+    .map((chunk) => {
+      if (!chunk || /^(\s+|\/|-|\(|\)|,)$/.test(chunk)) return chunk;
+      if (/[A-Z0-9$@%]/.test(chunk) || chunk.includes("R$/")) return chunk;
+      return chunk.charAt(0).toUpperCase() + chunk.slice(1).toLowerCase();
+    })
+    .join("");
+
+  return text;
+}
+
+function normalizeStatus(status?: string): Status {
+  if (status === "up" || status === "down" || status === "equal") return status;
+  return "unknown";
+}
+
+function parseLocaleNumber(input?: string): number | null {
+  if (!input) return null;
+  const clean = String(input).trim().replace(/\./g, "").replace(",", ".");
+  const num = Number(clean);
+  return Number.isFinite(num) ? num : null;
+}
+
+function formatValor(raw: string, colunaKey: string): string {
+  const num = parseLocaleNumber(raw);
+  if (num === null) return raw || "-";
+  const isVariacao = /variacao|var\b|percent|pct|%/i.test(colunaKey);
+  const base = new Intl.NumberFormat("pt-BR", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(num);
+  if (isVariacao) {
+    const sign = num > 0 ? "+" : "";
+    return `${sign}${base}%`;
+  }
+  return base;
+}
+
+function detectTags(searchText: string): Set<string> {
+  const tags = new Set<string>();
+  const normalized = slugText(searchText);
+  for (const [categoria, regexes] of Object.entries(commodityMatchers)) {
+    if (regexes.some((re) => re.test(normalized))) tags.add(categoria);
+  }
+  return tags;
+}
+
+function buildRows(prefix: string): Row[] {
+  const categoria = raias[prefix];
+  if (!categoria || typeof categoria !== "object") return [];
+
+  const rows: Row[] = [];
+  for (const [secao, itens] of Object.entries(categoria)) {
+    if (!itens || typeof itens !== "object") continue;
+    for (const [itemKey, colunas] of Object.entries(itens as Record<string, unknown>)) {
+      if (!colunas || typeof colunas !== "object") continue;
+      for (const [colunaKey, dados] of Object.entries(colunas as Record<string, any>)) {
+        if (!dados || typeof dados !== "object") continue;
+        const valorRaw = String(dados.valor ?? "").trim();
+        const label = String(dados.label ?? "").trim();
+        if (!valorRaw && !label) continue;
+        const referencia = normalizeDisplayText(prettyKey(colunaKey));
+        const row: Row = {
+          id: `${prefix}__${secao}__${itemKey}__${colunaKey}`,
+          categoria: prefix,
+          secao: normalizeDisplayText(prettyKey(secao)),
+          secaoKey: secao,
+          itemKey,
+          colunaKey,
+          label: normalizeDisplayText(label || prettyKey(itemKey)),
+          referencia,
+          valorRaw,
+          valorFmt: formatValor(valorRaw, colunaKey),
+          status: normalizeStatus(dados.status),
+          busca: slugText([label, secao, itemKey, colunaKey, valorRaw].join(" ")),
+        };
+        rows.push(row);
+      }
+    }
+  }
+
+  return rows;
+}
+
+function rowsByCategoria(prefix: string): Row[] {
+  const rows = buildRows(prefix);
+  return rows.filter((row) => {
+    const tags = detectTags([row.label, row.referencia, row.itemKey].join(" "));
+    if (tags.size === 0) return true;
+    return tags.has(prefix);
+  });
+}
+
+const datasetPorCategoria: Record<string, Row[]> = Object.fromEntries(
+  categoriasOrdenadas.map((prefix) => [prefix, rowsByCategoria(prefix)])
+);
+
+const historicoMap = HISTORICO as Record<string, string>;
+
+function historyKeysForRow(row: Row): string[] {
+  const base = `${row.categoria}_${row.secaoKey}`;
+  if (!row.itemKey) return [`${base}__${row.colunaKey}`, `${base}_${row.colunaKey}`];
+  return [`${base}_${row.itemKey}_${row.colunaKey}`];
+}
+
+function isEligibleTickerColumn(colunaKey: string): boolean {
+  return !/^(variacao|var|variacaomes|variacaosemana|variacaopontos|variacao_dia|variacao_diaria|vardia)$/i.test(colunaKey);
+}
+
+function toTickerMovement(row: Row): TickerMovement | null {
+  if (!isEligibleTickerColumn(row.colunaKey)) return null;
+  const valueNow = parseLocaleNumber(row.valorRaw);
+  if (valueNow === null) return null;
+  const prevKey = historyKeysForRow(row).find((k) => k in historicoMap);
+  if (!prevKey) return null;
+  const valuePrev = parseLocaleNumber(historicoMap[prevKey]);
+  if (valuePrev === null || valuePrev === 0 || valueNow === valuePrev) return null;
+  const deltaAbs = valueNow - valuePrev;
+  const deltaPct = (deltaAbs / Math.abs(valuePrev)) * 100;
+  return {
+    id: row.id,
+    categoria: row.categoria,
+    label: row.label,
+    valueNow,
+    valuePrev,
+    deltaAbs,
+    deltaPct,
+    direction: deltaAbs > 0 ? "up" : "down",
+  };
+}
+
+function buildTickerMovements(): TickerMovement[] {
+  const allRows = Object.values(datasetPorCategoria).flat();
+  const movements = allRows
+    .map(toTickerMovement)
+    .filter((item): item is TickerMovement => Boolean(item));
+
+  const byId = new Map<string, TickerMovement>();
+  for (const m of movements) {
+    const prev = byId.get(m.id);
+    if (!prev || Math.abs(m.deltaPct) > Math.abs(prev.deltaPct)) byId.set(m.id, m);
+  }
+
+  const deduped = Array.from(byId.values());
+  let ups = deduped.filter((m) => m.direction === "up").sort((a, b) => b.deltaPct - a.deltaPct).slice(0, 20);
+  let downs = deduped.filter((m) => m.direction === "down").sort((a, b) => a.deltaPct - b.deltaPct).slice(0, 20);
+
+  if (ups.length < 20 || downs.length < 20) {
+    const fallback = allRows
+      .filter((row) => /^(variacao|var|variacaomes|variacaosemana|variacaopontos|variacao_dia|variacao_diaria|vardia)$/i.test(row.colunaKey))
+      .map((row): TickerMovement | null => {
+        const pct = parseLocaleNumber(row.valorRaw);
+        if (pct === null || pct === 0) return null;
+        return {
+          id: `${row.id}__fallback`,
+          categoria: row.categoria,
+          label: row.label,
+          valueNow: pct,
+          valuePrev: 0,
+          deltaAbs: pct,
+          deltaPct: pct,
+          direction: pct > 0 ? "up" : "down",
+        };
+      })
+      .filter((item): item is TickerMovement => Boolean(item));
+
+    const fallbackUps = fallback.filter((m) => m.direction === "up").sort((a, b) => b.deltaPct - a.deltaPct);
+    const fallbackDowns = fallback.filter((m) => m.direction === "down").sort((a, b) => a.deltaPct - b.deltaPct);
+
+    if (ups.length < 20) ups = [...ups, ...fallbackUps.slice(0, 20 - ups.length)];
+    if (downs.length < 20) downs = [...downs, ...fallbackDowns.slice(0, 20 - downs.length)];
+  }
+
+  const alternated: TickerMovement[] = [];
+  const maxLen = Math.max(ups.length, downs.length);
+  for (let i = 0; i < maxLen; i++) {
+    if (ups[i]) alternated.push(ups[i]);
+    if (downs[i]) alternated.push(downs[i]);
+  }
+  return alternated;
+}
+
+const tickerItems = buildTickerMovements();
+
+function formatSignedPercent(value: number): string {
+  const sign = value > 0 ? "+" : "";
+  return `${sign}${new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(value)}%`;
+}
+
+function statusLabel(status: Status): string {
+  if (status === "up") return "Alta";
+  if (status === "down") return "Queda";
+  if (status === "equal") return "Estável";
+  return "Sem Sinal";
+}
+
+function boiDisplayName(rawItemKey: string): string {
+  const text = prettyKey(rawItemKey);
+  if (/^\d/.test(text)) return text;
+  return normalizeDisplayText(
+    text
+    .replace(/([a-zA-Z])(\d)/g, "$1 $2")
+    .replace(/(\d)([a-zA-Z])/g, "$1 $2")
+    .replace(/\b(\w)/g, (m) => m.toUpperCase())
+  );
+}
+
+function columnTitle(colunaKey: string): string {
+  const map: Record<string, string> = {
+    preco: "Preço",
+    preco_r: "Preço (R$)",
+    preco_rsc_de_60_kg: "Preço (R$/Sc 60Kg)",
+    preco_rsc_60_kg: "Preço (R$/Sc 60Kg)",
+    preco_rsc_50_kg: "Preço (R$/Sc 50Kg)",
+    preco_r_kg: "Preço (R$/Kg)",
+    preco_rkg: "Preço (R$/Kg)",
+    preco_rlitro: "Preço (R$/Litro)",
+    preco_r30_dz: "Preço (R$/30 Dz)",
+    preco_r_caixa_de_30_duzias: "Preço (R$/Cx 30 Dz)",
+    preco_rtonelada: "Preço (R$/Ton)",
+    valor_r: "Valor (R$)",
+    valor_rsc_60_kg: "Valor (R$/Sc 60Kg)",
+    valor_r_saca_de_60_kg: "Valor (R$/Sc 60Kg)",
+    valor_r_saca_de_50_kg: "Valor (R$/Sc 50Kg)",
+    fechamento_r: "Fechamento (R$)",
+    fechamento_rsc_60_kg: "Fechamento (R$/Sc 60Kg)",
+    fechamento_ussc_60_kg: "Fechamento (US$/Sc 60Kg)",
+    fechamento_us_bushel: "Fechamento (US$/Bu)",
+    fechamento_uston: "Fechamento (US$/Ton)",
+    fechamento_us_ton: "Fechamento (US$/Ton)",
+    fech_investing_lb: "Fech. Investing (c/lb)",
+    usbu: "US$/Bu",
+    ustonelada_curta: "US$/Ton Curta",
+    centslb: "cents/lb",
+    variacao: "Variação (%)",
+    var: "Variação (%)",
+    variacao_centsbu: "Variação (cents/bu)",
+    variacao_centslb: "Variação (cents/lb)",
+    variacao_centston: "Variação (cents/ton)",
+    variacao_pontos: "Variação (Pontos)",
+    variacaosemana: "Variação Semanal (%)",
+    variacao_dia: "Variação Diária (%)",
+    rkg: "R$/Kg",
+    rlitro: "R$/Litro",
+    rsc: "R$/Sc",
+    rt: "R$/Ton",
+    r30_dz: "R$/30 Dz",
+    r_caixa_408_kg: "R$/Cx 40,8Kg",
+    r_a_prazocaixa_408_kg: "R$ a Prazo/Cx 40,8Kg",
+  };
+  return map[colunaKey] ?? normalizeDisplayText(prettyKey(colunaKey));
+}
+
+function columnRank(colunaKey: string): number {
+  const rank: Record<string, number> = {
+    preco: 10,
+    preco_r: 11,
+    preco_rsc_de_60_kg: 12,
+    preco_rsc_60_kg: 13,
+    preco_rsc_50_kg: 14,
+    preco_r_kg: 15,
+    preco_rkg: 16,
+    preco_rlitro: 17,
+    preco_r30_dz: 18,
+    preco_r_caixa_de_30_duzias: 19,
+    preco_rtonelada: 20,
+    valor_r: 20,
+    valor_rsc_60_kg: 21,
+    valor_r_saca_de_60_kg: 22,
+    valor_r_saca_de_50_kg: 23,
+    fechamento_r: 30,
+    fechamento_rsc_60_kg: 31,
+    fechamento_ussc_60_kg: 32,
+    fechamento_us_bushel: 33,
+    fechamento_uston: 34,
+    fechamento_us_ton: 35,
+    fech_investing_lb: 36,
+    usbu: 40,
+    ustonelada_curta: 41,
+    centslb: 42,
+    variacao: 90,
+    var: 91,
+    variacao_centsbu: 92,
+    variacao_centslb: 93,
+    variacao_centston: 94,
+    variacao_pontos: 95,
+    variacaosemana: 96,
+    variacao_dia: 97,
+  };
+  return rank[colunaKey] ?? 50;
+}
+
+function isContractItemKey(itemKey: string): boolean {
+  const normalized = slugText(itemKey);
+  if (!normalized) return false;
+  return (
+    /(jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)/.test(normalized) &&
+    /\d{2,4}/.test(normalized)
+  );
+}
+
+function buildCardFromRows(prefix: string, id: string, title: string, subtitle: string, itemGroups: Row[][]): CardTable | null {
+  const flat = itemGroups.flat();
+  if (!flat.length) return null;
+  const colunas = Array.from(new Set(flat.map((r) => r.colunaKey))).sort((a, b) => {
+    const d = columnRank(a) - columnRank(b);
+    return d !== 0 ? d : columnTitle(a).localeCompare(columnTitle(b), "pt-BR");
+  });
+  return {
+    id: `${prefix}-${id}`,
+    title,
+    subtitle,
+    columns: ["Ativo / Praça", ...colunas.map(columnTitle)],
+    rows: itemGroups.map((itemRows) => {
+      const label = normalizeDisplayText(itemRows[0]?.label || boiDisplayName(itemRows[0]?.itemKey || ""));
+      const cells = [label, ...colunas.map((key) => itemRows.find((r) => r.colunaKey === key)?.valorFmt ?? "-")];
+      const status =
+        itemRows.find((r) => r.colunaKey === "variacao")?.status ??
+        itemRows.find((r) => r.colunaKey === "var")?.status ??
+        itemRows.find((r) => r.status !== "unknown")?.status;
+      return { busca: slugText([label, itemRows[0]?.itemKey || "", ...cells].join(" ")), cells, status };
+    }),
+  };
+}
+
+function buildGenericCards(prefix: string, rows: Row[]): CardTable[] {
+  const bySecao = new Map<string, Row[]>();
+  for (const row of rows) {
+    const bucket = bySecao.get(row.secao) ?? [];
+    bucket.push(row);
+    bySecao.set(row.secao, bucket);
+  }
+  const cards: CardTable[] = [];
+  for (const [secao, secaoRows] of bySecao.entries()) {
+    const byItem = new Map<string, Row[]>();
+    for (const row of secaoRows) {
+      const bucket = byItem.get(row.itemKey) ?? [];
+      bucket.push(row);
+      byItem.set(row.itemKey, bucket);
+    }
+    const card = buildCardFromRows(
+      prefix,
+      slugText(secao).replace(/\s+/g, "-"),
+      normalizeDisplayText(prettyKey(secao)),
+      categoryMap[prefix] || prefix.toUpperCase(),
+      Array.from(byItem.values())
+    );
+    if (card) cards.push(card);
+  }
+  return cards;
+}
+
+function buildFocusedCards(
+  prefix:
+    | "soja"
+    | "milho"
+    | "arroz"
+    | "cafe"
+    | "acucar_etanol"
+    | "algodao"
+    | "trigo"
+    | "feijao"
+    | "suinos"
+    | "frango"
+    | "ovos"
+    | "leite"
+    | "laranja"
+    | "mandioca"
+    | "amendoim"
+    | "cacau"
+    | "sorgo",
+  rows: Row[]
+): CardTable[] {
+  const byItem = new Map<string, Row[]>();
+  for (const row of rows) {
+    const bucket = byItem.get(row.itemKey) ?? [];
+    bucket.push(row);
+    byItem.set(row.itemKey, bucket);
+  }
+
+  const buckets: Record<"indicador" | "b3" | "internacional" | "fisico" | "derivados" | "outros", Row[][]> = {
+    indicador: [],
+    b3: [],
+    internacional: [],
+    fisico: [],
+    derivados: [],
+    outros: [],
+  };
+
+  for (const [itemKey, itemRows] of byItem.entries()) {
+    const keys = new Set(itemRows.map((r) => r.colunaKey));
+    const text = slugText([itemKey, ...itemRows.map((r) => r.label), ...itemRows.map((r) => r.colunaKey)].join(" "));
+    const hasUS = [...keys].some((k) => /us|cents|lb|ton|bu/.test(k));
+    const hasB3 = [...keys].some((k) => /fechamento_rsc|fechamento_ussc/.test(k));
+    const hasFisico = [...keys].some((k) => /preco_rsc|valor_r_saca|preco_r|preco$/.test(k));
+    const indicador = itemKey === "" || /indicador|cepea|esalq/.test(text);
+    const derivado = /farelo|oleo|premio|tipo|beneficiado|agulhinha/.test(text);
+
+    if (indicador) buckets.indicador.push(itemRows);
+    else if ((hasB3 && isContractItemKey(itemKey)) || /b3|pregao|bmf/.test(text)) buckets.b3.push(itemRows);
+    else if (hasUS || /chicago|cme|ny|nybot|londres|liffe|investing|ice/.test(text)) buckets.internacional.push(itemRows);
+    else if ((prefix === "soja" || prefix === "arroz" || prefix === "feijao") && derivado) buckets.derivados.push(itemRows);
+    else if (
+      prefix === "acucar_etanol" &&
+      /acucar|etanol|cana|usina|campo|esteira|referencia|litro|m3/.test(text)
+    )
+      buckets.derivados.push(itemRows);
+    else if (
+      hasFisico ||
+      /mercado|praca|municipio|cooper|sindicato|estado|tipo|granja|atacado|ceasa|ceagesp|media|brasil/.test(text)
+    )
+      buckets.fisico.push(itemRows);
+    else buckets.outros.push(itemRows);
+  }
+
+  const defs: Record<
+    | "soja"
+    | "milho"
+    | "arroz"
+    | "cafe"
+    | "acucar_etanol"
+    | "algodao"
+    | "trigo"
+    | "feijao"
+    | "suinos"
+    | "frango"
+    | "ovos"
+    | "leite"
+    | "laranja"
+    | "mandioca"
+    | "amendoim"
+    | "cacau"
+    | "sorgo",
+    Array<{ id: string; title: string; subtitle: string; bucket: keyof typeof buckets }>
+  > = {
+    soja: [
+      { id: "indicadores", title: "Indicadores de Soja", subtitle: "CEPEA / ESALQ", bucket: "indicador" },
+      { id: "b3", title: "Soja - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "internacional", title: "Soja - Bolsa de Chicago", subtitle: "CME Group", bucket: "internacional" },
+      { id: "derivados", title: "Derivados e Prêmios", subtitle: "Farelo / Óleo / Prêmio", bucket: "derivados" },
+      { id: "fisico", title: "Soja - Mercado Físico", subtitle: "Praças e Cooperativas", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Soja", bucket: "outros" },
+    ],
+    milho: [
+      { id: "indicadores", title: "Indicadores de Milho", subtitle: "CEPEA", bucket: "indicador" },
+      { id: "b3", title: "Milho - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "internacional", title: "Milho - Bolsa de Chicago", subtitle: "CME Group", bucket: "internacional" },
+      { id: "fisico", title: "Milho - Mercado Físico", subtitle: "Praças", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Milho", bucket: "outros" },
+    ],
+    arroz: [
+      { id: "indicadores", title: "Indicadores de Arroz", subtitle: "CEPEA / ESALQ", bucket: "indicador" },
+      { id: "derivados", title: "Arroz - Tipos e Beneficiados", subtitle: "Atacado / Tipos", bucket: "derivados" },
+      { id: "internacional", title: "Arroz - Bolsas Internacionais", subtitle: "Contratos Externos", bucket: "internacional" },
+      { id: "fisico", title: "Arroz - Mercado Físico", subtitle: "Praças", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Arroz", bucket: "outros" },
+    ],
+    cafe: [
+      { id: "indicadores", title: "Indicadores de Café", subtitle: "Arábica / Robusta - CEPEA", bucket: "indicador" },
+      { id: "b3", title: "Café - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "internacional", title: "Café - Bolsas Internacionais", subtitle: "NYBOT / Londres", bucket: "internacional" },
+      { id: "fisico", title: "Café - Mercado Físico", subtitle: "Municípios e Cooperativas", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Café", bucket: "outros" },
+    ],
+    acucar_etanol: [
+      { id: "indicadores", title: "Indicadores de Açúcar e Etanol", subtitle: "CEPEA / ESALQ", bucket: "indicador" },
+      { id: "b3", title: "Açúcar e Etanol - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "internacional", title: "Açúcar e Etanol - Mercados Internacionais", subtitle: "ICE / Referências Externas", bucket: "internacional" },
+      { id: "derivados", title: "Usina e Derivados", subtitle: "Cana, Usina e Indicadores de Base", bucket: "derivados" },
+      { id: "fisico", title: "Açúcar e Etanol - Mercado Físico", subtitle: "Praças", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Açúcar e Etanol", bucket: "outros" },
+    ],
+    algodao: [
+      { id: "indicadores", title: "Indicadores de Algodão", subtitle: "CEPEA / ESALQ", bucket: "indicador" },
+      { id: "b3", title: "Algodão - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "internacional", title: "Algodão - Mercado Internacional", subtitle: "ICE / Investing", bucket: "internacional" },
+      { id: "fisico", title: "Algodão - Mercado Físico", subtitle: "Praças e Institutos", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Algodão", bucket: "outros" },
+    ],
+    trigo: [
+      { id: "indicadores", title: "Indicadores de Trigo", subtitle: "Referências Nacionais", bucket: "indicador" },
+      { id: "b3", title: "Trigo - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "internacional", title: "Trigo - Bolsa de Chicago", subtitle: "CME Group", bucket: "internacional" },
+      { id: "fisico", title: "Trigo - Mercado Físico", subtitle: "Praças e Cooperativas", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Trigo", bucket: "outros" },
+    ],
+    feijao: [
+      { id: "indicadores", title: "Indicadores de Feijão", subtitle: "Tipos e Referências", bucket: "indicador" },
+      { id: "b3", title: "Feijão - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "derivados", title: "Feijão - Tipos Comerciais", subtitle: "Carioca / Preto e Classificações", bucket: "derivados" },
+      { id: "fisico", title: "Feijão - Mercado Físico", subtitle: "Praças", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Feijão", bucket: "outros" },
+    ],
+    suinos: [
+      { id: "indicadores", title: "Indicadores de Suínos", subtitle: "Referências Nacionais", bucket: "indicador" },
+      { id: "b3", title: "Suínos - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "internacional", title: "Suínos - Mercado Internacional", subtitle: "Referências Externas", bucket: "internacional" },
+      { id: "fisico", title: "Suínos - Mercado Físico", subtitle: "Estados e Praças", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Suínos", bucket: "outros" },
+    ],
+    frango: [
+      { id: "indicadores", title: "Indicadores de Frango", subtitle: "Referências Nacionais", bucket: "indicador" },
+      { id: "b3", title: "Frango - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "internacional", title: "Frango - Mercado Internacional", subtitle: "Referências Externas", bucket: "internacional" },
+      { id: "fisico", title: "Frango - Mercado Físico", subtitle: "Granja e Atacado", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Frango", bucket: "outros" },
+    ],
+    ovos: [
+      { id: "indicadores", title: "Indicadores de Ovos", subtitle: "Referências Nacionais", bucket: "indicador" },
+      { id: "b3", title: "Ovos - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "fisico", title: "Ovos - Mercado Físico", subtitle: "Ceasas, Estados e Tipos", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Ovos", bucket: "outros" },
+    ],
+    leite: [
+      { id: "indicadores", title: "Indicadores de Leite", subtitle: "Referências Nacionais", bucket: "indicador" },
+      { id: "b3", title: "Leite - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "fisico", title: "Leite - Mercado Físico", subtitle: "Estados e Média Brasil", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Leite", bucket: "outros" },
+    ],
+    laranja: [
+      { id: "indicadores", title: "Indicadores de Laranja", subtitle: "Referências Nacionais", bucket: "indicador" },
+      { id: "b3", title: "Laranja - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "internacional", title: "Laranja - Mercado Internacional", subtitle: "ICE / Referência Externa", bucket: "internacional" },
+      { id: "fisico", title: "Laranja - Mercado Físico", subtitle: "Ceasas e Praças", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Laranja", bucket: "outros" },
+    ],
+    mandioca: [
+      { id: "indicadores", title: "Indicadores de Mandioca", subtitle: "Referências Nacionais", bucket: "indicador" },
+      { id: "b3", title: "Mandioca - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "fisico", title: "Mandioca - Mercado Físico", subtitle: "Ceasas, Estados e Regionais", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Mandioca", bucket: "outros" },
+    ],
+    amendoim: [
+      { id: "indicadores", title: "Indicadores de Amendoim", subtitle: "Referências Nacionais", bucket: "indicador" },
+      { id: "b3", title: "Amendoim - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "fisico", title: "Amendoim - Mercado Físico", subtitle: "Ceasas e Tipos", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Amendoim", bucket: "outros" },
+    ],
+    cacau: [
+      { id: "indicadores", title: "Indicadores de Cacau", subtitle: "Referências Nacionais", bucket: "indicador" },
+      { id: "b3", title: "Cacau - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "internacional", title: "Cacau - Mercado Internacional", subtitle: "Bolsas Externas", bucket: "internacional" },
+      { id: "fisico", title: "Cacau - Mercado Físico", subtitle: "Bahia, ES e Pará", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Cacau", bucket: "outros" },
+    ],
+    sorgo: [
+      { id: "indicadores", title: "Indicadores de Sorgo", subtitle: "Referências Nacionais", bucket: "indicador" },
+      { id: "b3", title: "Sorgo - B3", subtitle: "Pregão Regular", bucket: "b3" },
+      { id: "fisico", title: "Sorgo - Mercado Físico", subtitle: "Praças e Cooperativas", bucket: "fisico" },
+      { id: "outros", title: "Outros Indicadores", subtitle: "Sorgo", bucket: "outros" },
+    ],
+  };
+
+  const cards: CardTable[] = [];
+  for (const def of defs[prefix]) {
+    const card = buildCardFromRows(prefix, def.id, def.title, def.subtitle, buckets[def.bucket]);
+    if (card) cards.push(card);
+  }
+  return cards;
+}
+
+function buildBoiCards(rows: Row[]): CardTable[] {
+  const byItem = new Map<string, Row[]>();
+  for (const row of rows) {
+    const bucket = byItem.get(row.itemKey) ?? [];
+    bucket.push(row);
+    byItem.set(row.itemKey, bucket);
+  }
+
+  const indicadores = byItem.get("") ?? [];
+  const contratoRows: Array<{ busca: string; cells: string[]; status?: Status }> = [];
+  const fisicoRows: Array<{ busca: string; cells: string[]; status?: Status }> = [];
+  const reposicaoRows: Array<{ busca: string; cells: string[]; status?: Status }> = [];
+  const genericCards: CardTable[] = [];
+
+  for (const [itemKey, itemRows] of byItem.entries()) {
+    if (!itemRows.length || itemKey === "") continue;
+    const keys = new Set(itemRows.map((r) => r.colunaKey));
+    const get = (key: string) => itemRows.find((r) => r.colunaKey === key);
+
+    if (keys.has("fechamento_r") || keys.has("variacao")) {
+      const fechamento = get("fechamento_r")?.valorFmt ?? "-";
+      const variacao = get("variacao")?.valorFmt ?? get("var")?.valorFmt ?? "-";
+      contratoRows.push({
+        busca: slugText([itemKey, fechamento, variacao].join(" ")),
+        cells: [boiDisplayName(itemKey), fechamento, variacao],
+        status: get("variacao")?.status ?? get("var")?.status,
+      });
+      continue;
+    }
+
+    if (keys.has("boi_gordo_r_a_vista") || keys.has("boi_gordo_r_prazo_30_dias")) {
+      const spot = get("boi_gordo_r_a_vista")?.valorFmt ?? "-";
+      const prazo = get("boi_gordo_r_prazo_30_dias")?.valorFmt ?? "-";
+      const vaca = get("vaca_gorda_r_a_vista")?.valorFmt ?? "-";
+      const label = itemRows[0]?.label || boiDisplayName(itemKey);
+      fisicoRows.push({
+        busca: slugText([label, spot, prazo, vaca].join(" ")),
+        cells: [label, spot, prazo, vaca],
+      });
+      continue;
+    }
+
+    if (keys.has("r_cabeca") || keys.has("r_kg") || keys.has("troca")) {
+      const cabeca = get("r_cabeca")?.valorFmt ?? "-";
+      const kg = get("r_kg")?.valorFmt ?? "-";
+      const troca = get("troca")?.valorFmt ?? "-";
+      const estado = itemRows[0]?.label || boiDisplayName(itemKey);
+      reposicaoRows.push({
+        busca: slugText([estado, cabeca, kg, troca].join(" ")),
+        cells: [estado, cabeca, kg, troca],
+      });
+      continue;
+    }
+
+    genericCards.push({
+      id: `boi-generic-${itemKey}`,
+      title: boiDisplayName(itemKey),
+      subtitle: "Fonte de Mercado",
+      columns: ["Referência", "Valor", "Status"],
+      rows: itemRows.map((row) => ({
+        busca: row.busca,
+        cells: [row.referencia, row.valorFmt, statusLabel(row.status)],
+        status: row.status,
+      })),
+    });
+  }
+
+  const cards: CardTable[] = [];
+  if (indicadores.length) {
+    const get = (key: string) => indicadores.find((r) => r.colunaKey === key);
+    const dataRef = indicadores[0]?.label || "-";
+    cards.push({
+      id: "boi-indicadores",
+      title: "Indicadores do Boi Gordo",
+      subtitle: "ESALQ / B3",
+      columns: ["Data", "À Vista (R$)", "A Prazo (R$)", "Variação (%)"],
+      rows: [
+        {
+          busca: slugText(
+            [dataRef, get("a_vista_r")?.valorFmt, get("a_prazo_r")?.valorFmt, get("variacao")?.valorFmt].join(" ")
+          ),
+          cells: [dataRef, get("a_vista_r")?.valorFmt ?? "-", get("a_prazo_r")?.valorFmt ?? "-", get("variacao")?.valorFmt ?? "-"],
+          status: get("variacao")?.status,
+        },
+      ],
+    });
+  }
+
+  if (contratoRows.length) {
+    cards.push({
+      id: "boi-b3",
+      title: "Boi Gordo - B3 (Pregão Regular)",
+      subtitle: "Contratos por Vencimento",
+      columns: ["Contrato - Mês", "Fechamento (R$/@)", "Variação (%)"],
+      rows: contratoRows,
+    });
+  }
+
+  if (fisicoRows.length) {
+    cards.push({
+      id: "boi-fisico",
+      title: "Boi Gordo - Mercado Físico",
+      subtitle: "Preços por Praça",
+      columns: ["Praça", "À Vista (R$)", "A Prazo (R$)", "Vaca Gorda (R$)"],
+      rows: fisicoRows,
+    });
+  }
+
+  if (reposicaoRows.length) {
+    cards.push({
+      id: "boi-reposicao",
+      title: "Reposição - Macho Nelore",
+      subtitle: "R$/Cabeça, R$/Kg e Troca",
+      columns: ["Estado / Praça", "R$/Cabeça", "R$/Kg", "Troca"],
+      rows: reposicaoRows,
+    });
+  }
+
+  return [...cards, ...genericCards];
+}
+
+const boiCards = buildBoiCards(datasetPorCategoria.boi ?? []);
+const cardsPorCategoria: Record<string, CardTable[]> = Object.fromEntries(
+  categoriasOrdenadas.map((prefix) => [
+    prefix,
+    prefix === "boi"
+      ? boiCards
+      : prefix === "soja" ||
+          prefix === "milho" ||
+          prefix === "arroz" ||
+          prefix === "cafe" ||
+          prefix === "acucar_etanol" ||
+          prefix === "algodao" ||
+          prefix === "trigo" ||
+          prefix === "feijao" ||
+          prefix === "suinos" ||
+          prefix === "frango" ||
+          prefix === "ovos" ||
+          prefix === "leite" ||
+          prefix === "laranja" ||
+          prefix === "mandioca" ||
+          prefix === "amendoim" ||
+          prefix === "cacau" ||
+          prefix === "sorgo"
+        ? buildFocusedCards(prefix, datasetPorCategoria[prefix] ?? [])
+        : buildGenericCards(prefix, datasetPorCategoria[prefix] ?? []),
+  ])
+);
+---
+
+<CotacoesLayout title="Terminal de Cotações">
+  <section class="page-header cotacoes-header" style={`--cotacoes-bg: url(${CotacoesBackground.src})`}>
+    <h1 data-i18n="quote_page_title">Terminal de Mercado</h1>
+    <p data-i18n="quote_page_subtitle">Dados organizados por cadeia produtiva, com filtros de consistência por categoria.</p>
+  </section>
+
+  <div class="market-dashboard-container">
+    <div class="market-ticker-wrapper">
+      <div class="market-ticker-label" data-i18n="quote_ticker_label">Ticker</div>
+      <div class="market-ticker-content">
+        {tickerItems.length > 0 ? (
+          <div class:list={["market-ticker-track", { static: tickerItems.length < 10 }]}>
+            <div class="market-ticker-run">
+              {tickerItems.map((item) => (
+                <span class={`market-tick-chip ${item.direction}`}>
+                  <strong class="market-tick-cat" data-i18n={`quote_cat_${item.categoria}`}>{categoryMap[item.categoria] || item.categoria}</strong>
+                  <span class="market-tick-name" data-i18n={`quote_label_${slugText(item.label)}`}>{item.label}</span>
+                  <span class="market-tick-delta">{formatSignedPercent(item.deltaPct)}</span>
+                </span>
+              ))}
+            </div>
+            {tickerItems.length >= 10 && (
+              <div class="market-ticker-run" aria-hidden="true">
+                {tickerItems.map((item) => (
+                  <span class={`market-tick-chip ${item.direction}`}>
+                    <strong class="market-tick-cat" data-i18n={`quote_cat_${item.categoria}`}>{categoryMap[item.categoria] || item.categoria}</strong>
+                    <span class="market-tick-name" data-i18n={`quote_label_${slugText(item.label)}`}>{item.label}</span>
+                    <span class="market-tick-delta">{formatSignedPercent(item.deltaPct)}</span>
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        ) : (
+          <div class="market-ticker-empty" data-i18n="quote_empty_ticker">Sem variações suficientes para montar o ticker neste ciclo.</div>
+        )}
+      </div>
+    </div>
+
+    <div class="terminal-layout">
+      <aside class="terminal-sidebar">
+        <div class="sidebar-header" data-i18n="quote_sidebar_title">Categorias</div>
+        <ul class="asset-list">
+          {categoriasOrdenadas.map((prefix, idx) => (
+            <li>
+              <button class:list={["asset-btn", { active: idx === 0 }]} data-ativo={prefix}>
+                <span data-i18n={`quote_cat_${prefix}`}>{categoryMap[prefix] || prefix.toUpperCase()}</span>
+                <small>{(datasetPorCategoria[prefix] ?? []).length} <span data-i18n="quote_unit_registros">Registros</span></small>
+              </button>
+            </li>
+          ))}
+        </ul>
+      </aside>
+
+      <main class="terminal-display">
+        <div class="terminal-topbar">
+          <div class="update-block">
+            <span class="update-label" data-i18n="quote_last_update">Última atualização</span>
+            <strong class="update-value update-date-js">{atualizacao}</strong>
+          </div>
+          <label class="search-wrap">
+            <span data-i18n="quote_search_placeholder">Buscar no painel ativo</span>
+            <input type="search" id="marketSearch" data-i18n="quote_search_example" placeholder="Ex.: Arábica, Boi, Junho, Var..." />
+          </label>
+        </div>
+
+        {categoriasOrdenadas.map((prefix, idx) => (
+          <div class:list={["quote-panel", { active: idx === 0 }]} data-ativo={prefix}>
+            <div class="panel-header">
+              <h2 data-i18n={`quote_cat_${prefix}`}>{categoryMap[prefix] || prefix.toUpperCase()}</h2>
+              <p data-i18n="quote_panel_desc">Somente ativos compatíveis com a cadeia selecionada.</p>
+            </div>
+
+            <div class="boi-cards">
+              {(cardsPorCategoria[prefix] ?? []).map((card) => (
+                <article class="boi-card">
+                  <header class="boi-card-head">
+                    <div class="boi-thumb" aria-hidden="true">
+                      <i class={`fa-solid ${resolveCardIcon(prefix, card.title, card.subtitle)}`}></i>
+                    </div>
+                    <div>
+                      <h3 data-i18n={`quote_card_title_${slugText(card.title)}`}>{card.title}</h3>
+                      <p data-i18n={`quote_card_sub_${slugText(card.subtitle)}`}>{card.subtitle}</p>
+                    </div>
+                  </header>
+                  <div class="static-table-container">
+                    <table class="market-table compact">
+                      <thead>
+                        <tr>
+                          {card.columns.map((col) => (
+                            <th data-i18n={`quote_th_${slugText(col)}`}>{col}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {card.rows.map((line) => (
+                          <tr data-status={line.status || "unknown"} data-busca={line.busca}>
+                            {line.cells.map((cell, idx) => (
+                              <td class={idx === 0 ? "item-name" : ""}>
+                                {idx === 0 ? (
+                                  <span data-i18n={`quote_label_${slugText(cell)}`}>{cell}</span>
+                                ) : (
+                                  // Se a célula for uma data (contém / e tem números)
+                                  /\d+\/\d+/.test(cell) ? (
+                                    <span class="update-date-js">{cell}</span>
+                                  ) : (
+                                    cell
+                                  )
+                                )}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  <footer class="boi-card-foot">
+                    <span data-i18n="quote_footer_updated">Atualizado em</span> <span class="update-date-js">{atualizacao}</span>
+                  </footer>
+                </article>
+              ))}
+            </div>
+          </div>
+        ))}
+      </main>
+    </div>
+  </div>
+</CotacoesLayout>
+
+<script>
+  declare const translations: Record<string, Record<string, string>> | undefined;
+  let cotacoesInitialized = false;
+
+  const localeByLang: Record<string, string> = { pt: "pt-BR", en: "en-US", es: "es-ES", cn: "zh-CN" };
+  const monthsPtShort = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+  const monthsEnShort = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const monthsEsShort = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
+  const monthsPtLong = ["janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+  const monthsEnLong = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const monthsEsLong = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+  function getCurrentLang(): string {
+    return document.documentElement.getAttribute("data-preferred-lang") || localStorage.getItem("preferredLang") || "pt";
+  }
+
+  function normalizeMonthToken(value: string): string {
+    return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  }
+
+  function translateMonthTokens(raw: string, lang: string): string {
+    let out = String(raw || "");
+    if (!out || lang === "pt") return out;
+
+    monthsPtShort.forEach((pt, idx) => {
+      const escaped = pt.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      if (lang === "en") out = out.replace(new RegExp(`\\b${escaped}\\b`, "gi"), monthsEnShort[idx]);
+      if (lang === "es") out = out.replace(new RegExp(`\\b${escaped}\\b`, "gi"), monthsEsShort[idx]);
+      if (lang === "cn") out = out.replace(new RegExp(`\\b${escaped}\\b`, "gi"), `${idx + 1}月`);
+    });
+
+    monthsPtLong.forEach((pt, idx) => {
+      const escaped = pt.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      if (lang === "en") out = out.replace(new RegExp(`\\b${escaped}\\b`, "gi"), monthsEnLong[idx]);
+      if (lang === "es") out = out.replace(new RegExp(`\\b${escaped}\\b`, "gi"), monthsEsLong[idx]);
+      if (lang === "cn") out = out.replace(new RegExp(`\\b${escaped}\\b`, "gi"), `${idx + 1}月`);
+    });
+
+    return out;
+  }
+
+  function parsePtLikeDate(raw: string): { day: number; month: number; year: number | null } | null {
+    const text = String(raw || "").trim();
+    if (!text) return null;
+
+    const m1 = text.match(/^(\d{1,2})[\/.-](\d{1,2})(?:[\/.-](\d{2,4}))?$/);
+    if (m1) {
+      const day = Number(m1[1]);
+      const month = Number(m1[2]);
+      let year: number | null = m1[3] ? Number(m1[3]) : null;
+      if (year !== null && year < 100) year += 2000;
+      if (day >= 1 && day <= 31 && month >= 1 && month <= 12) return { day, month, year };
+      return null;
+    }
+
+    const normalized = normalizeMonthToken(text);
+    const m2 = normalized.match(/^(\d{1,2})\s+de\s+([a-z]+)\s+de\s+(\d{4})$/);
+    if (m2) {
+      const day = Number(m2[1]);
+      const monthName = m2[2];
+      const month = monthsPtLong.indexOf(monthName) + 1;
+      const year = Number(m2[3]);
+      if (day >= 1 && day <= 31 && month >= 1 && month <= 12) return { day, month, year };
+      return null;
+    }
+
+    return null;
+  }
+
+  function formatDateByLang(raw: string, lang: string): string {
+    const parsed = parsePtLikeDate(raw);
+    if (!parsed) return translateMonthTokens(raw, lang);
+
+    const day = String(parsed.day).padStart(2, "0");
+    const month = String(parsed.month).padStart(2, "0");
+    if (parsed.year == null) {
+      if (lang === "en") return `${month}/${day}`;
+      if (lang === "cn") return `${month}/${day}`;
+      return `${day}/${month}`;
+    }
+    const year = String(parsed.year);
+    if (lang === "en") return `${month}/${day}/${year}`;
+    if (lang === "cn") return `${year}/${month}/${day}`;
+    return `${day}/${month}/${year}`;
+  }
+
+  function parsePtNumeric(raw: string): { value: number; isPercent: boolean; decimals: number; signed: boolean } | null {
+    const text = String(raw || "").trim();
+    if (!text || text === "-" || text === "--") return null;
+
+    const isPercent = /%$/.test(text);
+    let body = text.replace(/%$/, "").trim();
+    const signed = /^[+-]/.test(body);
+    body = body.replace(/^[+-]/, "");
+
+    const normalized = body.replace(/\./g, "").replace(",", ".");
+    if (!/^\d+(\.\d+)?$/.test(normalized)) return null;
+    const value = Number(normalized);
+    if (!Number.isFinite(value)) return null;
+    const decimals = normalized.includes(".") ? normalized.split(".")[1].length : 0;
+    const sign = text.trim().startsWith("-") ? -1 : 1;
+    return { value: value * sign, isPercent, decimals, signed };
+  }
+
+  function formatNumericByLang(raw: string, lang: string): string {
+    const parsed = parsePtNumeric(raw);
+    if (!parsed) return translateMonthTokens(raw, lang);
+
+    const locale = localeByLang[lang] || "pt-BR";
+    const decimals = Math.min(4, Math.max(0, parsed.decimals));
+    const formatted = new Intl.NumberFormat(locale, {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals,
+    }).format(parsed.value);
+
+    if (parsed.isPercent) return `${formatted}%`;
+    if (parsed.signed && parsed.value > 0) return `+${formatted}`;
+    return formatted;
+  }
+
+  function hasTranslationForKey(key: string, lang: string): boolean {
+    try {
+      if (typeof translations === "undefined") return false;
+      const pack = translations?.[lang];
+      return Boolean(pack && Object.prototype.hasOwnProperty.call(pack, key));
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function localizeFreeText(raw: string, lang: string): string {
+    let out = String(raw || "");
+    if (!out) return out;
+
+    const maps: Record<string, Record<string, string>> = {
+      pt: {
+        "Beans": "Feijão",
+        "Citrus": "Citricultura",
+        "Cassava": "Mandioca",
+        "Peanut": "Amendoim",
+        "Cocoa": "Cacau",
+        "Sorghum": "Sorgo",
+        "Updated on": "Atualizado em",
+        "Live Cattle - Physical Market": "Boi Gordo - Mercado Físico",
+        "Prices per Market": "Preços por Praça",
+        "Replacement - Nelore Male": "Reposição - Macho Nelore",
+        "R$/Head": "R$/Cabeça",
+        "Exchange": "Troca",
+        "State / Market": "Estado / Praça",
+        "Market Source": "Fonte de Mercado",
+        "Whole Dressed Bull": "Boi Casado Inteiro",
+        "Dressed Cow": "Vaca Casada",
+        "Prices In R$/Kg": "Preços Em R$/Kg",
+        "Up": "Alta",
+        "Down": "Queda",
+        "Stable": "Estável",
+        "No Signal": "Sem Sinal",
+        "Reference": "Referência",
+        "Value": "Valor",
+        "Status": "Status",
+        "Parana": "Paraná",
+        "Goias": "Goiás",
+        "Para": "Pará",
+        "Rondonia": "Rondônia",
+        "Sao Paulo": "São Paulo",
+        "Mato Grosso Do Sul": "Mato Grosso do Sul",
+        "Rio Grande Do Sul": "Rio Grande do Sul",
+        "Barra Do Garcas": "Barra do Garças",
+        "Cuiaba": "Cuiabá",
+        "Matupa": "Matupá",
+        "Rondonopolis": "Rondonópolis",
+        "Sp": "SP",
+        "Mg": "MG",
+        "Go": "GO",
+        "Ms": "MS",
+        "Mt": "MT",
+        "Pa": "PA",
+      },
+      en: {
+        "Fonte de Mercado": "Market Source",
+        "Boi Casado Inteiro": "Whole Dressed Bull",
+        "Vaca Casada": "Dressed Cow",
+        "Preços Em R$/Kg": "Prices In R$/Kg",
+        "Referência": "Reference",
+        "Estado / Praça": "State / Market",
+        "Atualizado em": "Updated on",
+        "Reposição - Macho Nelore": "Replacement - Nelore Male",
+        "Preços por Praça": "Prices per Market",
+        "R$/Cabeça": "R$/Head",
+        "Troca": "Exchange",
+        "Alta": "Up",
+        "Queda": "Down",
+        "Estável": "Stable",
+        "Sem Sinal": "No Signal",
+        "Mato Grosso Do Sul": "Mato Grosso do Sul",
+        "Rio Grande Do Sul": "Rio Grande do Sul",
+        "Barra Do Garcas": "Barra do Garças",
+        "Cuiaba": "Cuiabá",
+        "Matupa": "Matupá",
+        "Rondonopolis": "Rondonópolis",
+        "Parana": "Paraná",
+        "Goias": "Goiás",
+        "Para": "Pará",
+        "Rondonia": "Rondônia",
+        "Sao Paulo": "São Paulo",
+        "Sp": "SP",
+        "Mg": "MG",
+        "Go": "GO",
+        "Ms": "MS",
+        "Mt": "MT",
+        "Pa": "PA",
+      },
+      es: {
+        "Market Source": "Fuente de Mercado",
+        "Fonte de Mercado": "Fuente de Mercado",
+        "Updated on": "Actualizado en",
+        "Live Cattle - Physical Market": "Ganado Gordo - Mercado Físico",
+        "Prices per Market": "Precios por Plaza",
+        "Replacement - Nelore Male": "Reposición - Macho Nelore",
+        "Boi Casado Inteiro": "Buey Casado Entero",
+        "Vaca Casada": "Vaca Casada",
+        "Preços Em R$/Kg": "Precios En R$/Kg",
+        "Reference": "Referencia",
+        "State / Market": "Estado / Plaza",
+        "R$/Head": "R$/Cabeza",
+        "Exchange": "Canje",
+        "Alta": "Alza",
+        "Queda": "Baja",
+        "Estável": "Estable",
+        "Sem Sinal": "Sin señal",
+      },
+      cn: {
+        "Ticker": "行情条",
+        "Categories": "分类",
+        "records": "条记录",
+        "Record": "记录",
+        "Search active panel": "搜索当前面板",
+        "Search in active panel": "搜索当前面板",
+        "Only assets compatible with the selected chain.": "仅显示与所选产业链兼容的资产。",
+        "Asset / Market": "品种 / 地区",
+        "Market Terminal": "市场终端",
+        "Last update": "最后更新",
+        "Highlights": "重点",
+        "Not enough variations to build the ticker in this cycle.": "本轮涨跌不足，无法生成行情滚动条。",
+        "Indicators": "指标",
+        "Indicator": "指标",
+        "Physical Market": "现货市场",
+        "International Market": "国际市场",
+        "Regular Trading": "常规交易",
+        "Regular Session": "常规交易时段",
+        "States and Markets": "各州与交易地",
+        "States and Regions": "各州与地区",
+        "National References": "全国参考",
+        "Value": "数值",
+        "Status": "状态",
+        "Date": "日期",
+        "Contract - Month": "合约-月份",
+        "Spot (R$)": "现货 (R$)",
+        "Term (R$)": "远期 (R$)",
+        "R$/Kg": "雷亚尔/公斤",
+        "Market Source": "市场来源",
+        "Fonte de Mercado": "市场来源",
+        "Updated on": "更新于",
+        "Live Cattle - Physical Market": "肉牛 - 现货市场",
+        "Prices per Market": "各市场价格",
+        "Replacement - Nelore Male": "补栏 - 内洛尔公牛",
+        "Boi Casado Inteiro": "整切公牛肉",
+        "Vaca Casada": "整切母牛肉",
+        "Preços Em R$/Kg": "价格（雷亚尔/公斤）",
+        "Reference": "参考",
+        "State / Market": "州 / 市场",
+        "R$/Head": "雷亚尔/头",
+        "Exchange": "换购比",
+        "Alta": "上涨",
+        "Queda": "下跌",
+        "Estável": "持平",
+        "Sem Sinal": "无信号",
+      },
+    };
+
+    const map = maps[lang] || {};
+    Object.entries(map).forEach(([from, to]) => {
+      const escaped = from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      out = out.replace(new RegExp(`\\b${escaped}\\b`, "gi"), to);
+    });
+    return out;
+  }
+
+  function captureRawSources() {
+    document.querySelectorAll<HTMLElement>("[data-i18n^='quote_']").forEach((el) => {
+      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+        if (!el.hasAttribute("data-raw-placeholder")) {
+          el.setAttribute("data-raw-placeholder", (el.getAttribute("placeholder") || "").trim());
+        }
+      } else if (!el.hasAttribute("data-raw-text")) {
+        el.setAttribute("data-raw-text", (el.textContent || "").trim());
+      }
+    });
+
+    document.querySelectorAll<HTMLElement>(".item-name [data-i18n^='quote_label_'], .market-tick-name[data-i18n^='quote_label_']").forEach((el) => {
+      if (!el.hasAttribute("data-raw-label")) el.setAttribute("data-raw-label", (el.textContent || "").trim());
+    });
+    document.querySelectorAll<HTMLTableCellElement>("tbody td:not(.item-name)").forEach((td) => {
+      if (!td.hasAttribute("data-raw-value")) td.setAttribute("data-raw-value", (td.textContent || "").trim());
+    });
+    document.querySelectorAll<HTMLElement>(".update-date-js").forEach((el) => {
+      if (!el.hasAttribute("data-raw-date")) el.setAttribute("data-raw-date", (el.textContent || "").trim());
+    });
+  }
+
+  function applyCotacoesLocalization(lang: string) {
+    captureRawSources();
+
+    document.querySelectorAll<HTMLElement>("[data-i18n^='quote_']").forEach((el) => {
+      const key = el.getAttribute("data-i18n") || "";
+      if (!key || hasTranslationForKey(key, lang)) return;
+      if (el.classList.contains("update-date-js")) return;
+      if (el.closest("tbody td:not(.item-name)")) return;
+
+      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+        const raw = el.getAttribute("data-raw-placeholder") || el.getAttribute("placeholder") || "";
+        (el as HTMLInputElement).placeholder = localizeFreeText(translateMonthTokens(raw, lang), lang);
+      } else {
+        const raw = el.getAttribute("data-raw-text") || el.textContent || "";
+        el.textContent = localizeFreeText(translateMonthTokens(raw, lang), lang);
+      }
+    });
+
+    document.querySelectorAll<HTMLElement>(".item-name [data-i18n^='quote_label_'], .market-tick-name[data-i18n^='quote_label_']").forEach((el) => {
+      const key = el.getAttribute("data-i18n") || "";
+      if (hasTranslationForKey(key, lang)) return;
+      const raw = el.getAttribute("data-raw-label") || el.textContent || "";
+      el.textContent = localizeFreeText(translateMonthTokens(raw, lang), lang);
+    });
+
+    document.querySelectorAll<HTMLTableCellElement>("tbody td:not(.item-name)").forEach((td) => {
+      if (td.querySelector(".update-date-js")) return;
+      const raw = td.getAttribute("data-raw-value") || td.textContent || "";
+      const normalized = formatNumericByLang(raw, lang);
+      td.textContent = localizeFreeText(normalized, lang);
+    });
+
+    document.querySelectorAll<HTMLElement>(".update-date-js").forEach((el) => {
+      const raw = el.getAttribute("data-raw-date") || el.textContent || "";
+      el.textContent = formatDateByLang(raw, lang);
+    });
+
+    // Reforço apenas em elementos textuais com chave i18n.
+    // Não inclui .boi-card-foot para preservar os spans (rótulo + data) separados.
+    document.querySelectorAll<HTMLElement>(".boi-card-head h3[data-i18n], .boi-card-head p[data-i18n], .panel-header p[data-i18n], th[data-i18n], .update-label[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n") || "";
+      if (key && hasTranslationForKey(key, lang)) return;
+      el.textContent = localizeFreeText(translateMonthTokens(el.textContent || "", lang), lang);
+    });
+  }
+
+  function initCotacoes() {
+    if (cotacoesInitialized) {
+      applyCotacoesLocalization(getCurrentLang());
+      return;
+    }
+    cotacoesInitialized = true;
+
+    const buttons = document.querySelectorAll<HTMLButtonElement>(".asset-btn");
+    const panels = document.querySelectorAll<HTMLElement>(".quote-panel");
+    const search = document.querySelector<HTMLInputElement>("#marketSearch");
+
+    const runSearch = () => {
+      const term = String(search?.value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim();
+      const activePanel = document.querySelector<HTMLElement>(".quote-panel.active");
+      if (!activePanel) return;
+      const rows = activePanel.querySelectorAll<HTMLTableRowElement>("tbody tr");
+      rows.forEach((row) => {
+        const hay = String(row.getAttribute("data-busca") || "");
+        row.classList.toggle("hidden-row", term.length > 0 && !hay.includes(term));
+      });
+    };
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const ativo = btn.dataset.ativo;
+        buttons.forEach((b) => b.classList.remove("active"));
+        panels.forEach((p) => p.classList.remove("active"));
+        btn.classList.add("active");
+        const targetPanel = document.querySelector<HTMLElement>(`.quote-panel[data-ativo="${ativo}"]`);
+        if (targetPanel) targetPanel.classList.add("active");
+        runSearch();
+      });
+    });
+
+    search?.addEventListener("input", runSearch);
+    captureRawSources();
+
+    // Conecta com o sistema global de tradução após o carregamento
+    if (typeof (window as any).setLanguage === 'function') {
+      const savedLang = localStorage.getItem('preferredLang') || 'pt';
+      (window as any).setLanguage(savedLang);
+    }
+
+    applyCotacoesLocalization(localStorage.getItem("preferredLang") || getCurrentLang());
+    document.addEventListener("language:changed", (evt: any) => {
+      const lang = evt?.detail?.lang || getCurrentLang();
+      applyCotacoesLocalization(lang);
+    });
+
+    runSearch();
+  }
+
+  document.addEventListener("astro:page-load", initCotacoes);
+  initCotacoes();
+</script>

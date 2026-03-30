@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+    <section class="page-header-sophisticated" style="background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=2070&auto=format&fit=crop');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <span class="section-tag-white" data-i18n="plans_tag">Clube de Membros</span>
+            <h1 data-i18n="plans_title">Planos de Assinatura</h1>
+            <p data-i18n="plans_subtitle">Escolha como deseja contribuir e desbloqueie ferramentas exclusivas de inteligência.</p>
+        </div>
+    </section>
+
+    <main class="pricing-sophisticated-wrapper">
+        
+        <div class="intro-text-sophisticated">
+            <p data-i18n="plans_intro_text">
+                Ao se tornar um membro, você não está apenas comprando um serviço. Você está financiando a defesa da verdade no campo e garantindo que nossa voz chegue mais longe.
+            </p>
+        </div>
+
+        <div class="plans-grid-sophisticated">
+            
+            <div class="plan-card-sophisticated">
+                <div class="plan-header">
+                    <h3 data-i18n="plan_seed_title">Semente</h3>
+                    <p class="plan-desc" data-i18n="plan_seed_desc">Apoio institucional e acesso básico a notícias.</p>
+                </div>
+                
+                <div class="price-section">
+                    <span class="currency">R$</span>
+                    <span class="amount">29</span>
+                    <span class="period" data-i18n="plan_period">/mês</span>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <ul class="feature-list-sophisticated">
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_newsletter">Newsletter Semanal</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_support">Apoio à causa</span></li>
+                    <li class="disabled"><span data-i18n="feat_terminal">Terminal de Cotações</span></li>
+                    <li class="disabled"><span data-i18n="feat_dossiers">Dossiês de Inteligência</span></li>
+                </ul>
+
+                <button class="btn-plan-outline membership-plan-btn" data-i18n="btn_sign_seed">Assinar Semente</button>
+            </div>
+
+            <div class="plan-card-sophisticated featured">
+                <div class="popular-ribbon">
+                    <span data-i18n="badge_popular">Mais Popular</span>
+                </div>
+
+                <div class="plan-header">
+                    <h3 data-i18n="plan_harvest_title">Colheita</h3>
+                    <p class="plan-desc" data-i18n="plan_harvest_desc">Inteligência de mercado para o produtor rural.</p>
+                </div>
+                
+                <div class="price-section highlight">
+                    <span class="currency">R$</span>
+                    <span class="amount">89</span>
+                    <span class="period" data-i18n="plan_period">/mês</span>
+                </div>
+
+                <div class="divider-line gold"></div>
+
+                <ul class="feature-list-sophisticated">
+                    <li class="highlight-item"><i class="fas fa-check-circle"></i> <strong data-i18n="feat_all_seed">Tudo do plano Semente</strong></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_terminal">Acesso ao Terminal de Cotações</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_tech_pdf">Dossiês Técnicos (PDF)</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_report_preview">Prévia de Relatórios</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_store_discount">Desconto na Loja (10%)</span></li>
+                </ul>
+
+                <button class="btn-plan-filled membership-plan-btn" data-i18n="btn_sign_harvest">Assinar Colheita</button>
+            </div>
+
+            <div class="plan-card-sophisticated">
+                <div class="plan-header">
+                    <h3 data-i18n="plan_yield_title">Safra Premium</h3>
+                    <p class="plan-desc" data-i18n="plan_yield_desc">Suporte completo e consultoria especializada.</p>
+                </div>
+                
+                <div class="price-section">
+                    <span class="currency">R$</span>
+                    <span class="amount">199</span>
+                    <span class="period" data-i18n="plan_period">/mês</span>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <ul class="feature-list-sophisticated">
+                    <li class="highlight-item"><i class="fas fa-check-circle"></i> <strong data-i18n="feat_all_harvest">Tudo do plano Colheita</strong></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_custom_reports">Relatórios Personalizados</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_legal_channel">Canal direto com Jurídico</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_mentoring">Mentoria Mensal</span></li>
+                </ul>
+
+                <button class="btn-plan-outline membership-plan-btn" data-i18n="btn_sign_yield">Assinar Safra</button>
+            </div>
+
+        </div>
+        
+        <div class="secure-payment-note">
+            <p><i class="fas fa-lock"></i> <span data-i18n="pay_security">Pagamento processado de forma segura. Cancelamento disponível a qualquer momento no painel.</span></p>
+        </div>
+
+    </main>
+</body>
+</html>
+</Layout>

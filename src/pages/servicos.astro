@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// Importando as imagens do diretório de assets
+import imagemConflito from '../assets/img/conflito-fundiario.jpg'; 
+import imagemContas from '../assets/img/contas.png';
+---
+
+<Layout>
+    <section class="page-header-sophisticated" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <span class="section-tag-white" data-i18n="services_tag">Soluções & Estratégia</span>
+            <h1 data-i18n="services_title">Nossos Serviços</h1>
+            <p data-i18n="services_subtitle">Assessoria técnica e jurídica especializada para a defesa da propriedade e o fortalecimento do agronegócio.</p>
+        </div>
+    </section>
+
+    <div class="about-content"> 
+        <div class="intro-text-sophisticated">
+            <p data-i18n="services_intro_text">
+                Oferecemos mais do que serviços; entregamos segurança jurídica e inteligência de mercado. Nossa atuação combina a defesa técnica da propriedade rural com a capacitação contínua do produtor.
+            </p>
+        </div>
+
+        <div class="divider-center"><i class="fas fa-handshake"></i></div>
+
+        <div class="services-list-sophisticated">
+            
+            <div class="service-row-sophisticated">
+                <div class="service-image-sophisticated" style={`background-image: url('${imagemConflito.src}');`}></div>
+                
+                <div class="service-content-sophisticated">
+                    <div class="service-icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-i18n="srv_consult_title">Consultoria em Conflitos Fundiários</h3>
+                    <p data-i18n="srv_consult_desc">Assessoria completa para produtores rurais em áreas de risco. Transformamos insegurança jurídica em blindagem patrimonial através de estratégias preventivas e reativas baseadas em dados técnicos.</p>
+                    
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> <span data-i18n="srv_consult_li1">Análise de Risco Fundiário</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="srv_consult_li2">Defesa Jurídica e Administrativa</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="srv_consult_li3">Protocolos de Segurança Rural</span></li>
+                    </ul>
+
+                    <a href="/contato_consultoria" class="btn-service-sophisticated" data-membership-action="consultoria">
+                        <span data-i18n="btn_req_service">Solicitar Atendimento</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-row-sophisticated reverse">
+                <div class="service-image-sophisticated" style={`background-image: url('${imagemContas.src}');`}></div>
+                
+                <div class="service-content-sophisticated">
+                    <div class="service-icon-box gold"><i class="fas fa-user-lock"></i></div>
+                    <h3 data-i18n="srv_club_title">Clube de Membros</h3>
+                    <p data-i18n="srv_club_desc">Inteligência estratégica não é luxo, é sobrevivência. Receba relatórios semanais, acesse dossiês exclusivos e antecipe-se aos movimentos do mercado e questões agrárias.</p>
+                    
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-star"></i> <span data-i18n="srv_club_li1">Relatórios Semanais de Inteligência</span></li>
+                        <li><i class="fas fa-star"></i> <span data-i18n="srv_club_li2">Acesso antecipado a Dossiês</span></li>
+                        <li><i class="fas fa-star"></i> <span data-i18n="srv_club_li3">Webinars Exclusivos com Especialistas</span></li>
+                    </ul>
+
+                    <a href="/assinatura" class="btn-service-sophisticated gold" data-membership-action="assinatura">
+                        <span data-i18n="btn_sign_up">Assinar Agora</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</Layout>
+
+<script is:inline src="/scripts/translations.js"></script>
+<script is:inline src="/scripts/main.js"></script>

@@ -1,0 +1,80 @@
+﻿---
+import LoginLayout from '../layouts/LoginLayout.astro';
+import { Image } from 'astro:assets';
+
+import logoAmarte from '../assets/img/logo.png';
+import brFlag from '../assets/img/BRFLAG.png';
+import usaFlag from '../assets/img/USAFLAG.png';
+import esFlag from '../assets/img/ESFLAG.png';
+import cnFlag from '../assets/img/CNFLAG.png';
+---
+
+<LoginLayout title="Login - Instituto Amarte">
+    <div class="auth-split-container">
+        <div class="auth-visual-panel">
+            <div class="visual-overlay"></div>
+            <div class="visual-content">
+                <a href="/" class="auth-logo-link" aria-label="Ir para a página inicial">
+                    <Image src={logoAmarte} alt="Logo Instituto" width={107} height={120} class="auth-logo" fetchpriority="high" loading="eager"/>
+                </a>
+                <h1 data-i18n="hero_title">A verdade não se planta sozinha</h1>
+                <p data-i18n="footer_slogan">Cultivando valores, colhendo futuro e transformando a sociedade através da educação e do trabalho no campo.</p>
+            </div>
+            <i class="fas fa-leaf bg-decor"></i>
+        </div>
+
+        <div class="auth-form-panel">
+            <div class="auth-header-mobile">
+                <a href="/" aria-label="Ir para a página inicial"><Image src={logoAmarte} alt="Logo Mobile" width={120} height={120} fetchpriority="high" loading="eager"/></a>
+            </div>
+
+            <div class="form-content-box">
+                <div class="form-header">
+                    <h2 data-i18n="login_title">Acesse sua conta</h2>
+                    <p data-i18n="login_subtitle">Bem-vindo de volta ao Instituto.</p>
+                </div>
+
+                <form action="javascript:void(0)" method="post" id="login-form">
+                    <div class="form-group-sophisticated">
+                        <label for="login_email" data-i18n="lbl_email">E-mail</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="login_email" name="email" required placeholder="seu@email.com" data-i18n="ph_email">
+                        </div>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="login_password" data-i18n="lbl_password">Senha</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="login_password" name="password" required placeholder="********">
+                        </div>
+                    </div>
+
+                    <div class="form-actions-row">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember" data-i18n="lbl_remember_me">Lembrar de mim</label>
+                        </div>
+                        <a href="#" class="forgot-link" data-i18n="link_forgot_pass">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit" class="btn-auth-gold" data-i18n="btn_login">ENTRAR NA CONTA</button>
+                </form>
+
+                <div class="auth-footer-links">
+                    <p><span data-i18n="txt_no_account">Ainda não tem conta?</span> <a href="/cadastro" class="highlight-link" data-i18n="link_register">Cadastre-se aqui</a></p>
+                    <p style="margin-top: 8px;"><span>Não recebeu o código?</span> <a href="/confirmar-email" class="highlight-link">Confirmar e-mail</a></p>
+                </div>
+
+                <div class="auth-lang-selector">
+                    <Image src={brFlag} alt="PT" class="flag-btn lang-select" data-lang="pt" width={1920} height={1080} loading="eager" />
+                    <Image src={usaFlag} alt="EN" class="flag-btn lang-select" data-lang="en" width={1920} height={1080} loading="eager" />
+                    <Image src={esFlag} alt="ES" class="flag-btn lang-select" data-lang="es" width={1920} height={1080} loading="eager" />
+                    <Image src={cnFlag} alt="CN" class="flag-btn lang-select" data-lang="cn" width={1920} height={1080} loading="eager" />
+                </div>
+            </div>
+        </div>
+    </div>
+</LoginLayout>
+

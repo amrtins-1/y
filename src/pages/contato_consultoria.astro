@@ -1,0 +1,152 @@
+﻿---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Consultoria Jurídica - Instituto Amarte">
+    <section class="page-header-sophisticated" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <span class="section-tag-white" data-i18n="services_tag">Soluções & Estratégia</span>
+            <h1 data-i18n="srv_consult_title">Consultoria Jurídica</h1> 
+            <p data-i18n="consult_intro">Este canal é exclusivo para produtores rurais que necessitam de orientação sobre conflitos fundiários e invasões.</p>
+        </div>
+    </section>
+
+    <main class="contact-sophisticated-wrapper">
+        
+        <div class="contact-card-large">
+            
+            <div class="contact-info-panel">
+                <h3 data-i18n="sec_security">Segurança</h3>
+                <p class="info-intro" data-i18n="consult_intro">
+                    Seus dados serão mantidos em absoluto sigilo. Nossa equipe é especializada em gestão de crises e defesa patrimonial.
+                </p>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="icon-gold"><i class="fas fa-user-shield"></i></div>
+                        <div class="info-data">
+                            <span data-i18n="srv_consult_li1">Análise de Risco</span>
+                            <strong>Triagem Confidencial</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="icon-gold"><i class="fas fa-gavel"></i></div>
+                        <div class="info-data">
+                            <span data-i18n="srv_consult_li2">Defesa Jurídica</span>
+                            <strong>Especialistas Agrários</strong>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon-gold"><i class="fas fa-lock"></i></div>
+                        <div class="info-data">
+                            <span>Protocolo</span>
+                            <strong data-i18n="txt_security_note">Ambiente Seguro</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-footer-decor">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+            </div>
+
+            <div class="contact-form-panel">
+                <div class="form-header">
+                    <h2 data-i18n="consult_form_title">Formulário de Triagem</h2>
+                    <p data-i18n="sua_chave_de_traducao" style="color: #666; font-size: 0.95rem; margin-top: 5px;">
+                        Por favor, detalhe sua situação para agilizar o atendimento.
+                    </p>                
+                </div>
+
+                <form action="#" id="consultancy-form">
+                    
+                    <div class="form-divider-title">
+                        <span data-i18n="sec_responsible">1. Responsável</span>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="srv_nome" data-i18n="form_name">Nome Completo:*</label>
+                        <input type="text" id="srv_nome" name="nome" required data-i18n="ph_fullname_holder">
+                    </div>
+
+                    <div class="form-row-split">
+                        <div class="form-group-sophisticated">
+                            <label for="srv_email" data-i18n="form_email">E-mail:*</label>
+                            <input type="email" id="srv_email" name="email" required data-i18n="ph_email">
+                        </div>
+                        <div class="form-group-sophisticated">
+                            <label for="srv_phone" data-i18n="form_phone">Telefone / WhatsApp:*</label>
+                            <input type="text" id="srv_phone" name="telefone" required data-i18n="ph_phone">
+                        </div>
+                    </div>
+
+                    <div class="form-divider-title">
+                        <span data-i18n="sec_property">2. Dados da Propriedade</span>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="srv_fazenda" data-i18n="form_farm_name">Nome da Fazenda:*</label>
+                        <input type="text" id="srv_fazenda" name="fazenda" required>
+                    </div>
+
+                    <div class="checkbox-row-sophisticated">
+                        <input type="checkbox" id="freestyle-check">
+                        <label for="freestyle-check" data-i18n="form_freestyle">Prefiro digitar minha localização manualmente</label>
+                    </div>
+
+                    <div class="geo-grid-sophisticated">
+                        <div class="form-group-sophisticated">
+                            <label for="estado" data-i18n="form_state">Estado (UF):*</label>
+                            <select name="estado" id="estado">
+                                <option value="" disabled selected data-i18n="form_select_default">Selecione</option>
+                            </select>
+                            <input type="text" id="estado-input" name="estado_manual" data-i18n="ph_state_manual" style="display:none;">
+                        </div>
+
+                        <div class="form-group-sophisticated">
+                            <label for="cidade" data-i18n="form_city">Cidade:*</label>
+                            <select id="cidade" name="cidade" required disabled>
+                                <option value="" data-i18n="form_select_state_first">Selecione um estado primeiro</option>
+                            </select>
+                            <input type="text" id="cidade-input" name="cidade_manual" data-i18n="ph_city_manual" style="display:none;">
+                        </div>
+                    </div>
+
+                    <div class="form-divider-title">
+                        <span data-i18n="sec_conflict">3. Detalhes do Conflito</span>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="srv_status" data-i18n="status_label">Status Atual:*</label>
+                        <select name="status" id="srv_status" required>
+                            <option value="" disabled selected data-i18n="status_opt_select">Selecione a situação</option>
+                            <option value="ameaca" data-i18n="status_opt_threat">Ameaça de Invasão</option>
+                            <option value="invadida_parcial" data-i18n="status_opt_partial">Invasão Parcial</option>
+                            <option value="invadida_total" data-i18n="status_opt_total">Invasão Total</option>
+                            <option value="processo" data-i18n="status_opt_process">Em processo judicial</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="srv_grupo" data-i18n="group_label">Grupo Envolvido:*</label>
+                        <input type="text" id="srv_grupo" name="grupo_etnia" required data-i18n="group_placeholder">
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="srv_relato" data-i18n="report_label">Relato do Caso:*</label>
+                        <textarea id="srv_relato" name="relato" required data-i18n="report_placeholder"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit-gold-large" data-i18n="btn_submit_analysis">
+                        SOLICITAR ANÁLISE DO CASO
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+</Layout>

@@ -1,0 +1,76 @@
+﻿---
+import LoginLayout from '../layouts/LoginLayout.astro';
+import { Image } from 'astro:assets';
+
+import logoAmarte from '../assets/img/logo.png';
+import brFlag from '../assets/img/BRFLAG.png';
+import usaFlag from '../assets/img/USAFLAG.png';
+import esFlag from '../assets/img/ESFLAG.png';
+import cnFlag from '../assets/img/CNFLAG.png';
+---
+
+<LoginLayout title="Confirmar E-mail - Instituto Amarte">
+    <div class="auth-split-container">
+        <div class="auth-visual-panel">
+            <div class="visual-overlay"></div>
+            <div class="visual-content">
+                <a href="/" class="auth-logo-link" aria-label="Ir para a página inicial">
+                    <Image src={logoAmarte} alt="Logo Instituto" width={107} height={120} class="auth-logo" fetchpriority="high" loading="eager" />
+                </a>
+                <h1>Confirme seu e-mail</h1>
+                <p>Digite o código de 6 dígitos enviado para sua caixa de entrada para ativar sua conta.</p>
+            </div>
+            <i class="fas fa-envelope-open-text bg-decor"></i>
+        </div>
+
+        <div class="auth-form-panel">
+            <div class="auth-header-mobile">
+                <a href="/" aria-label="Ir para a página inicial"><Image src={logoAmarte} alt="Logo Mobile" width={120} height={120} fetchpriority="high" loading="eager"/></a>
+            </div>
+
+            <div class="form-content-box">
+                <div class="form-header">
+                    <h2>Valide sua conta</h2>
+                    <p>Insira abaixo o código numérico recebido por e-mail.</p>
+                </div>
+
+                <form action="#" id="email-verification-form">
+                    <div class="form-group-sophisticated">
+                        <label for="verify_email">E-mail</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="verify_email" name="email" required placeholder="seu@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label>Código de confirmação</label>
+                        <div class="verification-code-grid" id="verification-code-grid">
+                            <input type="text" class="verify-code-digit" maxlength="1" inputmode="numeric" pattern="[0-9]*" autocomplete="one-time-code">
+                            <input type="text" class="verify-code-digit" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                            <input type="text" class="verify-code-digit" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                            <input type="text" class="verify-code-digit" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                            <input type="text" class="verify-code-digit" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                            <input type="text" class="verify-code-digit" maxlength="1" inputmode="numeric" pattern="[0-9]*">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-auth-gold">CONFIRMAR CÓDIGO</button>
+                </form>
+
+                <div class="verification-actions">
+                    <button type="button" class="btn-auth-outline" id="resend-verification-code">Reenviar código</button>
+                    <p>Já confirmou? <a href="/login" class="highlight-link">Voltar para login</a></p>
+                </div>
+
+                <div class="auth-lang-selector">
+                    <Image src={brFlag} alt="PT" class="flag-btn lang-select" data-lang="pt" width={1920} height={1080} loading="eager" />
+                    <Image src={usaFlag} alt="EN" class="flag-btn lang-select" data-lang="en" width={1920} height={1080} loading="eager" />
+                    <Image src={esFlag} alt="ES" class="flag-btn lang-select" data-lang="es" width={1920} height={1080} loading="eager" />
+                    <Image src={cnFlag} alt="CN" class="flag-btn lang-select" data-lang="cn" width={1920} height={1080} loading="eager" />
+                </div>
+            </div>
+        </div>
+    </div>
+</LoginLayout>
+

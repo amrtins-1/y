@@ -1,0 +1,180 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+// Importação das imagens para que o Astro as processe corretamente
+import img1 from '../assets/img/1.jpg';
+import img2 from '../assets/img/2.jpg';
+import img3 from '../assets/img/3.jpg';
+import img4 from '../assets/img/4.jpg';
+import img5 from '../assets/img/5.jpg';
+import img6 from '../assets/img/6.jpg';
+import img7 from '../assets/img/7.jpg';
+import img8 from '../assets/img/8.png';
+import img9 from '../assets/img/9.png';
+import img10 from '../assets/img/10.jpg';
+import img11 from '../assets/img/11.png';
+import img12 from '../assets/img/12.jpg';
+import img13 from '../assets/img/13.jpg';
+import img14 from '../assets/img/14.png';
+---
+
+<Layout>
+    <section class="page-header-sophisticated" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <span class="section-tag-white" data-i18n="data_tag">Inteligência Territorial</span>
+            <h1 data-i18n="page_title">Síntese da Ocupação e Uso das Terras no Brasil</h1>
+            <p data-i18n="page_subtitle">Dados técnicos e geocodificados sobre a realidade territorial brasileira.</p>
+        </div>
+    </section>
+
+    <div class="about-content"> 
+        <div class="intro-text-sophisticated">
+            <p data-i18n="p1">
+                O mundo rural brasileiro utiliza, em média, apenas a metade da superfície de seus imóveis <strong>(50,1%)</strong>. A área dedicada à preservação da vegetação nativa nos imóveis rurais - registrados e mapeados no Cadastro Ambiental Rural (CAR) - representa um quarto do território nacional <strong>(25,6%)</strong>.
+            </p>
+        </div>
+
+        <div class="source-box-sophisticated">
+            <div class="source-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            <div class="source-info">
+                <span class="source-label" data-i18n="source_label">Fonte Oficial</span>
+                <p data-i18n="source_text">Estudo desenvolvido pela Embrapa Territorial com base no Cadastro Ambiental Rural (CAR).</p>
+            </div>
+        </div>
+
+        <div class="divider-center"><i class="fas fa-globe-americas"></i></div>
+
+        <article class="article-body-sophisticated">
+            
+            <p data-i18n="data_p_intro">O reconhecimento desse papel essencial da agricultura brasileira na preservação do meio ambiente pode ser conhecido, graças ao tratamento geocodificado dos dados do CAR, pela Embrapa Territorial. A área destinada à preservação em cada imóvel rural foi mapeada de forma precisa em escala local, municipal, microrregiões, estados e país. Sua repartição territorial é extremamente conectada e recobre todo o território nacional (Fig 1). E essas informações numéricas e cartográficas podem ser obtidas neste website em diversos recortes geográficos: país, estados e microrregiões homogêneas.</p>
+
+            <figure class="sophisticated-figure">
+                <Image src={img1} alt="Mapa do Brasil - Áreas de Preservação" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap1">Figura 1 – Áreas dedicadas à preservação da vegetação nativa nos imóveis rurais registrados no Cadastro Ambiental Rural no Brasil</figcaption>
+            </figure>
+
+            <h2 class="article-subtitle" data-i18n="h2_1">Áreas dedicadas à preservação da vegetação nativa</h2>
+            <p data-i18n="data_p3">A partir dos dados do CAR, a pesquisa da Embrapa Territorial quantificou a dimensão territorial da contribuição da agricultura à preservação ambiental. Os produtores rurais brasileiros (agricultores, florestais, pecuaristas, extrativistas etc. cadastrados no CAR) preservam no interior de seus imóveis rurais um total de 218 milhões de hectares, o equivalente à superfície de 10 países da Europa (Fig 2). O registro no CAR prosseguirá até o final de 2018 e as áreas dedicadas à preservação ainda apresentarão algum crescimento.</p>
+
+            <figure class="sophisticated-figure">
+                <Image src={img2} alt="Mapa Comparativo Europa 10 países" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap2">Figura 2 – As áreas dedicadas à preservação da vegetação nativa nos imóveis rurais brasileiros equivalem a 10 países da Europa.</figcaption>
+            </figure>
+
+            <h2 class="article-subtitle" data-i18n="h2_2">Áreas dedicadas à proteção da vegetação nativa</h2>
+            <p data-i18n="p4">As áreas dedicadas à preservação da vegetação nativa pelo mundo rural brasileiro compõe um mosaico ambiental relevante e de grande dimensão com as áreas protegidas do país: as unidades de conservação integral (parques nacionais, estações ecológicas etc.) e as terras indígenas.</p>
+            <p data-i18n="data_p5">Os limites das unidades de conservação integral são conhecidos de forma circunstanciada. Elas protegem 10,4% do território nacional e representam menos da metade da área dedicada à preservação pelo mundo rural. As 600 terras indígenas ocupam 13,8% do país. O total das áreas protegidas (unidades de conservação integral e terras indígenas) representam 206 milhões de hectares e 24,2% do Brasil.</p>
+            
+            <figure class="sophisticated-figure">
+                <Image src={img3} alt="Mapa áreas protegidas" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap3">Figura 3 - Repartição territorial das áreas protegidas do Brasil.</figcaption>
+            </figure>
+
+            <h2 class="article-subtitle" data-i18n="h2_3">Áreas dedicadas a proteção e preservação</h2>
+            <p data-i18n="p6">Juntas, as áreas protegidas e as preservadas no mundo rural totalizam 423 milhões de hectares ou 49,8% do Brasil. A repartição territorial desse conjunto de áreas dedicadas à preservação e proteção da vegetação nativa podem ser observadas no mapa abaixo (Fig 4). No Amazonas, por exemplo, observam-se grandes vazios (em branco) que, em boa parte, representam terras devolutas e algumas áreas militares.</p>
+
+            <figure class="sophisticated-figure">
+                <Image src={img4} alt="Mapa proteção e preservação" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap4">Figura 4 – Repartição territorial das áreas dedicadas à proteção e à preservação da vegetação nativa no Brasil</figcaption>
+            </figure>
+
+            <p data-i18n="p7">O conjunto dos territórios das áreas protegidas e preservadas no Brasil totaliza 423 milhões de hectares ou 49,8% do Brasil, e equivale a 28 países da Europa, a título de comparação (Fig 5).</p>
+
+            <figure class="sophisticated-figure">
+                <Image src={img5} alt="Mapa Comparativo Europa 28 países" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap5">Figura 5 – As áreas dedicadas à proteção e à preservação da vegetação nativa no Brasil equivalem territorialmente a 28 países da Europa.</figcaption>
+            </figure>
+
+            <h2 class="article-subtitle" data-i18n="h3_1">Total das áreas dedicadas à vegetação nativa</h2>
+            <p data-i18n="p8">Quando às áreas protegidas e preservadas agregam-se as de vegetação nativa das terras devolutas e militares, e dos imóveis rurais ainda não cadastrados ou disponíveis no CAR chega-se a um total de 564 milhões de hectares. Em outras palavras, 66,3% do território nacional está destinado e/ou ocupado com as várias formas de vegetação nativa, cuja natureza e estado variam bastante entre os diversos biomas (Fig 6).</p>
+
+            <figure class="sophisticated-figure">
+                <Image src={img6} alt="Mapa total vegetação nativa" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap6">Figura 6 – Repartição territorial do conjunto das áreas dedicadas à vegetação nativa no Brasil.</figcaption>
+            </figure>
+
+            <p data-i18n="p9">O conjunto dos territórios das áreas destinadas à vegetação nativa totaliza 564 milhões de hectares ou 66,3% no Brasil, e equivale a 43 países e 5 territórios da Europa, a título de comparação (Fig 7).</p>
+
+            <figure class="sophisticated-figure">
+                <Image src={img7} alt="Mapa Comparativo Europa 43 países" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap7">Figura 7 – As áreas destinadas à vegetação nativa no Brasil equivalem territorialmente a 43 países e 5 territórios da Europa.</figcaption>
+            </figure>
+
+            <h2 class="article-subtitle" data-i18n="h2_4">Quantificação territorial da ocupação e uso das terras</h2>
+            <p data-i18n="data_p10">Graças ao mapeamento das áreas destinadas à preservação da vegetação nativa cadastradas no CAR pelo mundo rural e das áreas protegidas do Brasil foi possível avançar no sentido de uma visão totalizante do uso e ocupação das terras em todo o território nacional. Com base em imagens de satélite e fontes cartográficas de diversos órgãos federais e estaduais, a equipe da Embrapa Territorial completou a quantificação das demais formas de uso e ocupação das terras. Essa síntese nacional é apresentada a seguir sob a forma numérica (Tabela 1) e gráfica (Fig. 8).</p>
+
+            <figure class="sophisticated-figure large-figure">
+                <Image src={img8} alt="Gráfico pizza Brasil" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap8">Figura 8 – Expressão gráfica da quantificação territorial dos diversos usos e ocupação das terras e das áreas destinadas à preservação e proteção da vegetação nativa no Brasil.</figcaption>
+            </figure>
+
+            <h3 class="article-subtitle" data-i18n="h3_2">Dimensão internacional</h3>
+            <p data-i18n="data_p12">É fato conhecido que o Brasil entre os únicos 10 países do mundo com mais de 2 milhões de km² é de longe o que mais protege seu território, tanto em termos absolutos como relativos, como apontam os dados do "Protected Planet Report 2016" publicado pela UNEP.</p>
+            <p data-i18n="data_p13">Um trabalho realizado pela equipe da Embrapa Territorial com base nos dados do Economic Research Service do USDA, utilizando dados do Major Land Use, permitiu a construção de um gráfico sintético análogo ao realizado para o Brasil expressando as diversas proporções dos diferentes usos e ocupação da terras nos Estados Unidos (Fig. 9).</p>
+
+            <figure class="sophisticated-figure">
+                <Image src={img9} alt="Gráfico pizza EUA" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap9">Figura 9 – Expressão gráfica da quantificação territorial nos EUA.</figcaption>
+            </figure>
+
+            <h3 class="article-subtitle" data-i18n="h3_3">Dinâmica temporal</h3>
+            <p data-i18n="data_p14">As porcentagens relativas a proteção e preservação da vegetação nativa, bem como aos diversos usos e ocupação das terras no Brasil não representam valores absolutos. Existem mudanças observáveis em diversas escalas espaciais e territoriais, algumas reversíveis, outras irreversíveis.</p>
+
+            <h3 class="article-subtitle" data-i18n="h3_4">Dinâmica tecnológica: o caso do ILPF</h3>
+            <p data-i18n="p15">Maior dinamismo ainda é verificado nas pastagens e áreas agrícolas, devido à incorporação de novos sistemas de produção que integram lavouras, pecuária e florestas (ILPF).</p>
+            <p data-i18n="p16">A integração de lavouras com pecuária e/ou florestas plantadas é uma estratégia de produção sustentável, desenvolvida pela pesquisa agropecuária.</p>
+
+            <figure class="sophisticated-figure">
+                <Image src={img10} alt="Gado ILPF" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap10">Figura 10 - Integração lavoura-pecuária-floresta. Crédito: Embrapa.</figcaption>
+            </figure>
+
+            <p data-i18n="data_p18_extra1">Esses sistemas integrados de produção otimizam o uso da terra, elevam os patamares de produtividade, diversificam a produção e geram produtos de qualidade.</p>
+            <p data-i18n="data_p18_extra2">Entre 2005 e 2015, a área de adoção do ILPF cresceu mais de 5 vezes, fruto de seu sucesso e sustentabilidade.</p>
+            
+            <p data-i18n="data_p19">Sendo assim, na prática, as porcentagens de área cultivada e de pastagens implantadas ou plantadas variam ao longo do ano. No inverno, quase 2% do território nacional até então utilizado para cultivos anuais transforma-se em áreas de pastagens graças à integração lavoura-pecuária.</p>
+
+            <figure class="sophisticated-figure">
+                <Image src={img11} alt="Gráfico ILPF" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap11">Figura 11 – Expressão gráfica ILPF (2%).</figcaption>
+            </figure>
+
+            <p data-i18n="data_p21">A grande dinâmica intra anual no uso e ocupação das terras pelas atividades agropecuárias explica porque em função dos sistemas orbitais utilizados, das datas de obtenção das imagens de satélites e dos métodos empregados pode haver diferenças até significativas no mapeamento e na quantificação dos fenômenos observados.</p>
+
+            <h2 class="article-subtitle" data-i18n="h2_5">Áreas dedicadas à conservação da vegetação nativa</h2>
+            <p data-i18n="data_p22">As áreas de pastagens nativas no Brasil representam 8% do território nacional. Essencialmente, são formações vegetais abertas, predominantemente não florestais, que ocupam grande extensões territoriais sob determinismos ecológicos diversos.</p>
+
+            <div class="figures-grid">
+                <figure class="sophisticated-figure">
+                    <Image src={img12} alt="Pampa" class="responsive-img-shadow" />
+                    <figcaption data-i18n="cap12">Figura 12 - Áreas de pampa sob pastejo animal.</figcaption>
+                </figure>
+
+                <figure class="sophisticated-figure">
+                    <Image src={img13} alt="Caatinga" class="responsive-img-shadow" />
+                    <figcaption data-i18n="cap13">Figura 13 - Áreas de caatinga sob pastejo animal.</figcaption>
+                </figure>
+            </div>
+
+            <p data-i18n="data_p23">Trata-se em todos esses casos de uma vegetação nativa conservada sob pastejo animal extensivo. Não se trata nem de áreas protegidas, nem de áreas preservadas. Mas sim, de áreas conservadas, em equilíbrio secular com os sistemas de exploração pecuária.</p>
+
+            <figure class="sophisticated-figure large-figure">
+                <Image src={img14} alt="Gráfico final" class="responsive-img-shadow" />
+                <figcaption data-i18n="cap14">Figura 14 – Gráfico final de uso da terra.</figcaption>
+            </figure>
+
+        </article>
+
+        <div class="citation-box">
+            <p><strong><span data-i18n="ref_label">Referência Bibliográfica:</span></strong> EMBRAPA TERRITORIAL. <em>Síntese da Ocupação e Uso das Terras no Brasil</em>. <span data-i18n="ref_access">Disponível em:</span> <a href="https://www.embrapa.br/car/sintese" target="_blank">www.embrapa.br/car/sintese</a>.</p>
+        </div>
+
+    </div>
+</Layout>
+
+<script is:inline src="/scripts/translations.js"></script>
+<script is:inline src="/scripts/main.js"></script>

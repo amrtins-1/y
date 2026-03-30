@@ -1,0 +1,127 @@
+﻿---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contato - Instituto Amarte">
+    <section class="page-header-sophisticated" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1 data-i18n="menu_contato">Contato</h1> 
+            <p data-i18n="footer_contact_msg">Entre em contato conosco!</p>
+        </div>
+    </section>
+
+    <main class="contact-sophisticated-wrapper">
+        
+        <div class="contact-card-large">
+            
+            <div class="contact-info-panel">
+                <h3 data-i18n="footer_social">Redes Sociais</h3>
+                <p class="info-intro" data-i18n="footer_slogan">
+                    Cultivando valores, colhendo futuro e transformando a sociedade através da educação e do trabalho no campo.
+                </p>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="icon-gold"><i class="fas fa-envelope"></i></div>
+                        <div class="info-data">
+                            <span>E-mail</span>
+                            <strong>contato@institutoamarte.org.br</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="icon-gold"><i class="fas fa-share-alt"></i></div>
+                        <div class="social-row-large">
+                            <a href="https://www.instagram.com/inst.cultivandovalores/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/CultivaValores" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.facebook.com/instcultivandovalores" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-footer-decor">
+                    <i class="fas fa-leaf"></i>
+                </div>
+            </div>
+
+            <div class="contact-form-panel">
+                <div class="form-header">
+                    <h2 data-i18n="contact_intro">Preencha o formulário abaixo...</h2>
+                </div>
+
+                <form action="#" id="main-contact-form">
+                    
+                    <div class="form-group-sophisticated">
+                        <label for="contact_name" data-i18n="form_name">Nome:*</label>
+                        <input type="text" id="contact_name" name="nome" required data-i18n="ph_fullname">
+                    </div>
+
+                    <div class="form-row-split">
+                        <div class="form-group-sophisticated">
+                            <label for="contact_email" data-i18n="form_email">E-mail:*</label>
+                            <input type="email" id="contact_email" name="email" required data-i18n="ph_email">
+                        </div>
+                        <div class="form-group-sophisticated">
+                            <label for="contact_phone" data-i18n="form_phone">Telefone:*</label>
+                            <input type="text" id="contact_phone" name="telefone" required data-i18n="ph_phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="contact_subject" data-i18n="form_subject">Assunto:*</label>
+                        <input type="text" id="contact_subject" name="assunto" required>
+                    </div>
+
+                    <div class="checkbox-row-sophisticated">
+                        <input type="checkbox" id="freestyle-check">
+                        <label for="freestyle-check" data-i18n="form_freestyle">Prefiro digitar minha localização manualmente</label>
+                    </div>
+
+                    <div class="geo-grid-sophisticated">
+                        <div class="form-group-sophisticated" id="row-pais" style="display:none;">
+                            <label for="pais" data-i18n="form_country">País:*</label>
+                            <select id="pais" name="pais">
+                                <option value="" disabled selected data-i18n="form_select_default">Selecione</option>
+                            </select>
+                            <input type="text" id="pais-input" name="pais_manual" style="display:none;" data-i18n="ph_country_manual">
+                        </div>
+
+                        <div class="form-group-sophisticated">
+                            <label for="estado" data-i18n="form_state">Estado:*</label>
+                            <select name="estado" id="estado">
+                                <option value="" disabled selected data-i18n="form_select_default">Selecione</option>
+                            </select>
+                            <input type="text" id="estado-input" name="estado_manual" style="display:none;" data-i18n="ph_state_manual">
+                        </div>
+
+                        <div class="form-group-sophisticated">
+                            <label for="cidade" data-i18n="form_city">Cidade:*</label>
+                            <select id="cidade" name="cidade" required disabled>
+                                <option value="" data-i18n="form_select_state_first">Selecione um estado primeiro</option>
+                            </select>
+                            <input type="text" id="cidade-input" name="cidade_manual" style="display:none;" data-i18n="ph_city_manual">
+                        </div>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="contact_message" data-i18n="form_message">Mensagem:*</label>
+                        <textarea id="contact_message" name="mensagem" required></textarea>
+                    </div>
+
+                    <div class="checkbox-row-sophisticated newsletter-box">
+                        <input type="checkbox" id="newsletter_check" name="newsletter" checked>
+                        <label for="newsletter_check" data-i18n="form_newsletter">Eu desejo receber os informes do Instituto.</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit-gold-large" data-i18n="form_btn">
+                        ENVIAR MENSAGEM
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+</Layout>
+

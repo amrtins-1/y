@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import logoAmarte from '../assets/img/logo.png';
+---
+<Layout>
+    <main class="dashboard-sophisticated-wrapper direct-mode">
+        
+        <div class="dashboard-inline-header">
+            <h1 data-i18n="dashboard_title">Olá, Membro</h1>
+            <p data-i18n="dashboard_subtitle">Gerencie suas doações, serviços e dados pessoais.</p>
+        </div>
+
+        <div class="dashboard-grid-sophisticated">
+             
+            <a href="/info_user" class="dashboard-card-sophisticated">
+                <div class="icon-circle-gold">
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <div class="card-text">
+                    <h3 data-i18n="dash_data_title">Meus Dados</h3>
+                    <p data-i18n="dash_data_desc">Atualize suas informações de contato e senha.</p>
+                </div>
+                <div class="card-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="/doacao" class="dashboard-card-sophisticated">
+                <div class="icon-circle-gold">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <div class="card-text">
+                    <h3 data-i18n="dash_donation_title">Doações</h3>
+                    <p data-i18n="dash_donation_desc">Visualize seu histórico de contribuições e recibos.</p>
+                </div>
+                <div class="card-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="/servicos" class="dashboard-card-sophisticated">
+                <div class="icon-circle-gold">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="card-text">
+                    <h3 data-i18n="dash_services_title">Serviços</h3>
+                    <p data-i18n="dash_services_desc">Acompanhe o status das suas solicitações de consultoria.</p>
+                </div>
+                <div class="card-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="/" class="dashboard-card-sophisticated logout-card">
+                <div class="icon-circle-red">
+                    <i class="fas fa-sign-out-alt"></i>
+                </div>
+                <div class="card-text">
+                    <h3 data-i18n="dash_logout">Sair</h3>
+                    <p data-i18n="dash_logout_desc">Encerrar a sessão de forma segura.</p>
+                </div>
+                <div class="card-arrow red">
+                    <i class="fas fa-power-off"></i>
+                </div>
+            </a>
+
+        </div>
+
+    </main>
+</Layout>

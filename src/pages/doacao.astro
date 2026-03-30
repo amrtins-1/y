@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+    <main class="donation-sophisticated-wrapper donation-section direct-mode">
+        
+        <div class="donation-inline-header">
+            <h1 data-i18n="donate_title">Doe Agora</h1>
+            <p data-i18n="donate_desc">Escolha sua forma de contribuição abaixo.</p>
+        </div>
+
+        <div class="donation-tabs-sophisticated">
+            <button class="tab-btn-sophisticated tab-btn active" onclick="switchTab('mensal', this)" data-i18n="tab_monthly">
+                <i class="far fa-calendar-alt"></i> Doação Mensal
+            </button>
+            <button class="tab-btn-sophisticated tab-btn" onclick="switchTab('unica', this)" data-i18n="tab_single">
+                <i class="fas fa-hand-holding-heart"></i> Doação Única
+            </button>
+        </div>
+
+        <div class="donation-grid-sophisticated" id="donation-grid">
+            
+            <div class="donation-card-sophisticated donation-card" onclick="selectCard(this)">
+                <div class="check-icon-gold"><i class="fas fa-check"></i></div>
+                <div class="card-content">
+                    <span class="card-label" data-i18n="donate_tier_1">Apoio Semente</span>
+                    <div class="card-values">
+                        <span class="currency">R$</span>
+                        <span class="amount">45</span>
+                        <span class="cents">,00</span>
+                    </div>
+                    <span class="card-calc" data-i18n="calc_45">Apenas R$1,50 /dia</span>
+                </div>
+            </div>
+
+            <div class="donation-card-sophisticated donation-card selected" onclick="selectCard(this)">
+                <div class="popular-tag" data-i18n="badge_recommended">Recomendado</div>
+                <div class="check-icon-gold"><i class="fas fa-check"></i></div>
+                <div class="card-content">
+                    <span class="card-label" data-i18n="donate_tier_2">Apoio Cultivo</span>
+                    <div class="card-values highlight">
+                        <span class="currency">R$</span>
+                        <span class="amount">75</span>
+                        <span class="cents">,00</span>
+                    </div>
+                    <span class="card-calc" data-i18n="calc_75">Apenas R$2,50 /dia</span>
+                </div>
+            </div>
+
+            <div class="donation-card-sophisticated donation-card" onclick="selectCard(this)">
+                <div class="check-icon-gold"><i class="fas fa-check"></i></div>
+                <div class="card-content">
+                    <span class="card-label" data-i18n="donate_tier_3">Apoio Colheita</span>
+                    <div class="card-values">
+                        <span class="currency">R$</span>
+                        <span class="amount">174</span>
+                        <span class="cents">,00</span>
+                    </div>
+                    <span class="card-calc" data-i18n="calc_174">Apenas R$5,80 /dia</span>
+                </div>
+            </div>
+
+            <div class="donation-card-sophisticated donation-card input-card" onclick="selectCard(this)">
+                <div class="check-icon-gold"><i class="fas fa-check"></i></div>
+                <div class="card-content">
+                    <span class="card-label" data-i18n="input_placeholder">Outro Valor</span>
+                    <div class="input-wrapper-gold">
+                        <span class="currency-input">R$</span>
+                        <input type="text" class="input-other-value-sophisticated" placeholder="0,00">
+                    </div>
+                    <span class="card-calc" data-i18n="txt_enter_amount">Digite o valor</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="donation-action-area">
+            <button class="btn-donate-gold-large" data-i18n="btn_continue_pay">
+                CONTINUAR PARA PAGAMENTO <i class="fas fa-arrow-right"></i>
+            </button>
+            <p class="security-note">
+                <i class="fas fa-lock"></i> <span data-i18n="txt_security_note">Ambiente seguro e criptografado.</span>
+            </p>
+        </div>
+
+    </main>
+</body>
+</html>
+</Layout>

@@ -1,0 +1,97 @@
+---
+import LoginLayout from '../layouts/LoginLayout.astro';
+import { Image } from 'astro:assets'; // IMPORTANTE: Importar o componente Image
+
+// Imports das imagens (devem estar em src/assets/img/)
+import logoAmarte from '../assets/img/logo.png';
+import brFlag from '../assets/img/BRFLAG.png';
+import usaFlag from '../assets/img/USAFLAG.png';
+import esFlag from '../assets/img/ESFLAG.png';
+import cnFlag from '../assets/img/CNFLAG.png';
+---
+
+<LoginLayout title="Cadastro - Instituto Amarte">
+    <div class="auth-split-container">
+        
+        <div class="auth-visual-panel">
+            <div class="visual-overlay"></div>
+            <div class="visual-content">
+                <a href="/" class="auth-logo-link" aria-label="Ir para a página inicial">
+                    <Image src={logoAmarte} alt="Logo Instituto" width={107} height={120} class="auth-logo" fetchpriority="high" loading="eager"/>
+                </a>
+                <h1 data-i18n="hero_title">A verdade não se planta sozinha</h1>
+                <p data-i18n="footer_slogan">Cultivando valores, colhendo futuro e transformando a sociedade através da educação e do trabalho no campo.</p>
+            </div>
+            <i class="fas fa-leaf bg-decor"></i>
+        </div>
+
+        <div class="auth-form-panel">
+            <div class="auth-header-mobile">
+                <a href="/" aria-label="Ir para a página inicial"><Image src={logoAmarte} alt="Logo Mobile" width={120} height={120} fetchpriority="high" loading="eager"/></a>
+            </div>
+
+            <div class="form-content-box">
+                <div class="form-header">
+                    <h2 data-i18n="register_hero_title">Junte-se a nós</h2>
+                    <p data-i18n="register_hero_subtitle">Crie sua conta e apoie a transformação do campo.</p>
+                </div>
+
+                <form action="#" id="register-form">
+                    
+                    <div class="form-group-sophisticated">
+                        <label for="reg_fullname" data-i18n="lbl_fullname">Nome Completo</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="reg_fullname" name="fullname" required placeholder="Seu nome completo" data-i18n="ph_fullname">
+                        </div>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="reg_email" data-i18n="lbl_email">E-mail</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="reg_email" name="email" required placeholder="seu@email.com" data-i18n="ph_email">
+                        </div>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="reg_phone" data-i18n="lbl_phone">Telefone</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" id="reg_phone" name="phone" required placeholder="(00) 00000-0000" data-i18n="ph_phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="reg_password" data-i18n="lbl_password">Senha</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="reg_password" name="password" required placeholder="********">
+                        </div>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="reg_confirm_password" data-i18n="lbl_confirm_pass">Confirmar Senha</label>
+                        <div class="input-icon-wrapper">
+                            <i class="fas fa-check-circle"></i>
+                            <input type="password" id="reg_confirm_password" name="confirm_password" required placeholder="********">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-auth-gold" data-i18n="btn_register">CADASTRAR</button>
+                </form>
+
+                <div class="auth-footer-links">
+                    <p><span data-i18n="txt_have_account">Já possui conta?</span> <a href="/login" class="highlight-link" data-i18n="link_login">Faça login</a></p>
+                </div>
+
+                <div class="auth-lang-selector">
+                    <Image src={brFlag} class="flag-mini active" onclick="setLanguage('pt')" alt="PT" width={1920} height={1080} fetchpriority="high" loading="eager"/>
+                    <Image src={usaFlag} class="flag-mini" onclick="setLanguage('en')" alt="EN" width={1920} height={1080} fetchpriority="high" loading="eager"/>
+                    <Image src={esFlag} class="flag-mini" onclick="setLanguage('es')" alt="ES" width={1920} height={1080} fetchpriority="high" loading="eager"/>
+                    <Image src={cnFlag} class="flag-mini" onclick="setLanguage('cn')" alt="CN" width={1920} height={1080} fetchpriority="high" loading="eager"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</LoginLayout>

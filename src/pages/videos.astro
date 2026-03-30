@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+    <section class="page-header-sophisticated" style="background-image: url('https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1950&q=80');">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <span class="section-tag-white" data-i18n="videos_tag_main">Conteúdo Audiovisual</span>
+            <h1 data-i18n="videos_title">Galeria de Vídeos</h1>
+            <p data-i18n="videos_subtitle">Análise técnica e debates sobre o setor através do canal Ancapsu.</p>
+        </div>
+    </section>
+
+    <main class="about-content">
+        <div class="channel-header">
+            <h2 data-i18n="yt_section_tag">Canal Ancapsu</h2>
+            <p data-i18n="yt_section_desc">Acompanhe análises técnicas, debates e conteúdos exclusivos sobre o agronegócio brasileiro.</p>
+            <a href="https://www.youtube.com/@ancap_su" target="_blank" class="btn-channel">
+                <i class="fab fa-youtube"></i> <span data-i18n="yt_button_text">Inscrever-se no Canal</span>
+            </a>
+        </div>
+
+        <div id="video-container">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Carregando vídeos...</p>
+            </div>
+        </div>
+    </main>
+
+    <script is:inline src="/scripts/youtube-api.js"></script>
+</Layout>

@@ -1,0 +1,116 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Meu Perfil - Instituto Amarte">
+    <main class="profile-sophisticated-wrapper direct-mode">
+        <div class="profile-inline-header">
+            <h1 data-i18n="profile_title">Meu Perfil</h1>
+            <p data-i18n="profile_subtitle">Gerencie suas informações pessoais.</p>
+        </div>
+
+        <div class="profile-card-sophisticated">
+            <div class="profile-header-section">
+                <div class="header-bg-decoration"></div>
+
+                <div class="profile-identity-group">
+                    <div class="profile-avatar-wrapper large">
+                        <div class="avatar-circle">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <button class="btn-edit-photo" title="Alterar Foto">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+
+                    <div class="profile-summary">
+                        <p class="profile-kicker">Area do Associado</p>
+                        <h2 id="profile_fullname_header">-</h2>
+                        <div class="badges-row">
+                            <span class="role-badge" id="profile_role_badge" data-i18n="badge_active_member">Membro Ativo</span>
+                            <span class="plan-badge"><i class="fas fa-seedling"></i> <span id="profile_plan_label" data-i18n="badge_plan_harvest">Plano Colheita</span></span>
+                        </div>
+                        <p class="join-date"><i class="far fa-calendar-alt"></i> <span data-i18n="lbl_member_since">Membro desde</span>: <span id="profile_member_since">-</span></p>
+                    </div>
+                </div>
+
+                <div class="profile-highlights">
+                    <div class="highlight-card">
+                        <span>Status da Conta</span>
+                        <strong>Ativa</strong>
+                    </div>
+                </div>
+            </div>
+
+            <form action="#" class="profile-form-sophisticated">
+                <div class="profile-form-section">
+                    <div class="form-divider-title">
+                        <span data-i18n="sec_personal_info">Informações Pessoais</span>
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div class="form-group-sophisticated">
+                            <label for="prof_name" data-i18n="lbl_fullname">Nome Completo</label>
+                            <input type="text" id="prof_name" name="fullname" value="" data-i18n="ph_fullname_holder">
+                        </div>
+
+                        <div class="form-group-sophisticated">
+                            <label for="prof_email" data-i18n="lbl_email">E-mail</label>
+                            <input type="email" id="prof_email" name="email" value="" data-i18n="ph_email">
+                        </div>
+
+                        <div class="form-group-sophisticated">
+                            <label for="prof_phone" data-i18n="lbl_phone">Telefone / WhatsApp</label>
+                            <input type="text" id="prof_phone" name="phone" value="" data-i18n="ph_phone">
+                        </div>
+
+                        <div class="form-group-sophisticated">
+                            <label for="prof_cpf" data-i18n="lbl_cpf">CPF</label>
+                            <input type="text" id="prof_cpf" name="cpf" value="" maxlength="14" inputmode="numeric" placeholder="000.000.000-00" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="prof_address" data-i18n="lbl_address">Endereço Completo</label>
+                        <input type="text" id="prof_address" name="address" value="" data-i18n="ph_address">
+                    </div>
+                </div>
+
+                <div class="profile-form-section profile-form-section-security">
+                    <div class="form-divider-title">
+                        <span data-i18n="sec_security">Segurança</span>
+                    </div>
+
+                    <div class="form-group-sophisticated">
+                        <label for="prof_curr_pass" data-i18n="lbl_current_pass">Senha Atual</label>
+                        <input type="password" id="prof_curr_pass" name="current_password" placeholder="********" data-i18n="ph_current_pass">
+                    </div>
+
+                    <div class="form-divider-title">
+                        <span>Trocar Senha </span>
+                    </div>
+
+                    <p class="security-tip">Preencha os campos abaixo somente se quiser alterar sua senha.</p>
+
+                    <div class="form-grid-2">
+                        <div class="form-group-sophisticated">
+                            <label for="prof_new_pass" data-i18n="lbl_new_pass">Nova Senha </label>
+                            <input type="password" id="prof_new_pass" name="new_password" placeholder="" data-i18n="ph_new_pass">
+                        </div>
+
+                        <div class="form-group-sophisticated">
+                            <label for="prof_confirm_new_pass" data-i18n="lbl_confirm_new_pass">Confirmar Nova Senha </label>
+                            <input type="password" id="prof_confirm_new_pass" name="confirm_new_password" placeholder="" data-i18n="ph_confirm_new_pass">
+                        </div>
+                    </div>
+
+                    <p class="security-tip">Dica: use uma senha forte com letras, numeros e simbolos.</p>
+                </div>
+
+                <div class="profile-actions-footer">
+                    <a href="/painel" class="btn-cancel-outline" data-i18n="btn_cancel">Cancelar</a>
+                    <button type="submit" class="btn-save-gold" data-i18n="btn_save_changes">Salvar Alterações</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</Layout>

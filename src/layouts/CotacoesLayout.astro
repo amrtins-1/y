@@ -1,0 +1,282 @@
+﻿---
+// Importamos o CSS global aqui. O Astro cuidará da otimização.
+import '../styles/style.css';
+import '../styles/cotacoes.css';
+import { Image } from 'astro:assets';
+
+// Lógica para identificar a página ativa
+const { pathname } = Astro.url;
+const currentPath = pathname.replace(/\/$/, "") || "/";
+
+// Importação das imagens locais
+import logoAmarte from '../assets/img/logo.png';
+import brFlag from '../assets/img/BRFLAG.png';
+import usaFlag from '../assets/img/USAFLAG.png';
+import esFlag from '../assets/img/ESFLAG.png';
+import cnFlag from '../assets/img/CNFLAG.png';
+import faviconIco from '../assets/img/favicon2.ico';
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script is:inline>
+        (() => {
+            try {
+                const lang = localStorage.getItem('preferredLang') || 'pt';
+                window.__preferredLang = lang;
+                document.documentElement.setAttribute('data-preferred-lang', lang);
+                if (lang !== 'pt') {
+                    document.documentElement.setAttribute('data-lang-pending', '1');
+                }
+                document.documentElement.lang =
+                    lang === 'en' ? 'en-US' :
+                    lang === 'es' ? 'es-ES' :
+                    lang === 'cn' ? 'zh-CN' :
+                    'pt-BR';
+            } catch (_) {
+                window.__preferredLang = 'pt';
+            }
+        })();
+    </script>
+    <title>Instituto Amarte</title>
+    <link rel="icon" href={faviconIco} type="image/x-icon" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body data-page="home">
+
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="/" aria-label="Ir para a página inicial">
+                <Image 
+                    src={logoAmarte} 
+                    alt="Logo Instituto Amarte" 
+                    width={150} 
+                    height={150} 
+                    loading="eager" 
+                />
+            </a>
+            <div class="logo-text">
+                <a href="/" aria-label="Ir para a página inicial">
+                    <span class="logo-title" data-i18n="logo_title">Instituto Amarte</span>
+                    <span class="logo-subtitle" data-i18n="logo_subtitle">Cultivando Valores</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="header-center-action">
+            <a href="/login" class="btn-login-center">
+                 <i class="fas fa-user"></i> <span data-i18n="topbar_login">Área do Associado</span>
+            </a>
+        </div>
+
+        <div class="flags-wrapper">
+    <Image src={brFlag} alt="PT" class="flag-btn lang-select" data-lang="pt"width={1920} height={1080} loading="eager"/>
+    <Image src={usaFlag} alt="EN" class="flag-btn lang-select" data-lang="en"width={1920} height={1080} loading="eager"/>
+    <Image src={esFlag} alt="ES" class="flag-btn lang-select" data-lang="es" width={1920} height={1080} loading="eager"/>
+    <Image src={cnFlag} alt="CN" class="flag-btn lang-select" data-lang="cn" width={1920} height={1080} loading="eager"/>
+        </div>
+            <div class="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="gray-nav-bar">
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="/sobre" class={currentPath === "/sobre" ? "active" : ""} data-i18n="menu_sobre">Instituto</a>
+                </li>
+                <li>
+                    <a href="/projetos" class={currentPath === "/projetos" ? "active" : ""} data-i18n="menu_projetos">Projetos</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="/noticias" class={`dropdown-trigger ${currentPath.includes("/noticia") ? "active" : ""}`}>
+                        <span data-i18n="menu_noticias">Notícias</span> <i class="fas fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i>
+                    </a>
+                    <div class="news-drawer">
+                        <div class="drawer-news-list">
+                            <a href="/noticias" class="drawer-link">
+                                <span class="drawer-date" data-i18n="news_today">HOJE</span>
+                                <span class="drawer-title">Carregando notícias...</span>
+                            </a>
+                        </div>
+                        <a href="/noticias" class="drawer-view-all" data-i18n="news_view_all">Ver todas</a>
+                    </div>
+                </li>
+                <li><a href="/videos" class={currentPath === "/videos" ? "active" : ""} data-i18n="menu_videos">Vídeos</a></li>
+                <li><a href="/dados" class={currentPath === "/dados" ? "active" : ""} data-i18n="menu_dados">Dados</a></li>
+                <li><a href="/servicos" class={currentPath === "/servicos" ? "active" : ""} data-i18n="menu_servicos">Serviços</a></li>
+                <li><a href="/produtos" class={currentPath === "/produtos" ? "active" : ""} data-i18n="menu_produtos">Produtos</a></li>
+                <li><a href="/contato" class={currentPath === "/contato" ? "active" : ""} data-i18n="menu_contato">Contato</a></li>
+                <li><a href="/cotacoes" class={currentPath === "/cotacoes" ? "active" : ""} data-i18n="menu_cotacoes">Cotações</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <slot /> 
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col col-logo">
+                <Image 
+                    src={logoAmarte} 
+                    alt="Logo" 
+                    width={150} 
+                    style="margin-top: -50px; filter: brightness(0) invert(1);" 
+                    fetchpriority="high" loading="lazy"
+                />
+                <p style="margin-top: -25px; font-size: 1rem; opacity: 0.9; max-width: 300px; line-height: 1.8;" data-i18n="footer_slogan">
+                    Cultivando valores, colhendo futuro e transformando a sociedade através da educação e do trabalho no campo.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer_links">Links Úteis</h4>
+                <ul>
+                    <li><a href="/sobre" data-i18n="menu_sobre">Instituto</a></li>
+                    <li><a href="#" data-i18n="footer_transparency">Transparência</a></li>
+                    <li><a href="#" data-i18n="footer_privacy">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="menu_contato">Contato</h4>
+                <ul>
+                    <li>
+                        <a href="/contato" style="text-decoration: none;">
+                            <i class="fas fa-envelope"></i> 
+                            <span data-i18n="footer_contact_msg">Entre em contato conosco!</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer_social">Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/inst.cultivandovalores/" class="social-insta" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/CultivaValores" class="social-x" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a> 
+                    <a href="https://www.facebook.com/instcultivandovalores" class="social-face" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-yt" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; {new Date().getFullYear()} Instituto Amarte. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+        </div>
+    </footer>
+
+<script is:inline src="/scripts/translations.js"></script>
+    <script is:inline src="/scripts/main.js"></script>
+    
+    <script is:inline>
+        // 1. Conecta as bandeiras ao sistema de tradução
+        document.querySelectorAll('.lang-select').forEach(img => {
+            img.addEventListener('click', () => {
+                const lang = img.getAttribute('data-lang');
+                if (typeof setLanguage === 'function') {
+                    setLanguage(lang);
+                    // Atualiza a borda/opacidade da bandeira ativa
+                    document.querySelectorAll('.lang-select').forEach(i => i.classList.remove('active'));
+                    img.classList.add('active');
+                }
+            });
+        });
+
+        // 2. Lógica Dinâmica do News Drawer
+        async function loadDrawerNews() {
+            const drawerList = document.querySelector('.drawer-news-list');
+            if (!drawerList) return;
+
+            const escapeHtml = (value) => String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+
+            const feedUrls = [
+                'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.google.com.br%2Falerts%2Ffeeds%2F16263980189685995465%2F2674679861920271350',
+                'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.google.com.br%2Falerts%2Ffeeds%2F16263980189685995465%2F10697110974606485694'
+            ];
+
+            try {
+                const results = await Promise.all(feedUrls.map(url => fetch(url).then(resp => resp.json())));
+                let allNews = [];
+
+                results.forEach(result => {
+                    if (result && Array.isArray(result.items)) {
+                        allNews = allNews.concat(result.items);
+                    }
+                });
+
+                const uniqueNews = allNews.filter((item, index, self) =>
+                    index === self.findIndex(other => other.link === item.link)
+                );
+
+                uniqueNews.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+                const latestFive = uniqueNews.slice(0, 5);
+
+                if (latestFive.length === 0) return;
+
+                drawerList.innerHTML = latestFive.map(item => {
+                    const title = escapeHtml((item.title || '').split(' - ')[0]);
+                    const link = escapeHtml(item.link || '/noticias');
+                    const date = new Date(item.pubDate);
+                    const formattedDate = Number.isNaN(date.getTime())
+                        ? ''
+                        : date.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' });
+
+                    return `
+                        <a href="${link}" target="_blank" rel="noopener noreferrer" class="drawer-link">
+                            <span class="drawer-date">${formattedDate}</span>
+                            <span class="drawer-title">${title}</span>
+                        </a>
+                    `;
+                }).join('');
+            } catch (e) {
+                console.warn('Drawer: mantendo conteúdo padrão.', e);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadDrawerNews();
+
+            // Carregamento condicional das Cotações
+            if (document.querySelector('.quotes-container') || document.getElementById('tab-boi')) {
+                const script = document.createElement('script');
+                script.src = '/scripts/cotacoes-page.js';
+                document.body.appendChild(script);
+            }
+
+            // Inicialização do Menu Mobile (caso o ID seja diferente no Layout)
+            const menuIcon = document.querySelector('.mobile-menu-icon');
+            if (menuIcon) {
+                menuIcon.addEventListener('click', () => {
+                    if (typeof toggleMenu === 'function') toggleMenu();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
