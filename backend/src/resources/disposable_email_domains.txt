@@ -1,0 +1,5 @@
+﻿# Lista basica de dominios de email descartavel
+mailinator.com
+yopmail.com
+tempmail.com
+10minutemail.com

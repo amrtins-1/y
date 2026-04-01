@@ -1,0 +1,43 @@
+﻿{
+  "name": "instituto-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend NestJS do Instituto",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node dist/main.js",
+    "start:dev": "nest start --watch",
+    "build": "nest build",
+    "lint": "eslint \"src/**/*.ts\" --max-warnings=0"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.3.10",
+    "@nestjs/core": "^10.3.10",
+    "@nestjs/platform-express": "^10.3.10",
+    "@nestjs/config": "^3.2.3",
+    "@nestjs/typeorm": "^10.0.2",
+    "@nestjs/schedule": "^4.0.2",
+    "bcrypt": "^5.1.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "cookie-parser": "^1.4.6",
+    "nodemailer": "^6.9.14",
+    "pg": "^8.13.1",
+    "reflect-metadata": "^0.2.2",
+    "rimraf": "^5.0.10",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.4.9",
+    "@nestjs/schematics": "^10.1.2",
+    "@nestjs/testing": "^10.3.10",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/node": "^20.14.13",
+    "@types/nodemailer": "^6.4.14",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "typescript": "^5.5.4"
+  }
+}
