@@ -5,6 +5,10 @@ function resolveDefaultApiBaseUrl() {
     if (hostname === 'localhost' || hostname === '127.0.0.1') {
         return `http://${hostname}:8080/api`;
     }
+    if (hostname.endsWith('.vercel.app')) {
+        // Default for Vercel previews when PUBLIC_API_BASE_URL is missing.
+        return 'https://y-csso.onrender.com/api';
+    }
     return `${origin}/api`;
 }
 
