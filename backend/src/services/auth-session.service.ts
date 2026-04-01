@@ -1,6 +1,6 @@
 ﻿import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
+import { Repository, IsNull } from 'typeorm';
 import { AuthSession } from '../entities/auth-session.entity';
 import { AppUser } from '../entities/app-user.entity';
 import { UserRole } from '../entities/enums';
@@ -104,7 +104,7 @@ export class AuthSessionService extends AbstractCrudService<AuthSession, string>
     const session = await this.repository.findOne({
       where: {
         id: sessionId,
-        revokedAt: null,
+        revokedAt: IsNull(),
       },
       relations: ['user'],
     });

@@ -14,7 +14,7 @@ export class DisposableEmailDomainService implements OnModuleInit {
     await this.refreshDomainSet();
   }
 
-  @Interval(() => getEnvNumber(process.env.APP_EMAIL_DISPOSABLE_REFRESH_MS, 86400000))
+  @Interval(86400000)
   async scheduledRefresh() {
     if (!getEnvFlag(process.env.APP_EMAIL_DISPOSABLE_UPDATE_ENABLED, true)) {
       return;

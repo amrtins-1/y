@@ -23,9 +23,9 @@ export class ApiCsrfProtectionMiddleware implements NestMiddleware {
       return next();
     }
 
-    let origin = req.header('Origin');
+    let origin: string | undefined = req.header('Origin') || undefined;
     if (!origin) {
-      origin = this.originFromReferer(req.header('Referer'));
+      origin = this.originFromReferer(req.header('Referer')) || undefined;
     }
 
     if (!origin) {
@@ -51,21 +51,21 @@ export class ApiCsrfProtectionMiddleware implements NestMiddleware {
     return Boolean(cookies['SESSION_ID']) && Boolean(cookies['USER_ID']);
   }
 
-  private originFromReferer(referer?: string): string | null {
+  private originFromReferer(referer?: string): string | undefined {
     if (!referer) {
-      return null;
+      return undefined;
     }
     try {
       const url = new URL(referer);
       if (!url.protocol || !url.hostname) {
-        return null;
+        return undefined;
       }
       if (url.port) {
         return `${url.protocol}//${url.hostname}:${url.port}`;
       }
       return `${url.protocol}//${url.hostname}`;
     } catch {
-      return null;
+      return undefined;
     }
   }
 }
