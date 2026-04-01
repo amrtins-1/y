@@ -1,4 +1,14 @@
-﻿let currentLang = window.__preferredLang || localStorage.getItem('preferredLang') || 'pt';
+let currentLang = window.__preferredLang || localStorage.getItem('preferredLang') || 'pt';
+
+
+function getDocumentApiBaseUrl() {
+    const raw = document.documentElement.getAttribute('data-api-base-url') || '';
+    if (!raw || raw.startsWith('{')) {
+        return '';
+    }
+    return raw;
+}
+
 
 function resolveDefaultApiBaseUrl() {
     const { hostname, origin } = window.location;
@@ -13,7 +23,8 @@ function resolveDefaultApiBaseUrl() {
 }
 
 const DEFAULT_API_BASE_URL = resolveDefaultApiBaseUrl().replace(/\/$/, '');
-let apiBaseUrl = (window.__API_BASE_URL || localStorage.getItem('apiBaseUrl') || DEFAULT_API_BASE_URL).replace(/\/$/, '');
+const documentApiBaseUrl = getDocumentApiBaseUrl();
+let apiBaseUrl = (documentApiBaseUrl || window.__API_BASE_URL || localStorage.getItem('apiBaseUrl') || DEFAULT_API_BASE_URL).replace(/\/$/, '');
 
 async function performApiFetch(path, options) {
     const requestOptions = {
@@ -55,12 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('setLanguage nao esta disponivel; mantendo idioma padrao.');
     }
     
-    // Inicializa páginas específicas se os elementos existirem
+    // Inicializa p�ginas espec�ficas se os elementos existirem
     if (document.getElementById('news-container')) {
         initNewsPage();
     }
     
-    // CORREÇÃO: Adicionada verificação para .contact-form-panel (usada no login/contato novo)
+    // CORRE��O: Adicionada verifica��o para .contact-form-panel (usada no login/contato novo)
     if (document.querySelector('.contact-form-wrapper') || document.querySelector('.contact-form-panel')) {
         initContactPage();
     }
@@ -160,9 +171,9 @@ function showDashboardVerificationReminder() {
     if (params.get('verifyEmail') !== '1') return;
 
     showFeedback(
-        'Sua conta está ativa, mas recomendamos confirmar o e-mail para maior segurança e recuperação de acesso.',
+        'Sua conta est� ativa, mas recomendamos confirmar o e-mail para maior seguran�a e recupera��o de acesso.',
         'warning',
-        'Confirmação recomendada'
+        'Confirma��o recomendada'
     );
 }
 
@@ -720,9 +731,9 @@ function showLoginVerificationFeedback() {
     const params = new URLSearchParams(window.location.search);
     const emailConfirmed = params.get('emailConfirmed');
     if (emailConfirmed === '1') {
-        showFeedback('Seu e-mail foi confirmado. Agora você já pode entrar.', 'success', 'E-mail verificado');
+        showFeedback('Seu e-mail foi confirmado. Agora voc� j� pode entrar.', 'success', 'E-mail verificado');
     } else if (emailConfirmed === '0') {
-        showFeedback('Link de confirmação inválido ou expirado. Solicite um novo cadastro.', 'warning', 'Confirmação inválida');
+        showFeedback('Link de confirma��o inv�lido ou expirado. Solicite um novo cadastro.', 'warning', 'Confirma��o inv�lida');
     }
 }
 
@@ -894,7 +905,7 @@ function bindLoginSubmit() {
 // MOBILE MENU FUNCTIONALITY
 // =========================================
 function initMobileMenu() {
-    // Cria o overlay e drawer se não existirem
+    // Cria o overlay e drawer se n�o existirem
     if (!document.querySelector('.mobile-menu-overlay')) {
         createMobileMenuElements();
     }
@@ -946,31 +957,31 @@ function createMobileMenuElements() {
             </button>
         </div>
         <ul class="mobile-nav-menu">
-            <li><a href="/"><span data-i18n="menu_home">Início</span> <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="/"><span data-i18n="menu_home">In�cio</span> <i class="fas fa-chevron-right"></i></a></li>
             <li><a href="/sobre"><span data-i18n="menu_sobre">Instituto</span> <i class="fas fa-chevron-right"></i></a></li>
             <li><a href="/projetos"><span data-i18n="menu_projetos">Projetos</span> <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="/noticias"><span data-i18n="menu_noticias">Notícias</span> <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="/noticias"><span data-i18n="menu_noticias">Not�cias</span> <i class="fas fa-chevron-right"></i></a></li>
             <li><a href="/dados"><span data-i18n="menu_dados">Dados</span> <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="/servicos"><span data-i18n="menu_servicos">Serviços</span> <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="/servicos"><span data-i18n="menu_servicos">Servi�os</span> <i class="fas fa-chevron-right"></i></a></li>
             <li><a href="/produtos"><span data-i18n="menu_produtos">Produtos</span> <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="/cotacoes"><span data-i18n="menu_cotacoes">Cotações</span> <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="/cotacoes"><span data-i18n="menu_cotacoes">Cota��es</span> <i class="fas fa-chevron-right"></i></a></li>
             <li><a href="/contato"><span data-i18n="menu_contato">Contato</span> <i class="fas fa-chevron-right"></i></a></li>
         </ul>
         <div class="mobile-nav-footer">
             <div class="mobile-nav-flags">
-                <img src="https://flagcdn.com/w40/br.png" alt="Português" class="flag-btn" onclick="setLanguage('pt'); updateMobileMenuFlags();">
+                <img src="https://flagcdn.com/w40/br.png" alt="Portugu�s" class="flag-btn" onclick="setLanguage('pt'); updateMobileMenuFlags();">
                 <img src="https://flagcdn.com/w40/us.png" alt="English" class="flag-btn" onclick="setLanguage('en'); updateMobileMenuFlags();">
-                <img src="https://flagcdn.com/w40/es.png" alt="Español" class="flag-btn" onclick="setLanguage('es'); updateMobileMenuFlags();">
+                <img src="https://flagcdn.com/w40/es.png" alt="Espa�ol" class="flag-btn" onclick="setLanguage('es'); updateMobileMenuFlags();">
             </div>
             <a href="/login" class="mobile-nav-cta">
-                <i class="fas fa-user"></i> <span data-i18n="topbar_login">Área do Associado</span>
+                <i class="fas fa-user"></i> <span data-i18n="topbar_login">�rea do Associado</span>
             </a>
         </div>
     `;
     
     document.body.appendChild(drawer);
 
-    // Marca página ativa
+    // Marca p�gina ativa
     markCurrentPageInMenu();
 }
 
@@ -1004,7 +1015,7 @@ function updateMobileMenuFlags() {
         }
     });
 
-    // Atualiza textos dentro do menu mobile se necessário
+    // Atualiza textos dentro do menu mobile se necess�rio
     const drawer = document.querySelector('.mobile-nav-drawer');
     if (drawer) {
         const elements = drawer.querySelectorAll('[data-i18n]');
@@ -1056,7 +1067,7 @@ function setLanguage(lang) {
         if (value == null) return true;
         const text = String(value);
         if (!text.trim()) return true;
-        if (/[ÃÂâ]/.test(text) || text.includes('\uFFFD')) return true;
+        if (/[���]/.test(text) || text.includes('\uFFFD')) return true;
         const qCount = (text.match(/\?/g) || []).length;
         if (qCount >= 2) return true;
         return false;
@@ -1092,43 +1103,43 @@ function setLanguage(lang) {
 
         const phraseMaps = {
             en: {
-                'Ativo / Praça': 'Asset / Market',
+                'Ativo / Pra�a': 'Asset / Market',
                 'Atualizado em': 'Updated on',
-                'Última atualização': 'Last update',
+                '�ltima atualiza��o': 'Last update',
                 'Ultima atualizacao': 'Last update',
                 'Buscar no painel ativo': 'Search in active panel',
-                'Somente ativos compatíveis com a cadeia selecionada.': 'Only assets compatible with the selected chain.',
+                'Somente ativos compat�veis com a cadeia selecionada.': 'Only assets compatible with the selected chain.',
                 'Somente ativos compativeis com a cadeia selecionada.': 'Only assets compatible with the selected chain.',
-                'Sem variações suficientes para montar o ticker neste ciclo.': 'Not enough changes to build the ticker in this cycle.',
+                'Sem varia��es suficientes para montar o ticker neste ciclo.': 'Not enough changes to build the ticker in this cycle.',
                 'Sem variacoes suficientes para montar o ticker neste ciclo.': 'Not enough changes to build the ticker in this cycle.',
                 'Categorias': 'Categories',
                 'registros': 'records'
             },
             es: {
-                'Ativo / Praça': 'Activo / Plaza',
+                'Ativo / Pra�a': 'Activo / Plaza',
                 'Atualizado em': 'Actualizado en',
-                'Última atualização': 'Última actualización',
-                'Ultima atualizacao': 'Última actualización',
+                '�ltima atualiza��o': '�ltima actualizaci�n',
+                'Ultima atualizacao': '�ltima actualizaci�n',
                 'Buscar no painel ativo': 'Buscar en el panel activo',
-                'Somente ativos compatíveis com a cadeia selecionada.': 'Solo activos compatibles con la cadena seleccionada.',
+                'Somente ativos compat�veis com a cadeia selecionada.': 'Solo activos compatibles con la cadena seleccionada.',
                 'Somente ativos compativeis com a cadeia selecionada.': 'Solo activos compatibles con la cadena seleccionada.',
-                'Sem variações suficientes para montar o ticker neste ciclo.': 'Sin variaciones suficientes para montar el ticker en este ciclo.',
+                'Sem varia��es suficientes para montar o ticker neste ciclo.': 'Sin variaciones suficientes para montar el ticker en este ciclo.',
                 'Sem variacoes suficientes para montar o ticker neste ciclo.': 'Sin variaciones suficientes para montar el ticker en este ciclo.',
-                'Categorias': 'Categorías',
+                'Categorias': 'Categor�as',
                 'registros': 'registros'
             },
             cn: {
-                'Ativo / Praça': '品种 / 地区',
-                'Atualizado em': 'æ›´æ–°äºŽ',
-                'Última atualização': '最后更新',
-                'Ultima atualizacao': 'æœ€åŽæ›´æ–°',
-                'Buscar no painel ativo': 'åœ¨å½“å‰é¢æ¿ä¸­æœç´¢',
-                'Somente ativos compatíveis com a cadeia selecionada.': '仅显示与所选产业链兼容的资产。',
-                'Somente ativos compativeis com a cadeia selecionada.': 'ä»…æ˜¾ç¤ºä¸Žæ‰€é€‰äº§ä¸šé“¾å…¼å®¹çš„èµ„äº§ã€‚',
-                'Sem variações suficientes para montar o ticker neste ciclo.': '本轮涨跌不足，无法生成行情滚动条。',
-                'Sem variacoes suficientes para montar o ticker neste ciclo.': 'æœ¬è½®æ¶¨è·Œä¸è¶³ï¼Œæ— æ³•ç”Ÿæˆè¡Œæƒ…æ»šåŠ¨æ¡ã€‚',
-                'Categorias': 'åˆ†ç±»',
-                'registros': 'æ¡è®°å½•'
+                'Ativo / Pra�a': '?? / ??',
+                'Atualizado em': '更新于',
+                '�ltima atualiza��o': '????',
+                'Ultima atualizacao': '最后更新',
+                'Buscar no painel ativo': '在当前面板中搜索',
+                'Somente ativos compat�veis com a cadeia selecionada.': '???????????????',
+                'Somente ativos compativeis com a cadeia selecionada.': '仅显示与所选产业链兼容的资产。',
+                'Sem varia��es suficientes para montar o ticker neste ciclo.': '??????,??????????',
+                'Sem variacoes suficientes para montar o ticker neste ciclo.': '本轮涨跌不足，无法生成行情滚动条。',
+                'Categorias': '分类',
+                'registros': '条记录'
             }
         };
 
@@ -1175,19 +1186,19 @@ function setLanguage(lang) {
                 'Valor (': 'Valor (',
                 'Fechamento ': 'Cierre ',
                 'Fechamento (': 'Cierre (',
-                'Variacao ': 'Variación ',
-                'Variacao (': 'Variación (',
-                'Variacao semanal': 'Variación semanal',
-                'Variacao dia': 'Variación diaria',
+                'Variacao ': 'Variaci�n ',
+                'Variacao (': 'Variaci�n (',
+                'Variacao semanal': 'Variaci�n semanal',
+                'Variacao dia': 'Variaci�n diaria',
                 'A vista': 'Contado',
                 'A prazo': 'Plazo',
                 'Data': 'Fecha',
                 'Referencia': 'Referencia',
                 'Praca': 'Plaza',
-                'Mercado Fisico': 'Mercado Físico',
+                'Mercado Fisico': 'Mercado F�sico',
                 'Mercado Internacional': 'Mercado Internacional',
                 'Outros Indicadores': 'Otros Indicadores',
-                'Pregao Regular': 'Sesión Regular',
+                'Pregao Regular': 'Sesi�n Regular',
                 'Referencias nacionais': 'Referencias nacionales',
                 'Estados e pracas': 'Estados y plazas',
                 'Estados e media Brasil': 'Estados y promedio de Brasil',
@@ -1200,33 +1211,33 @@ function setLanguage(lang) {
             cn: {
                 'Indicadores de ': '',
                 'Indicadores do ': '',
-                'Preco ': 'ä»·æ ¼ ',
-                'Preco(': 'ä»·æ ¼(',
-                'Preco (': 'ä»·æ ¼ (',
-                'Valor ': 'æ•°å€¼ ',
-                'Valor (': 'æ•°å€¼ (',
-                'Fechamento ': 'æ”¶ç›˜ ',
-                'Fechamento (': 'æ”¶ç›˜ (',
-                'Variacao ': 'æ¶¨è·Œ ',
-                'Variacao (': 'æ¶¨è·Œ (',
-                'Variacao semanal': 'å‘¨æ¶¨è·Œ',
-                'Variacao dia': 'æ—¥æ¶¨è·Œ',
-                'A vista': 'çŽ°è´§',
-                'A prazo': 'è¿œæœŸ',
-                'Data': 'æ—¥æœŸ',
-                'Referencia': 'å‚è€ƒ',
-                'Praca': 'äº¤æ˜“åœ°',
-                'Mercado Fisico': 'çŽ°è´§å¸‚åœº',
-                'Mercado Internacional': 'å›½é™…å¸‚åœº',
-                'Outros Indicadores': 'å…¶ä»–æŒ‡æ ‡',
-                'Pregao Regular': 'å¸¸è§„äº¤æ˜“æ—¶æ®µ',
-                'Referencias nacionais': 'å…¨å›½å‚è€ƒ',
-                'Estados e pracas': 'å„å·žä¸Žäº¤æ˜“åœ°',
-                'Estados e media Brasil': 'å„å·žä¸Žå·´è¥¿å‡å€¼',
-                'Granja e atacado': 'å†œåœºä¸Žæ‰¹å‘',
-                'Pracas e cooperativas': 'äº¤æ˜“åœ°ä¸Žåˆä½œç¤¾',
-                'Ceasas, estados e tipos': 'æ‰¹å‘å¸‚åœºã€å„å·žä¸Žå“ç±»',
-                'Ceasas e tipos': 'æ‰¹å‘å¸‚åœºä¸Žå“ç±»',
+                'Preco ': '价格 ',
+                'Preco(': '价格(',
+                'Preco (': '价格 (',
+                'Valor ': '数值 ',
+                'Valor (': '数值 (',
+                'Fechamento ': '收盘 ',
+                'Fechamento (': '收盘 (',
+                'Variacao ': '涨跌 ',
+                'Variacao (': '涨跌 (',
+                'Variacao semanal': '周涨跌',
+                'Variacao dia': '日涨跌',
+                'A vista': '现货',
+                'A prazo': '远期',
+                'Data': '日期',
+                'Referencia': '参考',
+                'Praca': '交易地',
+                'Mercado Fisico': '现货市场',
+                'Mercado Internacional': '国际市场',
+                'Outros Indicadores': '其他指标',
+                'Pregao Regular': '常规交易时段',
+                'Referencias nacionais': '全国参考',
+                'Estados e pracas': '各州与交易地',
+                'Estados e media Brasil': '各州与巴西均值',
+                'Granja e atacado': '农场与批发',
+                'Pracas e cooperativas': '交易地与合作社',
+                'Ceasas, estados e tipos': '批发市场、各州与品类',
+                'Ceasas e tipos': '批发市场与品类',
                 'B3': 'B3'
             }
         };
@@ -1243,7 +1254,7 @@ function setLanguage(lang) {
         let translated = langPack[key];
         if (isCorruptedText(translated)) translated = null;
 
-        // Para chinês, tenta inglês antes de cair para PT.
+        // Para chin�s, tenta ingl�s antes de cair para PT.
         if (translated == null && lang === 'cn') {
             const enCandidate = enPack[key];
             if (!isCorruptedText(enCandidate)) translated = enCandidate;
@@ -1268,7 +1279,7 @@ function setLanguage(lang) {
         }
     });
 
-    // CORREÇÃO: Atualiza bandeiras (suporte para bandeiras com data-lang e/ou onclick)
+    // CORRE��O: Atualiza bandeiras (suporte para bandeiras com data-lang e/ou onclick)
     const allFlags = document.querySelectorAll('.flag-btn, .flag-mini');
     allFlags.forEach(img => {
         img.classList.remove('active');
@@ -1279,7 +1290,7 @@ function setLanguage(lang) {
         }
     });
 
-    // Atualiza componentes dinâmicos se estiverem na página
+    // Atualiza componentes din�micos se estiverem na p�gina
     if (document.getElementById('news-container')) {
         loadNews();
     }
@@ -1289,15 +1300,15 @@ function setLanguage(lang) {
     if (document.querySelector('.contact-form-wrapper') || document.querySelector('.contact-form-panel')) {
         handleContactLanguageChange();
     }
-    // Dentro da função setLanguage(lang) no main.js
+    // Dentro da fun��o setLanguage(lang) no main.js
 const dateElements = document.querySelectorAll('.update-date-js');
 dateElements.forEach(el => {
     const rawValue = el.getAttribute('data-raw-date') || el.textContent.trim();
     
-    // Salva o valor original se for a primeira vez para não perder a referência na troca de idiomas
+    // Salva o valor original se for a primeira vez para n�o perder a refer�ncia na troca de idiomas
     if(!el.getAttribute('data-raw-date')) el.setAttribute('data-raw-date', rawValue);
 
-    // Lógica simples de inversão de data (DD/MM para MM/DD)
+    // L�gica simples de invers�o de data (DD/MM para MM/DD)
     if (rawValue.includes('/')) {
         const parts = rawValue.split('/');
         if (lang === 'en' && parts.length === 2) {
@@ -1310,7 +1321,7 @@ dateElements.forEach(el => {
     }
 });
 
-    // Notifica páginas com conteúdo dinâmico para reaplicar localização.
+    // Notifica p�ginas com conte�do din�mico para reaplicar localiza��o.
     try {
         document.dispatchEvent(new CustomEvent('language:changed', { detail: { lang } }));
     } catch (_) {}
@@ -1363,14 +1374,14 @@ function loadNews() {
 
         if (noticiasUnicas.length > 0) {
             noticiasUnicas.forEach(item => {
-                // Limpeza do título (remove source do final se houver)
+                // Limpeza do t�tulo (remove source do final se houver)
                 let manchete = item.title.split(' - ')[0]; 
                 
                 // Identifica fonte para tag visual
                 let fonte = 'Agro';
                 if (item.link.includes('gazetadopovo')) fonte = 'Gazeta do Povo';
                 else if (item.link.includes('comprerural')) fonte = 'Compre Rural';
-                else if (item.link.includes('noticiasagricolas')) fonte = 'Notícias Agrícolas';
+                else if (item.link.includes('noticiasagricolas')) fonte = 'Not�cias Agr�colas';
 
                 // Formata Data
                 let dateObj = new Date(item.pubDate);
@@ -1421,13 +1432,13 @@ function loadNews() {
                 container.appendChild(anchor);
             });
         } else {
-            const noNewsText = translations[currentLang]['no_news'] || 'Nenhuma notícia encontrada.';
+            const noNewsText = translations[currentLang]['no_news'] || 'Nenhuma not�cia encontrada.';
             container.innerHTML = `<div class="loading-container">${noNewsText}</div>`;
         }
     })
     .catch(error => {
-        console.error('Erro ao carregar notícias:', error);
-        const errorText = translations[currentLang]['error_news'] || 'Não foi possível carregar as notícias.';
+        console.error('Erro ao carregar not�cias:', error);
+        const errorText = translations[currentLang]['error_news'] || 'N�o foi poss�vel carregar as not�cias.';
         container.innerHTML = `<div class="loading-container">${errorText}</div>`;
     });
 }
@@ -1447,16 +1458,16 @@ function normalizeNewsUrl(value) {
 
 // Dados de Estados Brasileiros (Manual)
 const estadosBR = [
-    {sigla:'AC', nome:'Acre'}, {sigla:'AL', nome:'Alagoas'}, {sigla:'AP', nome:'Amapá'},
-    {sigla:'AM', nome:'Amazonas'}, {sigla:'BA', nome:'Bahia'}, {sigla:'CE', nome:'Ceará'},
-    {sigla:'DF', nome:'Distrito Federal'}, {sigla:'ES', nome:'Espírito Santo'},
-    {sigla:'GO', nome:'Goiás'}, {sigla:'MA', nome:'Maranhão'}, {sigla:'MT', nome:'Mato Grosso'},
+    {sigla:'AC', nome:'Acre'}, {sigla:'AL', nome:'Alagoas'}, {sigla:'AP', nome:'Amap�'},
+    {sigla:'AM', nome:'Amazonas'}, {sigla:'BA', nome:'Bahia'}, {sigla:'CE', nome:'Cear�'},
+    {sigla:'DF', nome:'Distrito Federal'}, {sigla:'ES', nome:'Esp�rito Santo'},
+    {sigla:'GO', nome:'Goi�s'}, {sigla:'MA', nome:'Maranh�o'}, {sigla:'MT', nome:'Mato Grosso'},
     {sigla:'MS', nome:'Mato Grosso do Sul'}, {sigla:'MG', nome:'Minas Gerais'},
-    {sigla:'PA', nome:'Pará'}, {sigla:'PB', nome:'Paraíba'}, {sigla:'PR', nome:'Paraná'},
-    {sigla:'PE', nome:'Pernambuco'}, {sigla:'PI', nome:'Piauí'}, {sigla:'RJ', nome:'Rio de Janeiro'},
+    {sigla:'PA', nome:'Par�'}, {sigla:'PB', nome:'Para�ba'}, {sigla:'PR', nome:'Paran�'},
+    {sigla:'PE', nome:'Pernambuco'}, {sigla:'PI', nome:'Piau�'}, {sigla:'RJ', nome:'Rio de Janeiro'},
     {sigla:'RN', nome:'Rio Grande do Norte'}, {sigla:'RS', nome:'Rio Grande do Sul'},
-    {sigla:'RO', nome:'Rondônia'}, {sigla:'RR', nome:'Roraima'}, {sigla:'SC', nome:'Santa Catarina'},
-    {sigla:'SP', nome:'São Paulo'}, {sigla:'SE', nome:'Sergipe'}, {sigla:'TO', nome:'Tocantins'}
+    {sigla:'RO', nome:'Rond�nia'}, {sigla:'RR', nome:'Roraima'}, {sigla:'SC', nome:'Santa Catarina'},
+    {sigla:'SP', nome:'S�o Paulo'}, {sigla:'SE', nome:'Sergipe'}, {sigla:'TO', nome:'Tocantins'}
 ];
 
 const paisesLatam = [
@@ -1474,7 +1485,7 @@ function initContactPage() {
     if(selectEstado) {
         selectEstado.addEventListener('change', function() {
             const estadoVal = this.value;
-            // Só carrega cidades se NÃO estiver no modo freestyle
+            // S� carrega cidades se N�O estiver no modo freestyle
             if (!freestyleCheck || !freestyleCheck.checked) {
                 if(currentLang === 'pt') {
                     // API IBGE
@@ -1490,7 +1501,7 @@ function initContactPage() {
         });
     }
 
-    // 2. Listener para País mudando (Espanhol) -> Carrega Estados
+    // 2. Listener para Pa�s mudando (Espanhol) -> Carrega Estados
     if(selectPais) {
         selectPais.addEventListener('change', function() {
             if(currentLang === 'es' && (!freestyleCheck || !freestyleCheck.checked)) {
@@ -1512,7 +1523,7 @@ function initContactPage() {
             toggleFreestyleMode(this.checked);
         });
         
-        // Inicializa o estado correto baseado se já vem marcado ou não
+        // Inicializa o estado correto baseado se j� vem marcado ou n�o
         toggleFreestyleMode(freestyleCheck.checked);
     }
 
@@ -1541,11 +1552,11 @@ function toggleFreestyleMode(isFreestyle) {
                 el.setAttribute('required', 'true');
             }
         });
-        // No modo manual, sempre mostra o campo País para a pessoa digitar
+        // No modo manual, sempre mostra o campo Pa�s para a pessoa digitar
         if(rowPais) rowPais.style.display = 'block';
 
     } else {
-        // MODO AUTOMÁTICO: Mostra Selects, Esconde Inputs
+        // MODO AUTOM�TICO: Mostra Selects, Esconde Inputs
         selects.forEach(id => {
             const el = document.getElementById(id);
             if(el) {
@@ -1561,7 +1572,7 @@ function toggleFreestyleMode(isFreestyle) {
             }
         });
         
-        // Recalcula visibilidade do Select de País baseado no idioma
+        // Recalcula visibilidade do Select de Pa�s baseado no idioma
         handleContactLanguageChange();
     }
 }
@@ -1576,10 +1587,10 @@ function handleContactLanguageChange() {
     const txtSelect = translations[currentLang]['form_select_default'] || 'Selecione';
     const txtFirst = translations[currentLang]['form_select_state_first'] || 'Selecione um estado primeiro';
 
-    // Se estiver em modo manual, não mexe nos selects (deixa o usuário digitar)
+    // Se estiver em modo manual, n�o mexe nos selects (deixa o usu�rio digitar)
     if (freestyleCheck && freestyleCheck.checked) return;
 
-    // Reseta selects básicos
+    // Reseta selects b�sicos
     if(selectEstado) selectEstado.innerHTML = `<option value="" disabled selected>${txtSelect}</option>`;
     if(selectCidade) {
         selectCidade.innerHTML = `<option value="" disabled selected>${txtFirst}</option>`;
@@ -1587,7 +1598,7 @@ function handleContactLanguageChange() {
     }
 
     if (currentLang === 'pt') {
-        // PT: Brasil implícito, esconde país, carrega estados BR
+        // PT: Brasil impl�cito, esconde pa�s, carrega estados BR
         if(rowPais) rowPais.style.display = 'none';
         
         if(selectEstado) {
@@ -1600,7 +1611,7 @@ function handleContactLanguageChange() {
         }
         
     } else if (currentLang === 'en') {
-        // EN: EUA implícito, esconde país, carrega estados EUA (API)
+        // EN: EUA impl�cito, esconde pa�s, carrega estados EUA (API)
         if(rowPais) rowPais.style.display = 'none';
         
         if(selectEstado) {
@@ -1608,7 +1619,7 @@ function handleContactLanguageChange() {
         }
 
     } else if (currentLang === 'es') {
-        // ES: Mostra seletor de países LATAM
+        // ES: Mostra seletor de pa�ses LATAM
         if(rowPais) rowPais.style.display = 'block';
         
         if(selectPais) {
@@ -1620,7 +1631,7 @@ function handleContactLanguageChange() {
                 selectPais.appendChild(opt);
             });
         }
-        // Em ES, estado fica bloqueado até escolher país
+        // Em ES, estado fica bloqueado at� escolher pa�s
         if(selectEstado) {
             selectEstado.innerHTML = `<option value="" disabled selected>${translations[currentLang]['form_select_default']}</option>`;
         }
@@ -1735,9 +1746,13 @@ function initDonationPage() {
         buttons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         
-        // Lógica de trocar conteúdo das abas se necessário
-        // Por enquanto é visual
+        // L�gica de trocar conte�do das abas se necess�rio
+        // Por enquanto � visual
     };
 }
+
+
+
+
 
 

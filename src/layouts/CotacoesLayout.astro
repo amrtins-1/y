@@ -20,7 +20,7 @@ const apiBaseUrl = import.meta.env.PUBLIC_API_BASE_URL || '';
 ---
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-api-base-url={apiBaseUrl}>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,9 +42,6 @@ const apiBaseUrl = import.meta.env.PUBLIC_API_BASE_URL || '';
                 window.__preferredLang = 'pt';
             }
         })();
-    </script>
-    <script is:inline>
-        window.__API_BASE_URL = {JSON.stringify(apiBaseUrl)} || undefined;
     </script>
     <title>Instituto Amarte</title>
     <link rel="icon" href={faviconIco} type="image/x-icon" />
