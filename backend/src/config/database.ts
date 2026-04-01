@@ -21,6 +21,5 @@ export function getDatabaseConfig(): PostgresConnectionOptions {
     schema: process.env.DB_SCHEMA || 'app',
     synchronize: false,
     logging: false,
-    timezone: 'UTC',
   };
 }

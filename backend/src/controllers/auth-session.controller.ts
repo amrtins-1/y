@@ -47,7 +47,7 @@ export class AuthSessionController {
 
   private addSessionCookie(response: Response, name: string, value: string, expiresAtEpochMs: number) {
     const secure = getEnvFlag(process.env.APP_AUTH_COOKIE_SECURE, false);
-    const sameSite = (process.env.APP_AUTH_COOKIE_SAMESITE || 'Lax') as 'Lax' | 'Strict' | 'None';
+    const sameSite = ((process.env.APP_AUTH_COOKIE_SAMESITE || 'Lax').toLowerCase() as 'lax' | 'strict' | 'none');
     const maxAge = Math.max(1, Math.floor((expiresAtEpochMs - Date.now()) / 1000));
     response.cookie(name, value, {
       httpOnly: true,
@@ -60,7 +60,7 @@ export class AuthSessionController {
 
   private clearSessionCookie(response: Response, name: string) {
     const secure = getEnvFlag(process.env.APP_AUTH_COOKIE_SECURE, false);
-    const sameSite = (process.env.APP_AUTH_COOKIE_SAMESITE || 'Lax') as 'Lax' | 'Strict' | 'None';
+    const sameSite = ((process.env.APP_AUTH_COOKIE_SAMESITE || 'Lax').toLowerCase() as 'lax' | 'strict' | 'none');
     response.cookie(name, '', {
       httpOnly: true,
       secure,
