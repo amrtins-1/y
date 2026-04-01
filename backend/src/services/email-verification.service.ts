@@ -96,7 +96,7 @@ export class EmailVerificationService {
     const openTokens = await this.tokenRepository.find({
       where: {
         user: { id: user.id },
-        usedAt: null,
+        usedAt: null as unknown as Date,
       },
       order: { createdAt: 'DESC' },
     });
@@ -127,7 +127,7 @@ export class EmailVerificationService {
     const token = await this.tokenRepository.findOne({
       where: {
         tokenHash: this.sha256(rawToken),
-        usedAt: null,
+        usedAt: null as unknown as Date,
       },
       relations: ['user'],
     });
@@ -147,7 +147,7 @@ export class EmailVerificationService {
 
   private async invalidateOpenTokens(userId: string): Promise<void> {
     const tokens = await this.tokenRepository.find({
-      where: { user: { id: userId }, usedAt: null },
+      where: { user: { id: userId }, usedAt: null as unknown as Date },
       relations: ['user'],
     });
     if (tokens.length === 0) {
