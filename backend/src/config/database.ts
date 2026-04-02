@@ -29,9 +29,9 @@ export function getDatabaseConfig(): PostgresConnectionOptions {
     'postgresql://localhost:5432/instituto_site';
   const url = normalizeDbUrl(rawUrl);
   const disableSsl = ['0', 'false', 'no', 'off'].includes((process.env.DB_SSL || '').toLowerCase());
-  const rejectUnauthorized = !['0', 'false', 'no', 'off'].includes(
-    (process.env.DB_SSL_REJECT_UNAUTHORIZED || '').toLowerCase(),
-  );
+  const rejectUnauthorized = process.env.DB_SSL_REJECT_UNAUTHORIZED
+    ? !['0', 'false', 'no', 'off'].includes(process.env.DB_SSL_REJECT_UNAUTHORIZED.toLowerCase())
+    : false;
 
   return {
     type: 'postgres',
