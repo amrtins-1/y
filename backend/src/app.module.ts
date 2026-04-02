@@ -70,6 +70,11 @@ import { ApiSecurityHeadersMiddleware } from './middleware/api-security-headers.
     ScheduleModule.forRoot(),
     TypeOrmModule.forRoot({
       ...getDatabaseConfig(),
+      // FIX: Forçando SSL para o Supabase em produção (Vercel)
+      ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
+      extra: {
+        ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
+      },
       entities: [
         AppUser,
         AuthSession,
