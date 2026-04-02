@@ -24,7 +24,7 @@ async function bootstrap() {
       return callback(new Error('Origem nao permitida'), false);
     },
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['*'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'X-Session-Id', 'X-User-Id'],
     exposedHeaders: ['Set-Cookie'],
     credentials: true,
   });
