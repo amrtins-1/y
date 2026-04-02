@@ -19,6 +19,9 @@ export function getDatabaseConfig(): PostgresConnectionOptions {
     'postgresql://localhost:5432/instituto_site';
   const url = normalizeDbUrl(rawUrl);
   const disableSsl = ['0', 'false', 'no', 'off'].includes((process.env.DB_SSL || '').toLowerCase());
+  const rejectUnauthorized = !['0', 'false', 'no', 'off'].includes(
+    (process.env.DB_SSL_REJECT_UNAUTHORIZED || '').toLowerCase(),
+  );
 
   return {
     type: 'postgres',
@@ -26,8 +29,8 @@ export function getDatabaseConfig(): PostgresConnectionOptions {
     username: process.env.DB_USER || 'postgres',
     password: process.env.DB_PASSWORD,
     schema: process.env.DB_SCHEMA || 'app',
-    ssl: disableSsl ? false : { rejectUnauthorized: false },
-    extra: disableSsl ? undefined : { ssl: { rejectUnauthorized: false } },
+    ssl: disableSsl ? false : { rejectUnauthorized },
+    extra: disableSsl ? undefined : { ssl: { rejectUnauthorized } },
     synchronize: false,
     logging: false,
   };
