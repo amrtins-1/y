@@ -1,6 +1,5 @@
-import { ValidationPipe } from '@nestjs/common';
-import { ClassSerializerInterceptor, Reflector } from '@nestjs/core';
-import { NestFactory } from '@nestjs/core';
+import { ValidationPipe, ClassSerializerInterceptor } from '@nestjs/common';
+import { NestFactory, Reflector } from '@nestjs/core';
 import cookieParser from 'cookie-parser';
 import type { IncomingMessage, ServerResponse } from 'http';
 import { AppModule } from '../src/app.module';
@@ -52,7 +51,7 @@ async function bootstrapHandler(): Promise<Handler> {
   await app.init();
 
   cachedHandler = app.getHttpAdapter().getInstance();
-  return cachedHandler;
+  return cachedHandler as Handler;
 }
 
 export default async function handler(req: IncomingMessage, res: ServerResponse) {

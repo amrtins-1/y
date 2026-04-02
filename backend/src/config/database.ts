@@ -4,10 +4,20 @@ function normalizeDbUrl(raw: string | undefined): string | undefined {
   if (!raw) {
     return undefined;
   }
-  if (raw.startsWith('jdbc:')) {
-    return raw.replace('jdbc:', '');
+
+  const trimmed = raw.trim().replace(/^"(.*)"$/, '$1');
+  const withoutJdbc = trimmed.startsWith('jdbc:') ? trimmed.replace('jdbc:', '') : trimmed;
+
+  try {
+    const parsed = new URL(withoutJdbc);
+    parsed.searchParams.delete('sslmode');
+    parsed.searchParams.delete('sslcert');
+    parsed.searchParams.delete('sslkey');
+    parsed.searchParams.delete('sslrootcert');
+    return parsed.toString();
+  } catch {
+    return withoutJdbc;
   }
-  return raw;
 }
 
 export function getDatabaseConfig(): PostgresConnectionOptions {
