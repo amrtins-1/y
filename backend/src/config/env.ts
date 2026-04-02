@@ -1,7 +1,13 @@
-﻿export function getAllowedOrigins(): string[] {
-  const raw = process.env.APP_ALLOWED_ORIGINS || 'http://localhost:4321,http://127.0.0.1:4321';
-  return raw
-    .split(',')
+export function getAllowedOrigins(): string[] {
+  const rawValues = [
+    process.env.APP_ALLOWED_ORIGINS,
+    process.env.APP_FRONTEND_BASE_URL,
+    'http://localhost:4321,http://127.0.0.1:4321',
+  ];
+
+  return rawValues
+    .filter((value): value is string => Boolean(value && value.trim()))
+    .flatMap((value) => value.split(','))
     .map((value) => value.trim())
     .filter((value) => value.length > 0)
     .map((value) => (value.endsWith('/') ? value.slice(0, -1) : value));

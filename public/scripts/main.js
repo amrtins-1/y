@@ -9,6 +9,20 @@ function getDocumentApiBaseUrl() {
     return raw;
 }
 
+function normalizeApiBaseUrl(raw) {
+    const value = (raw || '').trim();
+    if (!value) {
+        return '';
+    }
+
+    const withoutTrailingSlash = value.replace(/\/$/, '');
+    if (withoutTrailingSlash.endsWith('/api')) {
+        return withoutTrailingSlash;
+    }
+
+    return `${withoutTrailingSlash}/api`;
+}
+
 
 function resolveDefaultApiBaseUrl() {
     const { hostname, origin } = window.location;
@@ -22,9 +36,9 @@ function resolveDefaultApiBaseUrl() {
     return `${origin}/api`;
 }
 
-const DEFAULT_API_BASE_URL = resolveDefaultApiBaseUrl().replace(/\/$/, '');
+const DEFAULT_API_BASE_URL = normalizeApiBaseUrl(resolveDefaultApiBaseUrl());
 const documentApiBaseUrl = getDocumentApiBaseUrl();
-let apiBaseUrl = (documentApiBaseUrl || window.__API_BASE_URL || localStorage.getItem('apiBaseUrl') || DEFAULT_API_BASE_URL).replace(/\/$/, '');
+let apiBaseUrl = normalizeApiBaseUrl(documentApiBaseUrl || window.__API_BASE_URL || localStorage.getItem('apiBaseUrl') || DEFAULT_API_BASE_URL);
 
 async function performApiFetch(path, options) {
     const requestOptions = {
@@ -232,15 +246,19 @@ async function putJson(path, payload) {
 
 async function extractApiErrorMessage(response) {
     try {
-        const data = await response.json();
+        const text = await response.text();
+        if (!text || !text.trim()) {
+            return `Falha na requisicao (${response.status})`;
+        }
+
+        const data = JSON.parse(text);
         if (data && typeof data.message === 'string' && data.message.trim()) {
             return data.message;
         }
-    } catch (_) {
-        const text = await response.text();
         if (text && text.trim()) {
             return text;
         }
+    } catch (_) {
     }
     return `Falha na requisicao (${response.status})`;
 }
