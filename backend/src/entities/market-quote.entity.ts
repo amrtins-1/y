@@ -23,6 +23,6 @@ export class MarketQuote {
   @Column({ nullable: false, default: QuoteDirection.UNKNOWN })
   direction!: QuoteDirection;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   source?: string | null;
 }

@@ -19,11 +19,11 @@ export class AppUser extends AuditableEntity {
   email!: string;
 
   @IsOptional()
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   phone?: string | null;
 
   @IsOptional()
-  @Column({ nullable: true, unique: true })
+  @Column({ type: 'varchar', nullable: true, unique: true })
   cpf?: string | null;
 
   @IsNotEmpty()
@@ -34,7 +34,7 @@ export class AppUser extends AuditableEntity {
   @Column({ type: 'varchar', nullable: false })
   role: UserRole = UserRole.MEMBER;
 
-  @Column({ name: 'preferred_lang', nullable: true, default: 'pt' })
+  @Column({ name: 'preferred_lang', type: 'varchar', nullable: true, default: 'pt' })
   preferredLang?: string | null;
 
   @Column({ name: 'is_active', nullable: false, default: true })

@@ -36,17 +36,17 @@ export class ConsultancyRequest extends AuditableEntity {
 
   @IsOptional()
   @MaxLength(100)
-  @Column({ nullable: true, default: 'Brasil' })
+  @Column({ type: 'varchar', nullable: true, default: 'Brasil' })
   country?: string | null;
 
   @IsOptional()
   @MaxLength(100)
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   state?: string | null;
 
   @IsOptional()
   @MaxLength(120)
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   city?: string | null;
 
   @Column({ name: 'is_manual_location', nullable: false, default: false })

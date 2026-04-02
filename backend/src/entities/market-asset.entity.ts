@@ -12,16 +12,16 @@ export class MarketAsset extends AuditableEntity {
   @Column({ nullable: false })
   category!: string;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   section?: string | null;
 
   @Column({ nullable: false })
   label!: string;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   reference?: string | null;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   unit?: string | null;
 
   @Column({ name: 'is_active', nullable: false, default: true })

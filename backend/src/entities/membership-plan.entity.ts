@@ -12,7 +12,7 @@ export class MembershipPlan extends AuditableEntity {
   @Column({ nullable: false })
   name!: string;
 
-  @Column({ nullable: true })
+  @Column({ type: 'text', nullable: true })
   description?: string | null;
 
   @Column({ name: 'price_monthly', type: 'numeric', precision: 38, scale: 2, nullable: false })

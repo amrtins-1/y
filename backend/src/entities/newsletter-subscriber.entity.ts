@@ -14,12 +14,12 @@ export class NewsletterSubscriber {
 
   @IsOptional()
   @MaxLength(120)
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   name?: string | null;
 
   @IsOptional()
   @MaxLength(40)
-  @Column({ nullable: true, default: 'site' })
+  @Column({ type: 'varchar', nullable: true, default: 'site' })
   source?: string | null;
 
   @Column({ name: 'is_active', nullable: false, default: true })

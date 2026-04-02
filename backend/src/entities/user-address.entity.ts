@@ -11,19 +11,19 @@ export class UserAddress extends AuditableEntity {
   @JoinColumn({ name: 'user_id' })
   user!: AppUser;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   country?: string | null;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   state?: string | null;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   city?: string | null;
 
-  @Column({ name: 'address_line', nullable: true })
+  @Column({ name: 'address_line', type: 'varchar', nullable: true })
   addressLine?: string | null;
 
-  @Column({ name: 'postal_code', nullable: true })
+  @Column({ name: 'postal_code', type: 'varchar', nullable: true })
   postalCode?: string | null;
 
   @Column({ name: 'is_manual_location', nullable: false, default: false })

@@ -16,10 +16,10 @@ export class AuthSession {
   @Column({ name: 'remember_me', nullable: false, default: false })
   rememberMe!: boolean;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   ip?: string | null;
 
-  @Column({ name: 'user_agent', nullable: true })
+  @Column({ name: 'user_agent', type: 'varchar', nullable: true })
   userAgent?: string | null;
 
   @Column({ name: 'created_at', type: 'timestamptz', nullable: false, default: () => 'now()' })

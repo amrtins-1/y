@@ -8,7 +8,7 @@ export class NewsArticle {
   @Column({ nullable: false })
   title!: string;
 
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   source?: string | null;
 
   @Column({ name: 'source_url', nullable: false, unique: true })

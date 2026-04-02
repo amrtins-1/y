@@ -25,7 +25,7 @@ export class ContactMessage {
 
   @IsOptional()
   @MaxLength(40)
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   phone?: string | null;
 
   @IsNotEmpty()
@@ -39,17 +39,17 @@ export class ContactMessage {
 
   @IsOptional()
   @MaxLength(100)
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   country?: string | null;
 
   @IsOptional()
   @MaxLength(100)
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   state?: string | null;
 
   @IsOptional()
   @MaxLength(120)
-  @Column({ nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   city?: string | null;
 
   @Column({ name: 'is_manual_location', nullable: false, default: false })

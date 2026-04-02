@@ -14,18 +14,18 @@ export class Donation {
 
   @IsOptional()
   @MaxLength(120)
-  @Column({ name: 'donor_name', nullable: true })
+  @Column({ name: 'donor_name', type: 'varchar', nullable: true })
   donorName?: string | null;
 
   @IsOptional()
   @IsEmail()
   @MaxLength(180)
-  @Column({ name: 'donor_email', nullable: true })
+  @Column({ name: 'donor_email', type: 'varchar', nullable: true })
   donorEmail?: string | null;
 
   @IsOptional()
   @MaxLength(40)
-  @Column({ name: 'donor_phone', nullable: true })
+  @Column({ name: 'donor_phone', type: 'varchar', nullable: true })
   donorPhone?: string | null;
 
   @IsNotEmpty()
@@ -42,15 +42,15 @@ export class Donation {
   currency!: string;
 
   @IsOptional()
-  @Column({ name: 'payment_provider', nullable: true })
+  @Column({ name: 'payment_provider', type: 'varchar', nullable: true })
   paymentProvider?: string | null;
 
   @IsOptional()
-  @Column({ name: 'provider_payment_id', nullable: true })
+  @Column({ name: 'provider_payment_id', type: 'varchar', nullable: true })
   providerPaymentId?: string | null;
 
   @IsOptional()
-  @Column({ name: 'receipt_url', nullable: true })
+  @Column({ name: 'receipt_url', type: 'varchar', nullable: true })
   receiptUrl?: string | null;
 
   @Column({ name: 'paid_at', type: 'timestamptz', nullable: true })

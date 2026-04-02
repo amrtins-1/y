@@ -6,7 +6,7 @@ export class VideoItem {
   @PrimaryGeneratedColumn('uuid')
   id!: string;
 
-  @Column({ nullable: true, default: 'youtube' })
+  @Column({ type: 'varchar', nullable: true, default: 'youtube' })
   platform?: string | null;
 
   @Column({ name: 'external_id', nullable: false })
@@ -18,7 +18,7 @@ export class VideoItem {
   @Column({ nullable: false })
   url!: string;
 
-  @Column({ name: 'thumbnail_url', nullable: true })
+  @Column({ name: 'thumbnail_url', type: 'varchar', nullable: true })
   thumbnailUrl?: string | null;
 
   @Column({ name: 'published_at', type: 'timestamptz', nullable: true })

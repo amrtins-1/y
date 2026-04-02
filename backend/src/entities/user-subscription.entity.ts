@@ -31,13 +31,13 @@ export class UserSubscription {
   @Column({ name: 'canceled_at', type: 'timestamptz', nullable: true })
   canceledAt?: Date | null;
 
-  @Column({ name: 'payment_provider', nullable: true })
+  @Column({ name: 'payment_provider', type: 'varchar', nullable: true })
   paymentProvider?: string | null;
 
-  @Column({ name: 'provider_customer_id', nullable: true })
+  @Column({ name: 'provider_customer_id', type: 'varchar', nullable: true })
   providerCustomerId?: string | null;
 
-  @Column({ name: 'provider_subscription_id', nullable: true })
+  @Column({ name: 'provider_subscription_id', type: 'varchar', nullable: true })
   providerSubscriptionId?: string | null;
 
   @Column({ name: 'created_at', type: 'timestamptz', nullable: false, default: () => 'now()' })

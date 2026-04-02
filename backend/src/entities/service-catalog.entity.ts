@@ -12,13 +12,13 @@ export class ServiceCatalog extends AuditableEntity {
   @Column({ nullable: false })
   title!: string;
 
-  @Column({ nullable: true })
+  @Column({ type: 'text', nullable: true })
   description?: string | null;
 
   @Column({ type: 'jsonb', nullable: true, default: () => "'[]'" })
   features!: string | unknown;
 
-  @Column({ name: 'cta_url', nullable: true })
+  @Column({ name: 'cta_url', type: 'varchar', nullable: true })
   ctaUrl?: string | null;
 
   @Column({ name: 'is_active', nullable: false, default: true })
