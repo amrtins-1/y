@@ -415,7 +415,7 @@ function bindLogoutAction() {
 }
 
 function getAuthSession() {
-    const authRaw = sessionStorage.getItem('authSession');
+    const authRaw = sessionStorage.getItem('authSession') || localStorage.getItem('authSession');
     if (!authRaw) return null;
     try {
         return JSON.parse(authRaw);
@@ -441,7 +441,7 @@ function clearAuthSession() {
 }
 
 function isAuthSessionValid(authSession) {
-    if (!authSession || !authSession.userId) {
+    if (!authSession || !authSession.userId || !authSession.sessionId) {
         return false;
     }
 
