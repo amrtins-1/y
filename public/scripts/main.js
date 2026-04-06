@@ -426,10 +426,13 @@ function getAuthSession() {
 
 function saveAuthSession(authSession, rememberMe) {
     const sanitized = { ...(authSession || {}) };
-    delete sanitized.sessionId;
     const serialized = JSON.stringify(sanitized);
     sessionStorage.setItem('authSession', serialized);
-    localStorage.removeItem('authSession');
+    if (rememberMe) {
+        localStorage.setItem('authSession', serialized);
+    } else {
+        localStorage.removeItem('authSession');
+    }
 }
 
 function clearAuthSession() {

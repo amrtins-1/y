@@ -29,3 +29,7 @@ scripts/logs/
 .idea/
 
 .vercel
+instituto_site_app_data_export.sql
+instituto_site_app_data_insert.sql
+instituto_site_app_full_supabase.sql
+instituto_site_data_export.sql
