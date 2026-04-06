@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initCrudForms() {
     guardProtectedRoute();
+    syncAssociatedAreaLinks();
     showDashboardVerificationReminder();
     initSupabaseDashboardProfile();
     bindMembershipAccessWall();
@@ -390,6 +391,28 @@ function isSupabaseAuthSessionValid(authSession) {
     }
 
     return expiresAt.getTime() > Date.now();
+}
+
+function isAnyAuthSessionValid() {
+    const authSession = getAuthSession();
+    if (isAuthSessionValid(authSession)) {
+        return true;
+    }
+
+    const supabaseSession = getSupabaseAuthSession();
+    return isSupabaseAuthSessionValid(supabaseSession);
+}
+
+function getAssociatedAreaHref() {
+    return isAnyAuthSessionValid() ? '/painel' : '/login';
+}
+
+function syncAssociatedAreaLinks() {
+    const href = getAssociatedAreaHref();
+    const links = document.querySelectorAll('[data-associated-area-link], .mobile-nav-cta');
+    links.forEach((link) => {
+        link.setAttribute('href', href);
+    });
 }
 
 function toCpfDigits(value) {
@@ -1089,7 +1112,7 @@ function createMobileMenuElements() {
                 <img src="https://flagcdn.com/w40/us.png" alt="English" class="flag-btn" onclick="setLanguage('en'); updateMobileMenuFlags();">
                 <img src="https://flagcdn.com/w40/es.png" alt="Español" class="flag-btn" onclick="setLanguage('es'); updateMobileMenuFlags();">
             </div>
-            <a href="/login" class="mobile-nav-cta">
+            <a href="/login" class="mobile-nav-cta" data-associated-area-link>
                 <i class="fas fa-user"></i> <span data-i18n="topbar_login">Área do Associado</span>
             </a>
         </div>
@@ -1099,6 +1122,7 @@ function createMobileMenuElements() {
 
     // Marca página ativa
     markCurrentPageInMenu();
+    syncAssociatedAreaLinks();
 }
 
 function toggleMenu() {
