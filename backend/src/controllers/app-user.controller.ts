@@ -1,13 +1,17 @@
-﻿import { Body, Controller, Get, Param, Post, Put, Req } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Put, Req } from '@nestjs/common';
 import { Request } from 'express';
 import { AppUserService } from '../services/app-user.service';
+import { AuthSessionService } from '../services/auth-session.service';
 import { RegisterRequest } from '../dto/register-request.dto';
 import { ProfileUpdateRequest } from '../dto/profile-update-request.dto';
 import { AppUser } from '../entities/app-user.entity';
 
 @Controller('api/users')
 export class AppUserController {
-  constructor(private readonly appUserService: AppUserService) {}
+  constructor(
+    private readonly appUserService: AppUserService,
+    private readonly authSessionService: AuthSessionService,
+  ) {}
 
   @Post()
   create(@Body() body: RegisterRequest): Promise<AppUser> {
@@ -16,7 +20,7 @@ export class AppUserController {
 
   @Get(':id')
   async getById(@Param('id') id: string, @Req() request: Request): Promise<AppUser> {
-    const userId = this.getAuthenticatedUserId(request);
+    const userId = await this.getAuthenticatedUserId(request);
     if (id !== userId) {
       throw new Error('Usuario nao autorizado.');
     }
@@ -29,18 +33,27 @@ export class AppUserController {
     @Body() requestBody: ProfileUpdateRequest,
     @Req() request: Request,
   ): Promise<AppUser> {
-    const userId = this.getAuthenticatedUserId(request);
+    const userId = await this.getAuthenticatedUserId(request);
     if (id !== userId) {
       throw new Error('Usuario nao autorizado.');
     }
     return this.appUserService.updateProfile(id, requestBody);
   }
 
-  private getAuthenticatedUserId(request: Request): string {
+  private async getAuthenticatedUserId(request: Request): Promise<string> {
     const value = (request as any).AUTH_USER_ID;
     if (typeof value === 'string') {
       return value;
     }
+
+    const sessionId = request.header('X-Session-Id') || request.cookies?.['SESSION_ID'];
+    const userId = request.header('X-User-Id') || request.cookies?.['USER_ID'];
+
+    if (sessionId && userId) {
+      await this.authSessionService.assertActiveSession(sessionId, userId);
+      return userId;
+    }
+
     throw new Error('Usuario nao autenticado.');
   }
 }
