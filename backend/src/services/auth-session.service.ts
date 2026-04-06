@@ -64,22 +64,13 @@ export class AuthSessionService extends AbstractCrudService<AuthSession, string>
       user.passwordHash = await this.passwordService.hash(password);
     }
 
-    const rememberMe = Boolean(request.rememberMe);
-    const now = Date.now();
-    const expiresAt = new Date(now + (rememberMe ? 30 : 1) * 24 * 60 * 60 * 1000);
-
-    const session = this.repository.create({
+    const savedSession = await this.createSessionForUser(
       user,
-      rememberMe,
-      ip: ip || null,
-      userAgent: this.limit(userAgent, 255),
-      refreshTokenHash: this.sha256(`${randomUUID()}:${email}:${now}`),
-      expiresAt,
-    });
-
-    const savedSession = await this.repository.save(session);
-    user.lastLoginAt = new Date();
-    await this.appUserRepository.save(user);
+      Boolean(request.rememberMe),
+      ip,
+      userAgent,
+      email,
+    );
     this.loginAttemptService.registerSuccess(attemptKey);
 
     return {
@@ -89,6 +80,28 @@ export class AuthSessionService extends AbstractCrudService<AuthSession, string>
       sessionId: savedSession.id,
       expiresAt: savedSession.expiresAt.toISOString(),
       isActive: Boolean(user.isActive),
+    };
+  }
+
+  async authenticateSupabaseUser(
+    appUser: AppUser,
+    options?: { rememberMe?: boolean; ip?: string; userAgent?: string; providerUserId?: string },
+  ): Promise<LoginResponse> {
+    const savedSession = await this.createSessionForUser(
+      appUser,
+      Boolean(options?.rememberMe),
+      options?.ip,
+      options?.userAgent,
+      options?.providerUserId || appUser.email,
+    );
+
+    return {
+      userId: appUser.id,
+      fullName: appUser.fullName,
+      email: appUser.email,
+      sessionId: savedSession.id,
+      expiresAt: savedSession.expiresAt.toISOString(),
+      isActive: Boolean(appUser.isActive),
     };
   }
 
@@ -151,6 +164,31 @@ export class AuthSessionService extends AbstractCrudService<AuthSession, string>
 
   private sha256(raw: string): string {
     return createHash('sha256').update(raw).digest('hex');
+  }
+
+  private async createSessionForUser(
+    user: AppUser,
+    rememberMe: boolean,
+    ip?: string,
+    userAgent?: string,
+    entropySeed?: string,
+  ): Promise<AuthSession> {
+    const now = Date.now();
+    const expiresAt = new Date(now + (rememberMe ? 30 : 1) * 24 * 60 * 60 * 1000);
+
+    const session = this.repository.create({
+      user,
+      rememberMe,
+      ip: ip || null,
+      userAgent: this.limit(userAgent, 255),
+      refreshTokenHash: this.sha256(`${randomUUID()}:${entropySeed || user.email}:${now}`),
+      expiresAt,
+    });
+
+    const savedSession = await this.repository.save(session);
+    user.lastLoginAt = new Date();
+    await this.appUserRepository.save(user);
+    return savedSession;
   }
 
   private limit(value?: string, maxLength?: number): string | null {

@@ -9,6 +9,7 @@ import { PasswordService } from './password.service';
 import { EmailVerificationService } from './email-verification.service';
 import { RegisterRequest } from '../dto/register-request.dto';
 import { ProfileUpdateRequest } from '../dto/profile-update-request.dto';
+import { randomUUID } from 'crypto';
 
 @Injectable()
 export class AppUserService extends AbstractCrudService<AppUser, string> {
@@ -46,6 +47,42 @@ export class AppUserService extends AbstractCrudService<AppUser, string> {
     entity.phone = this.normalizeBlankToNull(request.phone);
     entity.passwordHash = request.password;
     return this.create(entity);
+  }
+
+  async findOrCreateSupabaseUser(input: { email: string; fullName?: string | null }): Promise<AppUser> {
+    const email = (input.email || '').trim().toLowerCase();
+    if (!email) {
+      throw new Error('Conta Google sem e-mail disponivel.');
+    }
+
+    const displayName = (input.fullName || '').trim() || email.split('@')[0] || 'Membro';
+    const existing = await this.repository.findOne({ where: { email } });
+    if (existing) {
+      let shouldSave = false;
+      if (!existing.fullName || !existing.fullName.trim()) {
+        existing.fullName = displayName;
+        shouldSave = true;
+      }
+      if (!existing.isActive) {
+        existing.isActive = true;
+        shouldSave = true;
+      }
+      if (shouldSave) {
+        await this.validateAndNormalize(existing, existing.id);
+        return this.repository.save(existing);
+      }
+      return existing;
+    }
+
+    const entity = new AppUser();
+    entity.fullName = displayName;
+    entity.email = email;
+    entity.phone = null;
+    entity.passwordHash = await this.passwordService.hash(randomUUID());
+    entity.role = UserRole.MEMBER;
+    entity.isActive = true;
+    await this.validateAndNormalize(entity, null);
+    return this.repository.save(entity);
   }
 
   override async update(id: string, entity: AppUser): Promise<AppUser> {

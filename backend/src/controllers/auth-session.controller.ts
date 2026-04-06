@@ -5,13 +5,18 @@ import { LoginRequest } from '../dto/login-request.dto';
 import { LoginResponse } from '../dto/login-response.dto';
 import { getEnvFlag } from '../config/env';
 import { getClientIp } from '../utils/client-ip';
+import { SupabaseLoginRequest } from '../dto/supabase-login-request.dto';
+import { AppUserService } from '../services/app-user.service';
 
 @Controller('api/auth-sessions')
 export class AuthSessionController {
   private readonly sessionCookieName = 'SESSION_ID';
   private readonly userCookieName = 'USER_ID';
 
-  constructor(private readonly authSessionService: AuthSessionService) {}
+  constructor(
+    private readonly authSessionService: AuthSessionService,
+    private readonly appUserService: AppUserService,
+  ) {}
 
   @Post('login')
   async login(
@@ -43,6 +48,65 @@ export class AuthSessionController {
     await this.authSessionService.revokeSession(sessionId, userId);
     this.clearSessionCookie(response, this.sessionCookieName);
     this.clearSessionCookie(response, this.userCookieName);
+  }
+
+  @Post('supabase')
+  async loginWithSupabase(
+    @Body() request: SupabaseLoginRequest,
+    @Req() servletRequest: Request,
+    @Res({ passthrough: true }) servletResponse: Response,
+  ): Promise<LoginResponse> {
+    const accessToken = (request.accessToken || '').trim();
+    if (!accessToken) {
+      throw new Error('Token do Supabase nao informado.');
+    }
+
+    const providerUser = await this.fetchSupabaseUser(accessToken);
+    const email = typeof providerUser?.email === 'string' ? providerUser.email : '';
+    const fullName =
+      providerUser?.user_metadata?.full_name ||
+      providerUser?.user_metadata?.name ||
+      email;
+
+    const appUser = await this.appUserService.findOrCreateSupabaseUser({
+      email,
+      fullName,
+    });
+
+    const response = await this.authSessionService.authenticateSupabaseUser(appUser, {
+      rememberMe: Boolean(request.rememberMe),
+      ip: getClientIp(servletRequest),
+      userAgent: servletRequest.header('User-Agent') || undefined,
+      providerUserId: typeof providerUser?.id === 'string' ? providerUser.id : appUser.id,
+    });
+
+    const expiresAt = new Date(response.expiresAt).getTime();
+    this.addSessionCookie(servletResponse, this.sessionCookieName, response.sessionId, expiresAt);
+    this.addSessionCookie(servletResponse, this.userCookieName, response.userId, expiresAt);
+    return response;
+  }
+
+  private async fetchSupabaseUser(accessToken: string): Promise<any> {
+    const supabaseUrl = (process.env.SUPABASE_URL || process.env.PUBLIC_SUPABASE_URL || '').trim();
+    const supabaseAnonKey = (process.env.SUPABASE_ANON_KEY || process.env.PUBLIC_SUPABASE_ANON_KEY || '').trim();
+
+    if (!supabaseUrl || !supabaseAnonKey) {
+      throw new Error('Supabase Auth nao configurado no backend.');
+    }
+
+    const response = await fetch(`${supabaseUrl.replace(/\/$/, '')}/auth/v1/user`, {
+      method: 'GET',
+      headers: {
+        apikey: supabaseAnonKey,
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error('Token do Supabase invalido ou expirado.');
+    }
+
+    return response.json();
   }
 
   private addSessionCookie(response: Response, name: string, value: string, expiresAtEpochMs: number) {

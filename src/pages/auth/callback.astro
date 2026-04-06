@@ -21,6 +21,15 @@ import LoginLayout from '../../layouts/LoginLayout.astro';
     </div>
 
     <script>
+        function getApiBaseUrl() {
+            const raw = document.documentElement.getAttribute('data-api-base-url') || '';
+            const value = String(raw || '').trim().replace(/\/$/, '');
+            if (!value) {
+                return `${window.location.origin}/api`;
+            }
+            return value.endsWith('/api') ? value : `${value}/api`;
+        }
+
         async function waitForSupabaseAuth(timeoutMs = 4000) {
             const startedAt = Date.now();
 
@@ -46,7 +55,39 @@ import LoginLayout from '../../layouts/LoginLayout.astro';
             }
 
             try {
-                await supabaseAuth.finishOAuthFlow();
+                const supabaseSession = await supabaseAuth.finishOAuthFlow();
+                const rememberMe = localStorage.getItem(supabaseAuth.storageKey) != null;
+                const apiUrl = `${getApiBaseUrl()}/auth-sessions/supabase`;
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        accessToken: supabaseSession?.accessToken || '',
+                        rememberMe,
+                    }),
+                });
+
+                let authSession = null;
+                if (response.status !== 204) {
+                    authSession = await response.json().catch(() => null);
+                }
+
+                if (!response.ok || !authSession?.userId || !authSession?.sessionId) {
+                    throw new Error((authSession && authSession.message) || 'Nao foi possivel criar a sessao do site a partir do login Google.');
+                }
+
+                authSession.rememberMe = rememberMe;
+                const serialized = JSON.stringify(authSession);
+                sessionStorage.setItem('authSession', serialized);
+                if (rememberMe) {
+                    localStorage.setItem('authSession', serialized);
+                } else {
+                    localStorage.removeItem('authSession');
+                }
+
                 if (statusEl) {
                     statusEl.textContent = 'Conta Google conectada. Redirecionando para o painel...';
                 }
