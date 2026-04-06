@@ -342,7 +342,19 @@ function normalizeEmail(value) {
 }
 
 function getAuthHeaders() {
-    return {};
+    const authSession = getAuthSession();
+    if (!authSession) {
+        return {};
+    }
+
+    const headers = {};
+    if (authSession.sessionId) {
+        headers['X-Session-Id'] = String(authSession.sessionId);
+    }
+    if (authSession.userId) {
+        headers['X-User-Id'] = String(authSession.userId);
+    }
+    return headers;
 }
 
 function toCpfDigits(value) {
