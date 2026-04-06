@@ -2,6 +2,7 @@
 // Importamos o CSS global aqui. O Astro cuidará da otimização.
 import '../styles/style.css';
 import { Image } from 'astro:assets';
+import SupabaseAuth from '../components/SupabaseAuth.astro';
 
 // Lógica para identificar a página ativa
 const { pathname } = Astro.url;
@@ -159,6 +160,7 @@ const apiBaseUrl = import.meta.env.PUBLIC_API_BASE_URL || '';
 
     <script is:inline src="/scripts/translations.js"></script>
     <script is:inline src="/scripts/main.js"></script>
+    <SupabaseAuth />
     
     <script is:inline>
         // 1. Tradução e Bandeiras

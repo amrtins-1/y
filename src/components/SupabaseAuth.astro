@@ -1,0 +1,240 @@
+---
+const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || '';
+const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || '';
+const siteUrl = import.meta.env.PUBLIC_SITE_URL || '';
+---
+
+<script is:inline define:vars={{ supabaseUrl, supabaseAnonKey, siteUrl }}>
+  window.__SUPABASE_CONFIG__ = {
+    supabaseUrl,
+    supabaseAnonKey,
+    siteUrl,
+  };
+</script>
+
+<script>
+  import { createClient } from '@supabase/supabase-js';
+
+  const config = window.__SUPABASE_CONFIG__ || {};
+  const callbackPath = '/auth/callback';
+  const storageKey = 'supabaseAuthSession';
+
+  function normalizeSiteUrl(value) {
+    const raw = String(value || '').trim();
+    if (!raw) return '';
+    return raw.endsWith('/') ? raw.slice(0, -1) : raw;
+  }
+
+  function getBaseSiteUrl() {
+    const configured = normalizeSiteUrl(config.siteUrl);
+    if (configured) return configured;
+    return normalizeSiteUrl(window.location.origin);
+  }
+
+  function getRedirectUrl() {
+    return `${getBaseSiteUrl()}${callbackPath}`;
+  }
+
+  function getStoredSession() {
+    const raw = localStorage.getItem(storageKey) || sessionStorage.getItem(storageKey);
+    if (!raw) return null;
+    try {
+      return JSON.parse(raw);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function clearStoredSession() {
+    localStorage.removeItem(storageKey);
+    sessionStorage.removeItem(storageKey);
+  }
+
+  function saveStoredSession(session, persistent) {
+    if (!session) {
+      clearStoredSession();
+      return;
+    }
+
+    const serialized = JSON.stringify(session);
+    sessionStorage.setItem(storageKey, serialized);
+    if (persistent) {
+      localStorage.setItem(storageKey, serialized);
+    } else {
+      localStorage.removeItem(storageKey);
+    }
+  }
+
+  function toStoredSession(session, user) {
+    const metadata = user?.user_metadata || {};
+    return {
+      provider:
+        Array.isArray(user?.identities) && user.identities[0]?.provider
+          ? user.identities[0].provider
+          : 'google',
+      accessToken: session?.access_token || null,
+      refreshToken: session?.refresh_token || null,
+      expiresAt: session?.expires_at ? new Date(session.expires_at * 1000).toISOString() : null,
+      user: user
+        ? {
+            id: user.id,
+            email: user.email || '',
+            fullName: metadata.full_name || metadata.name || user.email || 'Membro',
+            avatarUrl: metadata.avatar_url || '',
+          }
+        : null,
+    };
+  }
+
+  const isConfigured = Boolean(config.supabaseUrl && config.supabaseAnonKey);
+  const supabase = isConfigured
+    ? createClient(config.supabaseUrl, config.supabaseAnonKey, {
+        auth: {
+          flowType: 'pkce',
+          persistSession: true,
+          autoRefreshToken: true,
+          detectSessionInUrl: false,
+        },
+      })
+    : null;
+
+  async function syncSupabaseSession(persistent = true) {
+    if (!supabase) return null;
+    const [{ data: sessionData }, { data: userData }] = await Promise.all([
+      supabase.auth.getSession(),
+      supabase.auth.getUser(),
+    ]);
+
+    if (!sessionData.session || !userData.user) {
+      clearStoredSession();
+      return null;
+    }
+
+    const storedSession = toStoredSession(sessionData.session, userData.user);
+    saveStoredSession(storedSession, persistent);
+    return storedSession;
+  }
+
+  async function signInWithGoogle() {
+    if (!supabase) {
+      throw new Error('Supabase Auth ainda nao foi configurado no frontend.');
+    }
+
+    const rememberMeField = document.getElementById('remember');
+    const rememberMe = Boolean(rememberMeField?.checked);
+    sessionStorage.setItem('supabaseAuthRememberMe', rememberMe ? '1' : '0');
+
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: getRedirectUrl(),
+        queryParams: {
+          access_type: 'offline',
+          prompt: 'consent',
+        },
+      },
+    });
+
+    if (error) {
+      throw error;
+    }
+  }
+
+  async function signOutSupabase() {
+    if (supabase) {
+      await supabase.auth.signOut();
+    }
+    clearStoredSession();
+  }
+
+  async function finishOAuthFlow() {
+    if (!supabase) {
+      throw new Error('Supabase Auth ainda nao foi configurado no frontend.');
+    }
+
+    const url = new URL(window.location.href);
+    const code = url.searchParams.get('code');
+    const errorCode = url.searchParams.get('error_code');
+    const errorDescription = url.searchParams.get('error_description');
+
+    if (errorCode) {
+      throw new Error(errorDescription || 'Falha ao concluir o login com Google.');
+    }
+
+    if (!code) {
+      const synced = await syncSupabaseSession(sessionStorage.getItem('supabaseAuthRememberMe') === '1');
+      if (synced) return synced;
+      throw new Error('Nao foi possivel concluir o retorno do Google.');
+    }
+
+    const { data, error } = await supabase.auth.exchangeCodeForSession(code);
+    if (error) {
+      throw error;
+    }
+
+    const rememberMe = sessionStorage.getItem('supabaseAuthRememberMe') === '1';
+    sessionStorage.removeItem('supabaseAuthRememberMe');
+    const storedSession = toStoredSession(data.session, data.user);
+    saveStoredSession(storedSession, rememberMe);
+    window.history.replaceState({}, document.title, callbackPath);
+    return storedSession;
+  }
+
+  function bindGoogleButtons() {
+    const buttons = Array.from(document.querySelectorAll('[data-supabase-google-login]'));
+    buttons.forEach((button) => {
+      button.addEventListener('click', async () => {
+        try {
+          button.setAttribute('aria-busy', 'true');
+          button.setAttribute('disabled', 'disabled');
+          await signInWithGoogle();
+        } catch (error) {
+          const message = error instanceof Error ? error.message : 'Nao foi possivel iniciar o login com Google.';
+          if (typeof window.showFeedback === 'function') {
+            window.showFeedback(message, 'error', 'Falha no Google');
+          } else {
+            window.alert(message);
+          }
+        } finally {
+          button.removeAttribute('aria-busy');
+          button.removeAttribute('disabled');
+        }
+      });
+    });
+  }
+
+  window.__supabaseAuth = {
+    isConfigured,
+    storageKey,
+    client: supabase,
+    getStoredSession,
+    clearStoredSession,
+    saveStoredSession,
+    syncSupabaseSession,
+    signInWithGoogle,
+    signOutSupabase,
+    finishOAuthFlow,
+  };
+
+  if (supabase) {
+    supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'SIGNED_OUT') {
+        clearStoredSession();
+        return;
+      }
+
+      if (!session || !session.user) {
+        return;
+      }
+
+      const persistent = localStorage.getItem(storageKey) != null;
+      saveStoredSession(toStoredSession(session, session.user), persistent);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bindGoogleButtons, { once: true });
+  } else {
+    bindGoogleButtons();
+  }
+</script>

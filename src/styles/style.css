@@ -6050,6 +6050,92 @@ body.menu-open {
     background: rgba(27, 94, 32, 0.08);
 }
 
+.auth-provider-divider {
+    position: relative;
+    margin: 24px 0 18px;
+    text-align: center;
+    color: #7a7a7a;
+    font-size: 0.92rem;
+}
+
+.auth-provider-divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.auth-provider-divider span {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 0 14px;
+}
+
+.btn-auth-google {
+    width: 100%;
+    padding: 15px 18px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background: #ffffff;
+    color: #202124;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-auth-google:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    border-color: rgba(27, 94, 32, 0.3);
+}
+
+.btn-auth-google[disabled] {
+    opacity: 0.72;
+    cursor: wait;
+}
+
+.btn-auth-google .fa-google {
+    color: #db4437;
+    font-size: 1.1rem;
+}
+
+.auth-provider-hint {
+    margin-top: 12px;
+    color: #666;
+    font-size: 0.92rem;
+    text-align: center;
+}
+
+.auth-callback-container {
+    min-height: 100vh;
+}
+
+.auth-callback-panel {
+    width: 100%;
+    justify-content: center;
+}
+
+.auth-callback-box {
+    text-align: center;
+}
+
+.auth-callback-spinner {
+    display: grid;
+    place-items: center;
+    margin: 6px 0 24px;
+    font-size: 2.4rem;
+    color: var(--primary-green);
+}
+
 .verification-code-grid {
     display: grid;
     grid-template-columns: repeat(6, minmax(38px, 1fr));
@@ -6848,6 +6934,26 @@ body.menu-open {
 .dashboard-inline-header p {
     font-size: 1.1rem;
     color: #666;
+}
+
+.dashboard-auth-notice {
+    width: min(100%, 860px);
+    margin: 0 auto 28px;
+    padding: 18px 22px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(27, 94, 32, 0.08), rgba(99, 73, 43, 0.08));
+    border: 1px solid rgba(27, 94, 32, 0.12);
+}
+
+.dashboard-auth-notice h2 {
+    color: var(--primary-green);
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+}
+
+.dashboard-auth-notice p {
+    color: #555;
+    margin: 0;
 }
 
 /* Grid do Painel */

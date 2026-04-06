@@ -1,0 +1,58 @@
+---
+import LoginLayout from '../../layouts/LoginLayout.astro';
+---
+
+<LoginLayout title="Conectando conta - Instituto Amarte">
+    <div class="auth-split-container auth-callback-container">
+        <div class="auth-form-panel auth-callback-panel">
+            <div class="form-content-box auth-callback-box">
+                <div class="form-header">
+                    <h2>Conectando sua conta</h2>
+                    <p id="supabase-callback-status">Estamos concluindo o login com Google. Isso leva só alguns segundos.</p>
+                </div>
+
+                <div class="auth-callback-spinner" aria-hidden="true">
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                </div>
+
+                <a class="btn-auth-outline" href="/login">Voltar para login</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function runSupabaseCallback() {
+            const statusEl = document.getElementById('supabase-callback-status');
+            const supabaseAuth = window.__supabaseAuth;
+
+            if (!supabaseAuth || !supabaseAuth.isConfigured) {
+                if (statusEl) {
+                    statusEl.textContent = 'Configure PUBLIC_SUPABASE_URL e PUBLIC_SUPABASE_ANON_KEY antes de testar o login com Google.';
+                }
+                return;
+            }
+
+            try {
+                await supabaseAuth.finishOAuthFlow();
+                if (statusEl) {
+                    statusEl.textContent = 'Conta Google conectada. Redirecionando para o painel...';
+                }
+                window.location.href = '/painel?authProvider=supabase';
+            } catch (error) {
+                const message = error instanceof Error ? error.message : 'Nao foi possivel concluir o login com Google.';
+                if (statusEl) {
+                    statusEl.textContent = message;
+                }
+                if (typeof window.showFeedback === 'function') {
+                    window.showFeedback(message, 'error', 'Falha no callback');
+                }
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', runSupabaseCallback, { once: true });
+        } else {
+            runSupabaseCallback();
+        }
+    </script>
+</LoginLayout>

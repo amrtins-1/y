@@ -1,46 +1,54 @@
-# Astro Starter Kit: Basics
+# Instituto Amarte
 
-```sh
-npm create astro@latest -- --template basics
+## Supabase Auth
+
+O frontend agora ja vem preparado para iniciar o login com Google via Supabase.
+
+### Variaveis do frontend
+
+Configure no Vercel do frontend:
+
+```env
+PUBLIC_SITE_URL=https://amarte-ten.vercel.app
+PUBLIC_SUPABASE_URL=https://SEU-PROJETO.supabase.co
+PUBLIC_SUPABASE_ANON_KEY=SEU_ANON_KEY
+PUBLIC_API_BASE_URL=https://y-q3kr-delta.vercel.app/api
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### URLs do Supabase Auth
 
-## 🚀 Project Structure
+No painel do Supabase:
 
-Inside of your Astro project, you'll see the following folders and files:
+1. `Authentication > URL Configuration`
+2. `Site URL`: `https://amarte-ten.vercel.app`
+3. `Redirect URLs`:
+   - `http://localhost:4321/**`
+   - `https://amarte-ten.vercel.app/auth/callback`
+   - `https://*-naorespondaamarte-9716s-projects.vercel.app/**`
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+### Google Cloud
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+No Google Cloud Console:
 
-## 🧞 Commands
+1. Crie um `OAuth Client ID` do tipo Web.
+2. Copie o callback mostrado no provider Google do Supabase.
+3. Cole esse callback em `Authorized redirect URIs`.
+4. Copie `Client ID` e `Client Secret`.
 
-All commands are run from the root of the project, from a terminal:
+### Supabase Provider
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+No painel do Supabase:
 
-## 👀 Want to learn more?
+1. `Authentication > Providers > Google`
+2. Ative o provider.
+3. Cole `Client ID` e `Client Secret`.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Fluxo atual
+
+- `/login` ja possui o botao `Entrar com Google`
+- `/auth/callback` conclui o retorno do OAuth
+- `/painel` reconhece a sessao do Supabase
+
+### Proxima etapa recomendada
+
+Migrar as rotas protegidas do backend para validar o usuario do Supabase, eliminando o login manual legado.

@@ -1,6 +1,7 @@
 ---
 import '../styles/style.css';
 import faviconIco from '../assets/img/favicon2.ico';
+import SupabaseAuth from '../components/SupabaseAuth.astro';
 
 interface Props {
     title: string;
@@ -68,6 +69,7 @@ const apiBaseUrl = import.meta.env.PUBLIC_API_BASE_URL || '';
 
     <script is:inline src="/scripts/translations.js"></script>
     <script is:inline src="/scripts/main.js"></script>
+    <SupabaseAuth />
     
     <script is:inline>
         // Mantendo apenas o essencial para a página de login

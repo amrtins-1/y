@@ -103,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initCrudForms() {
     guardProtectedRoute();
     showDashboardVerificationReminder();
+    initSupabaseDashboardProfile();
     bindMembershipAccessWall();
     bindCpfMask();
     showLoginVerificationFeedback();
@@ -357,6 +358,40 @@ function getAuthHeaders() {
     return headers;
 }
 
+function getSupabaseAuthSession() {
+    const storageKey = window.__supabaseAuth?.storageKey || 'supabaseAuthSession';
+    const authRaw = sessionStorage.getItem(storageKey) || localStorage.getItem(storageKey);
+    if (!authRaw) return null;
+    try {
+        return JSON.parse(authRaw);
+    } catch (_) {
+        return null;
+    }
+}
+
+function clearSupabaseAuthSession() {
+    const storageKey = window.__supabaseAuth?.storageKey || 'supabaseAuthSession';
+    localStorage.removeItem(storageKey);
+    sessionStorage.removeItem(storageKey);
+}
+
+function isSupabaseAuthSessionValid(authSession) {
+    if (!authSession || !authSession.user || !authSession.user.id) {
+        return false;
+    }
+
+    if (!authSession.expiresAt) {
+        return true;
+    }
+
+    const expiresAt = new Date(authSession.expiresAt);
+    if (Number.isNaN(expiresAt.getTime())) {
+        return false;
+    }
+
+    return expiresAt.getTime() > Date.now();
+}
+
 function toCpfDigits(value) {
     return (value || '').replace(/\D/g, '').slice(0, 11);
 }
@@ -384,14 +419,19 @@ function guardProtectedRoute() {
     const guestOnlyPaths = new Set(['/login', '/cadastro', '/confirmar-email']);
     const authSession = getAuthSession();
     const isSessionValid = isAuthSessionValid(authSession);
+    const supabaseSession = getSupabaseAuthSession();
+    const isSupabaseSessionValid = isSupabaseAuthSessionValid(supabaseSession);
+    const isAllowedWithSupabase = path === '/painel' && isSupabaseSessionValid;
+    const isAuthenticated = isSessionValid || isAllowedWithSupabase;
 
-    if (protectedPaths.has(path) && !isSessionValid) {
+    if (protectedPaths.has(path) && !isAuthenticated) {
         clearAuthSession();
+        clearSupabaseAuthSession();
         window.location.href = '/login';
         return;
     }
 
-    if (guestOnlyPaths.has(path) && isSessionValid) {
+    if (guestOnlyPaths.has(path) && isAuthenticated) {
         window.location.href = '/painel';
     }
 }
@@ -399,7 +439,8 @@ function guardProtectedRoute() {
 function bindLogoutAction() {
     const logoutCard = document.querySelector('.logout-card');
     if (!logoutCard) return;
-    logoutCard.addEventListener('click', async () => {
+    logoutCard.addEventListener('click', async (event) => {
+        event.preventDefault();
         const authSession = getAuthSession();
         if (authSession && authSession.userId) {
             try {
@@ -411,6 +452,17 @@ function bindLogoutAction() {
             }
         }
         clearAuthSession();
+        const supabaseSession = getSupabaseAuthSession();
+        if (supabaseSession && window.__supabaseAuth?.signOutSupabase) {
+            try {
+                await window.__supabaseAuth.signOutSupabase();
+            } catch (_) {
+                clearSupabaseAuthSession();
+            }
+        } else {
+            clearSupabaseAuthSession();
+        }
+        window.location.href = '/';
     });
 }
 
@@ -509,6 +561,37 @@ async function initUserProfile() {
     } catch (error) {
         console.error('Erro ao carregar perfil do usuario:', error);
         showFeedback(error.message || 'Nao foi possivel carregar os dados do perfil.', 'error', 'Falha ao carregar perfil');
+    }
+}
+
+function initSupabaseDashboardProfile() {
+    const path = window.location.pathname.replace(/\/+$/, '') || '/';
+    if (path !== '/painel') return;
+
+    const authSession = getAuthSession();
+    if (isAuthSessionValid(authSession)) {
+        return;
+    }
+
+    const supabaseSession = getSupabaseAuthSession();
+    if (!isSupabaseAuthSessionValid(supabaseSession)) {
+        return;
+    }
+
+    const fullName = supabaseSession.user.fullName || supabaseSession.user.email || 'Membro';
+    const headerName = document.getElementById('dashboard_user_name');
+    if (headerName) {
+        headerName.textContent = fullName;
+    }
+
+    const subtitle = document.getElementById('dashboard_auth_subtitle');
+    if (subtitle) {
+        subtitle.textContent = 'Sessao autenticada com Google via Supabase.';
+    }
+
+    const bridgeNotice = document.getElementById('dashboard_auth_notice');
+    if (bridgeNotice) {
+        bridgeNotice.hidden = false;
     }
 }
 
