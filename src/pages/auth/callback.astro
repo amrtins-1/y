@@ -21,9 +21,22 @@ import LoginLayout from '../../layouts/LoginLayout.astro';
     </div>
 
     <script>
+        async function waitForSupabaseAuth(timeoutMs = 4000) {
+            const startedAt = Date.now();
+
+            while (Date.now() - startedAt < timeoutMs) {
+                if (window.__supabaseAuth) {
+                    return window.__supabaseAuth;
+                }
+                await new Promise((resolve) => setTimeout(resolve, 50));
+            }
+
+            return window.__supabaseAuth || null;
+        }
+
         async function runSupabaseCallback() {
             const statusEl = document.getElementById('supabase-callback-status');
-            const supabaseAuth = window.__supabaseAuth;
+            const supabaseAuth = await waitForSupabaseAuth();
 
             if (!supabaseAuth || !supabaseAuth.isConfigured) {
                 if (statusEl) {

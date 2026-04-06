@@ -216,6 +216,14 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || '';
     finishOAuthFlow,
   };
 
+  window.dispatchEvent(
+    new CustomEvent('supabase-auth-ready', {
+      detail: {
+        isConfigured,
+      },
+    }),
+  );
+
   if (supabase) {
     supabase.auth.onAuthStateChange((event, session) => {
       if (event === 'SIGNED_OUT') {
