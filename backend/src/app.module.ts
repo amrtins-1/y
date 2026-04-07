@@ -37,6 +37,7 @@ import { UserAddressController } from './controllers/user-address.controller';
 import { UserMarketWatchlistController } from './controllers/user-market-watchlist.controller';
 import { UserSubscriptionController } from './controllers/user-subscription.controller';
 import { VideoItemController } from './controllers/video-item.controller';
+import { AdminInboxController } from './controllers/admin-inbox.controller';
 import { AppUserService } from './services/app-user.service';
 import { AuthSessionService } from './services/auth-session.service';
 import { EmailVerificationService } from './services/email-verification.service';
@@ -59,6 +60,7 @@ import { UserAddressService } from './services/user-address.service';
 import { UserMarketWatchlistService } from './services/user-market-watchlist.service';
 import { UserSubscriptionService } from './services/user-subscription.service';
 import { VideoItemService } from './services/video-item.service';
+import { AdminInboxService } from './services/admin-inbox.service';
 import { PublicApiRateLimitMiddleware } from './middleware/public-api-rate-limit.middleware';
 import { ApiCsrfProtectionMiddleware } from './middleware/api-csrf-protection.middleware';
 import { ApiSessionAuthMiddleware } from './middleware/api-session-auth.middleware';
@@ -128,6 +130,7 @@ import { ApiSecurityHeadersMiddleware } from './middleware/api-security-headers.
     UserMarketWatchlistController,
     UserSubscriptionController,
     VideoItemController,
+    AdminInboxController,
   ],
   providers: [
     AppUserService,
@@ -152,6 +155,7 @@ import { ApiSecurityHeadersMiddleware } from './middleware/api-security-headers.
     UserMarketWatchlistService,
     UserSubscriptionService,
     VideoItemService,
+    AdminInboxService,
   ],
 })
 export class AppModule implements NestModule {

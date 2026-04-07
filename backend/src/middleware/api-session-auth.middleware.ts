@@ -55,8 +55,11 @@ export class ApiSessionAuthMiddleware implements NestMiddleware {
     { method: 'DELETE', pattern: '/api/newsletter-subscribers/{id}' },
     { method: 'GET', pattern: '/api/contact-messages' },
     { method: 'GET', pattern: '/api/contact-messages/{id}' },
+    { method: 'PUT', pattern: '/api/contact-messages/{id}' },
     { method: 'GET', pattern: '/api/consultancy-requests' },
     { method: 'GET', pattern: '/api/consultancy-requests/{id}' },
+    { method: 'PUT', pattern: '/api/consultancy-requests/{id}' },
+    { pattern: '/api/admin/**' },
   ];
 
   constructor(private readonly authSessionService: AuthSessionService) {}

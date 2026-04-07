@@ -102,9 +102,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initCrudForms() {
     guardProtectedRoute();
+    if (!ensureAdminAccess()) {
+        return;
+    }
     syncAssociatedAreaLinks();
     showDashboardVerificationReminder();
     initSupabaseDashboardProfile();
+    initAdminDashboardCard();
+    initAdminInboxPage();
     bindMembershipAccessWall();
     bindCpfMask();
     showLoginVerificationFeedback();
@@ -403,6 +408,10 @@ function isAnyAuthSessionValid() {
     return isSupabaseAuthSessionValid(supabaseSession);
 }
 
+function isAdminSession(authSession) {
+    return Boolean(authSession && authSession.role === 'ADMIN');
+}
+
 function getAssociatedAreaHref() {
     return isAnyAuthSessionValid() ? '/painel' : '/login';
 }
@@ -413,6 +422,22 @@ function syncAssociatedAreaLinks() {
     links.forEach((link) => {
         link.setAttribute('href', href);
     });
+}
+
+function ensureAdminAccess() {
+    const path = window.location.pathname.replace(/\/+$/, '') || '/';
+    if (path !== '/admin') {
+        return true;
+    }
+
+    const authSession = getAuthSession();
+    if (!isAuthSessionValid(authSession) || !isAdminSession(authSession)) {
+        showFeedback('Acesso restrito a administradores.', 'warning', 'Area protegida');
+        window.location.href = '/painel';
+        return false;
+    }
+
+    return true;
 }
 
 function toCpfDigits(value) {
@@ -616,6 +641,304 @@ function initSupabaseDashboardProfile() {
     if (bridgeNotice) {
         bridgeNotice.hidden = false;
     }
+}
+
+function initAdminDashboardCard() {
+    const adminCard = document.getElementById('admin-dashboard-card');
+    if (!adminCard) return;
+
+    const authSession = getAuthSession();
+    adminCard.hidden = !isAdminSession(authSession);
+}
+
+function escapeHtml(value) {
+    return String(value == null ? '' : value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function formatAdminDate(value) {
+    if (!value) return '-';
+    const parsed = new Date(value);
+    if (Number.isNaN(parsed.getTime())) return '-';
+    return parsed.toLocaleString('pt-BR', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+}
+
+function getAdminItemTitle(item) {
+    return item.category === 'consultancy'
+        ? item.farmName || 'Consultoria sem fazenda'
+        : item.subject || 'Mensagem sem assunto';
+}
+
+function getAdminItemPreview(item) {
+    return item.category === 'consultancy'
+        ? item.caseReport || ''
+        : item.message || '';
+}
+
+function updateAdminStats(stats) {
+    const mapping = {
+        'admin-stat-contacts': stats.contactsOpen || 0,
+        'admin-stat-consultancy': stats.consultancyOpen || 0,
+        'admin-stat-urgent': stats.urgentCases || 0,
+        'admin-stat-awaiting': stats.awaitingResponse || 0,
+    };
+
+    Object.entries(mapping).forEach(([id, value]) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.textContent = String(value);
+        }
+    });
+}
+
+function renderAdminInboxList(items, selectedId) {
+    const list = document.getElementById('admin-inbox-list');
+    if (!list) return;
+
+    if (!items.length) {
+        list.innerHTML = `
+            <div class="admin-list-empty">
+                <i class="fas fa-inbox"></i>
+                <p>Nenhum item encontrado com os filtros atuais.</p>
+            </div>
+        `;
+        return;
+    }
+
+    list.innerHTML = items.map((item) => `
+        <button type="button" class="admin-list-item ${item.id === selectedId ? 'is-active' : ''}" data-admin-item-id="${escapeHtml(item.id)}">
+            <div class="admin-list-item-head">
+                <span class="admin-type-badge admin-type-${escapeHtml(item.category)}">${item.category === 'consultancy' ? 'Consultoria' : 'Contato'}</span>
+                <span class="admin-urgency-badge admin-urgency-${escapeHtml(item.urgencyLevel)}">${escapeHtml(item.urgencyLabel)}</span>
+            </div>
+            <h3>${escapeHtml(getAdminItemTitle(item))}</h3>
+            <p>${escapeHtml(getAdminItemPreview(item).slice(0, 180))}</p>
+            <div class="admin-list-item-meta">
+                <span>${escapeHtml(item.requesterName || item.name || '-')}</span>
+                <span>${escapeHtml(formatAdminDate(item.createdAt))}</span>
+            </div>
+        </button>
+    `).join('');
+}
+
+function renderAdminDetail(item) {
+    const emptyState = document.getElementById('admin-empty-state');
+    const detail = document.getElementById('admin-detail-content');
+    if (!detail || !emptyState) return;
+
+    emptyState.hidden = Boolean(item);
+    detail.hidden = !item;
+    if (!item) {
+        detail.innerHTML = '';
+        return;
+    }
+
+    const identityName = item.requesterName || item.name || '-';
+    const identityEmail = item.requesterEmail || item.email || '-';
+    const identityPhone = item.requesterPhone || item.phone || '-';
+    const longText = item.category === 'consultancy' ? item.caseReport : item.message;
+    const statusOptions = ['NOVO', 'EM_ANALISE', 'RESPONDIDO', 'ENCERRADO'];
+
+    detail.innerHTML = `
+        <div class="admin-detail-header">
+            <div>
+                <span class="admin-urgency-badge admin-urgency-${escapeHtml(item.urgencyLevel)}">${escapeHtml(item.urgencyLabel)}</span>
+                <h2>${escapeHtml(getAdminItemTitle(item))}</h2>
+                <p>${escapeHtml(identityName)} · ${escapeHtml(identityEmail)} · ${escapeHtml(identityPhone)}</p>
+            </div>
+            <div class="admin-detail-meta">
+                <span>${escapeHtml(item.category === 'consultancy' ? 'Pedido de consultoria' : 'Mensagem de contato')}</span>
+                <span>${escapeHtml(formatAdminDate(item.createdAt))}</span>
+            </div>
+        </div>
+
+        <div class="admin-detail-section">
+            <h3>Contexto</h3>
+            <dl class="admin-detail-grid">
+                <div><dt>Status</dt><dd>${escapeHtml(item.status || '-')}</dd></div>
+                <div><dt>Pais</dt><dd>${escapeHtml(item.country || '-')}</dd></div>
+                <div><dt>Estado</dt><dd>${escapeHtml(item.state || '-')}</dd></div>
+                <div><dt>Cidade</dt><dd>${escapeHtml(item.city || '-')}</dd></div>
+                ${item.category === 'consultancy' ? `<div><dt>Conflito</dt><dd>${escapeHtml(item.conflictStatus || '-')}</dd></div>` : ''}
+                ${item.category === 'consultancy' ? `<div><dt>Grupo envolvido</dt><dd>${escapeHtml(item.involvedGroup || '-')}</dd></div>` : ''}
+            </dl>
+        </div>
+
+        <div class="admin-detail-section">
+            <h3>Mensagem recebida</h3>
+            <div class="admin-message-body">${escapeHtml(longText || '-').replace(/\n/g, '<br>')}</div>
+        </div>
+
+        <form class="admin-reply-form" id="admin-reply-form">
+            <div class="admin-form-row">
+                <div class="admin-filter-group">
+                    <label for="admin-status-select">Novo status</label>
+                    <select id="admin-status-select" name="status">
+                        ${statusOptions.map((status) => `<option value="${status}" ${status === item.status ? 'selected' : ''}>${status}</option>`).join('')}
+                    </select>
+                </div>
+                <div class="admin-filter-group admin-search-group">
+                    <label for="admin-reply-subject">Assunto da resposta</label>
+                    <input id="admin-reply-subject" name="subject" type="text" value="${escapeHtml(item.category === 'consultancy' ? `Atualizacao da sua consultoria - ${getAdminItemTitle(item)}` : `Retorno sobre: ${getAdminItemTitle(item)}`)}">
+                </div>
+            </div>
+            <div class="admin-filter-group">
+                <label for="admin-reply-message">Resposta</label>
+                <textarea id="admin-reply-message" name="message" rows="7" placeholder="Escreva aqui a resposta que sera enviada por e-mail."></textarea>
+            </div>
+            <div class="admin-reply-actions">
+                <button type="submit" class="btn-auth-gold">Enviar resposta</button>
+            </div>
+        </form>
+    `;
+}
+
+function filterAdminInboxItems(items) {
+    const typeFilter = document.getElementById('admin-filter-type')?.value || 'all';
+    const urgencyFilter = document.getElementById('admin-filter-urgency')?.value || 'all';
+    const searchFilter = (document.getElementById('admin-filter-search')?.value || '').trim().toLowerCase();
+
+    return items.filter((item) => {
+        if (typeFilter !== 'all' && item.category !== typeFilter) {
+            return false;
+        }
+        if (urgencyFilter !== 'all' && item.urgencyLevel !== urgencyFilter) {
+            return false;
+        }
+        if (!searchFilter) {
+            return true;
+        }
+
+        const haystack = [
+            item.requesterName,
+            item.requesterEmail,
+            item.name,
+            item.email,
+            item.subject,
+            item.message,
+            item.farmName,
+            item.caseReport,
+            item.involvedGroup,
+        ]
+            .filter(Boolean)
+            .join(' ')
+            .toLowerCase();
+
+        return haystack.includes(searchFilter);
+    });
+}
+
+async function initAdminInboxPage() {
+    const list = document.getElementById('admin-inbox-list');
+    if (!list) return;
+
+    const authSession = getAuthSession();
+    if (!isAdminSession(authSession)) {
+        list.innerHTML = '<div class="admin-list-empty"><p>Area restrita a administradores.</p></div>';
+        return;
+    }
+
+    const state = {
+        items: [],
+        selectedId: null,
+    };
+
+    const render = () => {
+        const filtered = filterAdminInboxItems(state.items);
+        if (!state.selectedId && filtered[0]) {
+            state.selectedId = filtered[0].id;
+        }
+        const selected = filtered.find((item) => item.id === state.selectedId) || filtered[0] || null;
+        state.selectedId = selected ? selected.id : null;
+        renderAdminInboxList(filtered, state.selectedId);
+        renderAdminDetail(selected);
+    };
+
+    try {
+        const payload = await getJson('/admin/inbox');
+        updateAdminStats(payload.stats || {});
+        state.items = [
+            ...(payload.contactMessages || []),
+            ...(payload.consultancyRequests || []),
+        ].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+        render();
+    } catch (error) {
+        console.error('Erro ao carregar area admin:', error);
+        list.innerHTML = '<div class="admin-list-empty"><p>Nao foi possivel carregar a caixa administrativa.</p></div>';
+        return;
+    }
+
+    ['admin-filter-type', 'admin-filter-urgency', 'admin-filter-search'].forEach((id) => {
+        const element = document.getElementById(id);
+        if (!element) return;
+        element.addEventListener('input', render);
+        element.addEventListener('change', render);
+    });
+
+    list.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-admin-item-id]');
+        if (!button) return;
+        state.selectedId = button.getAttribute('data-admin-item-id');
+        render();
+    });
+
+    document.addEventListener('submit', async (event) => {
+        const form = event.target;
+        if (!(form instanceof HTMLFormElement) || form.id !== 'admin-reply-form') {
+            return;
+        }
+
+        event.preventDefault();
+        const selected = state.items.find((item) => item.id === state.selectedId);
+        if (!selected) return;
+
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton ? submitButton.textContent : '';
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = 'Enviando...';
+        }
+
+        try {
+            const payload = {
+                subject: form.querySelector('#admin-reply-subject')?.value || '',
+                message: form.querySelector('#admin-reply-message')?.value || '',
+                status: form.querySelector('#admin-status-select')?.value || 'RESPONDIDO',
+            };
+
+            if (!payload.message.trim()) {
+                throw new Error('Escreva a resposta antes de enviar.');
+            }
+
+            const basePath = selected.category === 'consultancy'
+                ? `/admin/inbox/consultancy-requests/${selected.id}`
+                : `/admin/inbox/contact-messages/${selected.id}`;
+
+            await postJson(`${basePath}/reply`, payload);
+            selected.status = payload.status;
+            showFeedback('Resposta enviada com sucesso.', 'success', 'Atendimento registrado');
+            render();
+            form.reset();
+        } catch (error) {
+            console.error('Erro ao responder item admin:', error);
+            showFeedback(error.message || 'Nao foi possivel enviar a resposta.', 'error', 'Falha ao responder');
+        } finally {
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = originalText;
+            }
+        }
+    });
 }
 
 function bindUserProfileSubmit() {

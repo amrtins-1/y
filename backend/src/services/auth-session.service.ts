@@ -80,6 +80,7 @@ export class AuthSessionService extends AbstractCrudService<AuthSession, string>
       sessionId: savedSession.id,
       expiresAt: savedSession.expiresAt.toISOString(),
       isActive: Boolean(user.isActive),
+      role: user.role,
     };
   }
 
@@ -102,6 +103,7 @@ export class AuthSessionService extends AbstractCrudService<AuthSession, string>
       sessionId: savedSession.id,
       expiresAt: savedSession.expiresAt.toISOString(),
       isActive: Boolean(appUser.isActive),
+      role: appUser.role,
     };
   }
 

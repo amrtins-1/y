@@ -1,0 +1,82 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+    <main class="admin-inbox-wrapper">
+        <section class="admin-hero">
+            <div>
+                <p class="admin-eyebrow">Operacao administrativa</p>
+                <h1>Caixa de atendimento do Instituto</h1>
+                <p>Veja mensagens, pedidos de consultoria, niveis de urgencia e responda sem sair do site.</p>
+            </div>
+        </section>
+
+        <section class="admin-stats" id="admin-stats">
+            <article class="stat-card">
+                <div>
+                    <h3 id="admin-stat-contacts">0</h3>
+                    <p>Mensagens abertas</p>
+                </div>
+                <div class="stat-icon-bg"><i class="fas fa-envelope-open-text"></i></div>
+            </article>
+            <article class="stat-card">
+                <div>
+                    <h3 id="admin-stat-consultancy">0</h3>
+                    <p>Consultorias abertas</p>
+                </div>
+                <div class="stat-icon-bg"><i class="fas fa-scale-balanced"></i></div>
+            </article>
+            <article class="stat-card">
+                <div>
+                    <h3 id="admin-stat-urgent">0</h3>
+                    <p>Casos urgentes</p>
+                </div>
+                <div class="stat-icon-bg"><i class="fas fa-triangle-exclamation"></i></div>
+            </article>
+            <article class="stat-card">
+                <div>
+                    <h3 id="admin-stat-awaiting">0</h3>
+                    <p>Aguardando resposta</p>
+                </div>
+                <div class="stat-icon-bg"><i class="fas fa-inbox"></i></div>
+            </article>
+        </section>
+
+        <section class="admin-toolbar">
+            <div class="admin-filter-group">
+                <label for="admin-filter-type">Tipo</label>
+                <select id="admin-filter-type">
+                    <option value="all">Todos</option>
+                    <option value="consultancy">Consultoria</option>
+                    <option value="contact">Contato</option>
+                </select>
+            </div>
+            <div class="admin-filter-group">
+                <label for="admin-filter-urgency">Urgencia</label>
+                <select id="admin-filter-urgency">
+                    <option value="all">Todas</option>
+                    <option value="critical">Critica</option>
+                    <option value="high">Alta</option>
+                    <option value="medium">Media</option>
+                    <option value="low">Baixa</option>
+                </select>
+            </div>
+            <div class="admin-filter-group admin-search-group">
+                <label for="admin-filter-search">Buscar</label>
+                <input id="admin-filter-search" type="search" placeholder="Nome, email, assunto ou fazenda">
+            </div>
+        </section>
+
+        <section class="admin-inbox-grid">
+            <div class="admin-inbox-list" id="admin-inbox-list"></div>
+            <aside class="admin-detail-panel" id="admin-detail-panel">
+                <div class="admin-empty-state" id="admin-empty-state">
+                    <i class="fas fa-user-shield"></i>
+                    <h2>Selecione um item</h2>
+                    <p>Ao clicar em uma mensagem ou consultoria, os detalhes e a resposta aparecem aqui.</p>
+                </div>
+                <div id="admin-detail-content" hidden></div>
+            </aside>
+        </section>
+    </main>
+</Layout>
