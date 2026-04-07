@@ -67,10 +67,15 @@ export class AuthSessionController {
       providerUser?.user_metadata?.full_name ||
       providerUser?.user_metadata?.name ||
       email;
+    const phone =
+      typeof providerUser?.user_metadata?.phone === 'string'
+        ? providerUser.user_metadata.phone
+        : null;
 
     const appUser = await this.appUserService.findOrCreateSupabaseUser({
       email,
       fullName,
+      phone,
     });
 
     const response = await this.authSessionService.authenticateSupabaseUser(appUser, {

@@ -49,18 +49,23 @@ export class AppUserService extends AbstractCrudService<AppUser, string> {
     return this.create(entity);
   }
 
-  async findOrCreateSupabaseUser(input: { email: string; fullName?: string | null }): Promise<AppUser> {
+  async findOrCreateSupabaseUser(input: { email: string; fullName?: string | null; phone?: string | null }): Promise<AppUser> {
     const email = (input.email || '').trim().toLowerCase();
     if (!email) {
       throw new Error('Conta Google sem e-mail disponivel.');
     }
 
     const displayName = (input.fullName || '').trim() || email.split('@')[0] || 'Membro';
+    const normalizedPhone = this.normalizeBlankToNull(input.phone);
     const existing = await this.repository.findOne({ where: { email } });
     if (existing) {
       let shouldSave = false;
       if (!existing.fullName || !existing.fullName.trim()) {
         existing.fullName = displayName;
+        shouldSave = true;
+      }
+      if (!existing.phone && normalizedPhone) {
+        existing.phone = normalizedPhone;
         shouldSave = true;
       }
       if (!existing.isActive) {
@@ -77,7 +82,7 @@ export class AppUserService extends AbstractCrudService<AppUser, string> {
     const entity = new AppUser();
     entity.fullName = displayName;
     entity.email = email;
-    entity.phone = null;
+    entity.phone = normalizedPhone;
     entity.passwordHash = await this.passwordService.hash(randomUUID());
     entity.role = UserRole.MEMBER;
     entity.isActive = true;

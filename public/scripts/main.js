@@ -838,19 +838,22 @@ function bindRegisterSubmit() {
 
         try {
             const email = normalizeEmail(form.querySelector('#reg_email')?.value);
+            const supabaseAuth = window.__supabaseAuth;
+            if (!supabaseAuth || !supabaseAuth.isConfigured || typeof supabaseAuth.signUpWithEmail !== 'function') {
+                throw new Error('Cadastro por email ainda nao foi configurado no Supabase.');
+            }
 
-            const payload = {
+            await supabaseAuth.signUpWithEmail({
                 fullName: (form.querySelector('#reg_fullname')?.value || '').trim(),
                 email,
                 phone: (form.querySelector('#reg_phone')?.value || '').trim(),
                 password
-            };
+            });
 
-            await postJson('/users', payload);
-            showFeedback('Cadastro criado. Enviamos um codigo de confirmacao para seu e-mail.', 'success', 'Conta criada');
+            showFeedback('Cadastro criado. Enviamos um link de confirmacao para seu e-mail.', 'success', 'Conta criada');
             form.reset();
             setTimeout(() => {
-                window.location.href = `/confirmar-email?email=${encodeURIComponent(email)}`;
+                window.location.href = `/login?signupEmail=${encodeURIComponent(email)}`;
             }, 1800);
         } catch (error) {
             console.error('Erro ao cadastrar usuario:', error);

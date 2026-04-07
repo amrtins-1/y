@@ -140,6 +140,34 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || '';
     }
   }
 
+  async function signUpWithEmail({ fullName, email, password, phone }) {
+    if (!supabase) {
+      throw new Error('Supabase Auth ainda nao foi configurado no frontend.');
+    }
+
+    const normalizedEmail = String(email || '').trim().toLowerCase();
+    const trimmedName = String(fullName || '').trim();
+    const trimmedPhone = String(phone || '').trim();
+
+    const { data, error } = await supabase.auth.signUp({
+      email: normalizedEmail,
+      password: String(password || ''),
+      options: {
+        emailRedirectTo: getRedirectUrl(),
+        data: {
+          full_name: trimmedName,
+          phone: trimmedPhone,
+        },
+      },
+    });
+
+    if (error) {
+      throw error;
+    }
+
+    return data;
+  }
+
   async function signOutSupabase() {
     if (supabase) {
       await supabase.auth.signOut();
@@ -212,6 +240,7 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || '';
     saveStoredSession,
     syncSupabaseSession,
     signInWithGoogle,
+    signUpWithEmail,
     signOutSupabase,
     finishOAuthFlow,
   };
