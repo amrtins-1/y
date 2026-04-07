@@ -430,6 +430,20 @@ function assertPasswordValue(value, { required = true, label = 'Senha' } = {}) {
     return normalized;
 }
 
+function assertExistingPasswordValue(value, { required = true, label = 'Senha' } = {}) {
+    const normalized = String(value || '').trim();
+    if (!normalized) {
+        if (required) {
+            throw new Error(`${label} e obrigatoria.`);
+        }
+        return '';
+    }
+    if (normalized.length < 1 || normalized.length > 72) {
+        throw new Error(`${label} deve ter no maximo 72 caracteres.`);
+    }
+    return normalized;
+}
+
 function assertMultilineText(label, value, minLength, maxLength) {
     const normalized = normalizeMultilineText(value);
     if (normalized.length < minLength) {
@@ -1087,7 +1101,7 @@ function bindUserProfileSubmit() {
                 email: assertEmailValue(document.getElementById('prof_email')?.value || ''),
                 phone: assertPhoneValue(document.getElementById('prof_phone')?.value || ''),
                 cpf: toCpfDigits(document.getElementById('prof_cpf')?.value || ''),
-                currentPassword: assertPasswordValue(currentPassword, { label: 'Senha atual' }),
+                currentPassword: assertExistingPasswordValue(currentPassword, { label: 'Senha atual' }),
                 newPassword: hasPasswordChangeInput
                     ? assertPasswordValue(newPassword, { label: 'Nova senha' })
                     : ''
@@ -1446,7 +1460,7 @@ function bindLoginSubmit() {
         try {
             const payload = {
                 email: assertEmailValue(form.querySelector('#login_email')?.value),
-                password: assertPasswordValue(form.querySelector('#login_password')?.value || '', { label: 'Senha' }),
+                password: assertExistingPasswordValue(form.querySelector('#login_password')?.value || '', { label: 'Senha' }),
                 rememberMe: Boolean(form.querySelector('#remember')?.checked)
             };
 
