@@ -1,7 +1,8 @@
-﻿import { Body, Controller, Get, HttpCode, Post, Query, Redirect } from '@nestjs/common';
+import { Body, Controller, Get, HttpCode, Post, Query, Redirect, UsePipes } from '@nestjs/common';
 import { EmailVerificationService } from '../services/email-verification.service';
 import { EmailVerificationRequest } from '../dto/email-verification-request.dto';
 import { EmailCodeConfirmRequest } from '../dto/email-code-confirm-request.dto';
+import { STRICT_BODY_VALIDATION_PIPE } from '../validation/strict-body-validation.pipe';
 
 @Controller('api/email-verification')
 export class EmailVerificationController {
@@ -9,6 +10,7 @@ export class EmailVerificationController {
 
   @Post('request')
   @HttpCode(204)
+  @UsePipes(STRICT_BODY_VALIDATION_PIPE)
   async request(@Body() request: EmailVerificationRequest): Promise<void> {
     await this.emailVerificationService.requestVerification(request.email);
   }
@@ -23,6 +25,7 @@ export class EmailVerificationController {
   }
 
   @Post('confirm-code')
+  @UsePipes(STRICT_BODY_VALIDATION_PIPE)
   async confirmCode(@Body() request: EmailCodeConfirmRequest) {
     const confirmed = await this.emailVerificationService.confirmByCode(request.email, request.code);
     if (!confirmed) {

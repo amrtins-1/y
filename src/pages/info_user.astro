@@ -50,17 +50,17 @@ import Layout from '../layouts/Layout.astro';
                     <div class="form-grid-2">
                         <div class="form-group-sophisticated">
                             <label for="prof_name" data-i18n="lbl_fullname">Nome Completo</label>
-                            <input type="text" id="prof_name" name="fullname" value="" data-i18n="ph_fullname_holder">
+                            <input type="text" id="prof_name" name="fullname" value="" minlength="3" maxlength="120" autocomplete="name" data-i18n="ph_fullname_holder">
                         </div>
 
                         <div class="form-group-sophisticated">
                             <label for="prof_email" data-i18n="lbl_email">E-mail</label>
-                            <input type="email" id="prof_email" name="email" value="" data-i18n="ph_email">
+                            <input type="email" id="prof_email" name="email" value="" maxlength="180" autocomplete="email" data-i18n="ph_email">
                         </div>
 
                         <div class="form-group-sophisticated">
                             <label for="prof_phone" data-i18n="lbl_phone">Telefone / WhatsApp</label>
-                            <input type="text" id="prof_phone" name="phone" value="" data-i18n="ph_phone">
+                            <input type="tel" id="prof_phone" name="phone" value="" minlength="10" maxlength="40" inputmode="tel" autocomplete="tel" data-i18n="ph_phone">
                         </div>
 
                         <div class="form-group-sophisticated">
@@ -82,7 +82,7 @@ import Layout from '../layouts/Layout.astro';
 
                     <div class="form-group-sophisticated">
                         <label for="prof_curr_pass" data-i18n="lbl_current_pass">Senha Atual</label>
-                        <input type="password" id="prof_curr_pass" name="current_password" placeholder="********" data-i18n="ph_current_pass">
+                        <input type="password" id="prof_curr_pass" name="current_password" minlength="8" maxlength="72" autocomplete="current-password" placeholder="********" data-i18n="ph_current_pass">
                     </div>
 
                     <div class="form-divider-title">
@@ -94,12 +94,12 @@ import Layout from '../layouts/Layout.astro';
                     <div class="form-grid-2">
                         <div class="form-group-sophisticated">
                             <label for="prof_new_pass" data-i18n="lbl_new_pass">Nova Senha </label>
-                            <input type="password" id="prof_new_pass" name="new_password" placeholder="" data-i18n="ph_new_pass">
+                            <input type="password" id="prof_new_pass" name="new_password" minlength="8" maxlength="72" autocomplete="new-password" placeholder="" data-i18n="ph_new_pass">
                         </div>
 
                         <div class="form-group-sophisticated">
                             <label for="prof_confirm_new_pass" data-i18n="lbl_confirm_new_pass">Confirmar Nova Senha </label>
-                            <input type="password" id="prof_confirm_new_pass" name="confirm_new_password" placeholder="" data-i18n="ph_confirm_new_pass">
+                            <input type="password" id="prof_confirm_new_pass" name="confirm_new_password" minlength="8" maxlength="72" autocomplete="new-password" placeholder="" data-i18n="ph_confirm_new_pass">
                         </div>
                     </div>
 

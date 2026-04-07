@@ -42,7 +42,7 @@ import cnFlag from '../assets/img/CNFLAG.png';
                         <label for="reg_fullname" data-i18n="lbl_fullname">Nome Completo</label>
                         <div class="input-icon-wrapper">
                             <i class="fas fa-user"></i>
-                            <input type="text" id="reg_fullname" name="fullname" required placeholder="Seu nome completo" data-i18n="ph_fullname">
+                            <input type="text" id="reg_fullname" name="fullname" required minlength="3" maxlength="120" autocomplete="name" placeholder="Seu nome completo" data-i18n="ph_fullname">
                         </div>
                     </div>
 
@@ -50,7 +50,7 @@ import cnFlag from '../assets/img/CNFLAG.png';
                         <label for="reg_email" data-i18n="lbl_email">E-mail</label>
                         <div class="input-icon-wrapper">
                             <i class="fas fa-envelope"></i>
-                            <input type="email" id="reg_email" name="email" required placeholder="seu@email.com" data-i18n="ph_email">
+                            <input type="email" id="reg_email" name="email" required maxlength="180" autocomplete="email" placeholder="seu@email.com" data-i18n="ph_email">
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@ import cnFlag from '../assets/img/CNFLAG.png';
                         <label for="reg_phone" data-i18n="lbl_phone">Telefone</label>
                         <div class="input-icon-wrapper">
                             <i class="fas fa-phone"></i>
-                            <input type="tel" id="reg_phone" name="phone" required placeholder="(00) 00000-0000" data-i18n="ph_phone">
+                            <input type="tel" id="reg_phone" name="phone" required minlength="10" maxlength="40" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000" data-i18n="ph_phone">
                         </div>
                     </div>
 
@@ -66,7 +66,7 @@ import cnFlag from '../assets/img/CNFLAG.png';
                         <label for="reg_password" data-i18n="lbl_password">Senha</label>
                         <div class="input-icon-wrapper">
                             <i class="fas fa-lock"></i>
-                            <input type="password" id="reg_password" name="password" required placeholder="********">
+                            <input type="password" id="reg_password" name="password" required minlength="8" maxlength="72" autocomplete="new-password" placeholder="********">
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@ import cnFlag from '../assets/img/CNFLAG.png';
                         <label for="reg_confirm_password" data-i18n="lbl_confirm_pass">Confirmar Senha</label>
                         <div class="input-icon-wrapper">
                             <i class="fas fa-check-circle"></i>
-                            <input type="password" id="reg_confirm_password" name="confirm_password" required placeholder="********">
+                            <input type="password" id="reg_confirm_password" name="confirm_password" required minlength="8" maxlength="72" autocomplete="new-password" placeholder="********">
                         </div>
                     </div>
 

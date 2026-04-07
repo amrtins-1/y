@@ -348,6 +348,108 @@ function normalizeEmail(value) {
     return (value || '').trim().toLowerCase();
 }
 
+function normalizeSingleLineText(value) {
+    return (value || '').replace(/\s+/g, ' ').trim();
+}
+
+function normalizeMultilineText(value) {
+    return (value || '').replace(/\r\n/g, '\n').trim();
+}
+
+function normalizePhoneInput(value) {
+    return (value || '').replace(/[^\d()+\-\s]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function getPhoneDigits(value) {
+    return String(value || '').replace(/\D/g, '');
+}
+
+function assertTextRange(label, value, minLength, maxLength) {
+    const normalized = normalizeSingleLineText(value);
+    if (normalized.length < minLength) {
+        throw new Error(`${label} deve ter pelo menos ${minLength} caracteres.`);
+    }
+    if (normalized.length > maxLength) {
+        throw new Error(`${label} deve ter no maximo ${maxLength} caracteres.`);
+    }
+    return normalized;
+}
+
+function assertOptionalTextRange(label, value, maxLength) {
+    const normalized = normalizeSingleLineText(value);
+    if (!normalized) {
+        return '';
+    }
+    if (normalized.length > maxLength) {
+        throw new Error(`${label} deve ter no maximo ${maxLength} caracteres.`);
+    }
+    return normalized;
+}
+
+function assertEmailValue(value) {
+    const normalized = normalizeEmail(value);
+    if (!normalized) {
+        throw new Error('Informe um e-mail valido.');
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(normalized) || normalized.length > 180) {
+        throw new Error('Informe um e-mail valido.');
+    }
+    return normalized;
+}
+
+function assertPhoneValue(value, { required = false } = {}) {
+    const normalized = normalizePhoneInput(value);
+    const digits = getPhoneDigits(normalized);
+    if (!digits) {
+        if (required) {
+            throw new Error('Informe um telefone valido.');
+        }
+        return '';
+    }
+    if (digits.length < 10 || digits.length > 15 || normalized.length > 40) {
+        throw new Error('Informe um telefone valido com DDD.');
+    }
+    return normalized;
+}
+
+function assertPasswordValue(value, { required = true, label = 'Senha' } = {}) {
+    const normalized = String(value || '').trim();
+    if (!normalized) {
+        if (required) {
+            throw new Error(`${label} e obrigatoria.`);
+        }
+        return '';
+    }
+    if (normalized.length < 8 || normalized.length > 72) {
+        throw new Error(`${label} deve ter entre 8 e 72 caracteres.`);
+    }
+    if (!/[A-Za-z]/.test(normalized) || !/\d/.test(normalized)) {
+        throw new Error(`${label} deve conter pelo menos uma letra e um numero.`);
+    }
+    return normalized;
+}
+
+function assertMultilineText(label, value, minLength, maxLength) {
+    const normalized = normalizeMultilineText(value);
+    if (normalized.length < minLength) {
+        throw new Error(`${label} deve ter pelo menos ${minLength} caracteres.`);
+    }
+    if (normalized.length > maxLength) {
+        throw new Error(`${label} deve ter no maximo ${maxLength} caracteres.`);
+    }
+    return normalized;
+}
+
+function validateLocationPayload(location) {
+    return {
+        country: assertOptionalTextRange('Pais', location.country, 100),
+        state: assertTextRange('Estado', location.state, 2, 100),
+        city: assertTextRange('Cidade', location.city, 2, 120),
+        isManualLocation: Boolean(location.isManualLocation)
+    };
+}
+
 function getAuthHeaders() {
     const authSession = getAuthSession();
     if (!authSession) {
@@ -648,7 +750,11 @@ function initAdminDashboardCard() {
     if (!adminCard) return;
 
     const authSession = getAuthSession();
-    adminCard.hidden = !isAdminSession(authSession);
+    const shouldShow = isAdminSession(authSession);
+    adminCard.hidden = !shouldShow;
+    adminCard.style.display = shouldShow ? 'flex' : 'none';
+    adminCard.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
+    adminCard.tabIndex = shouldShow ? 0 : -1;
 }
 
 function escapeHtml(value) {
@@ -962,9 +1068,9 @@ function bindUserProfileSubmit() {
         }
 
         try {
-            const currentPassword = (document.getElementById('prof_curr_pass')?.value || '');
-            const newPassword = (document.getElementById('prof_new_pass')?.value || '');
-            const confirmNewPassword = (document.getElementById('prof_confirm_new_pass')?.value || '');
+            const currentPassword = String(document.getElementById('prof_curr_pass')?.value || '');
+            const newPassword = String(document.getElementById('prof_new_pass')?.value || '');
+            const confirmNewPassword = String(document.getElementById('prof_confirm_new_pass')?.value || '');
             const hasPasswordChangeInput = Boolean(newPassword || confirmNewPassword);
 
             if (hasPasswordChangeInput) {
@@ -977,12 +1083,14 @@ function bindUserProfileSubmit() {
             }
 
             const payload = {
-                fullName: (document.getElementById('prof_name')?.value || '').trim(),
-                email: normalizeEmail(document.getElementById('prof_email')?.value || ''),
-                phone: (document.getElementById('prof_phone')?.value || '').trim(),
+                fullName: assertTextRange('Nome completo', document.getElementById('prof_name')?.value || '', 3, 120),
+                email: assertEmailValue(document.getElementById('prof_email')?.value || ''),
+                phone: assertPhoneValue(document.getElementById('prof_phone')?.value || ''),
                 cpf: toCpfDigits(document.getElementById('prof_cpf')?.value || ''),
-                currentPassword,
-                newPassword
+                currentPassword: assertPasswordValue(currentPassword, { label: 'Senha atual' }),
+                newPassword: hasPasswordChangeInput
+                    ? assertPasswordValue(newPassword, { label: 'Nova senha' })
+                    : ''
             };
 
             const updatedUser = await putJson(`/users/${authSession.userId}/profile`, payload);
@@ -1060,13 +1168,13 @@ function bindContactSubmit() {
         }
 
         try {
-            const location = resolveLocationValues(form);
+            const location = validateLocationPayload(resolveLocationValues(form));
             const payload = {
-                name: (form.querySelector('#contact_name')?.value || '').trim(),
-                email: (form.querySelector('#contact_email')?.value || '').trim(),
-                phone: (form.querySelector('#contact_phone')?.value || '').trim(),
-                subject: (form.querySelector('#contact_subject')?.value || '').trim(),
-                message: (form.querySelector('#contact_message')?.value || '').trim(),
+                name: assertTextRange('Nome', form.querySelector('#contact_name')?.value || '', 3, 120),
+                email: assertEmailValue(form.querySelector('#contact_email')?.value || ''),
+                phone: assertPhoneValue(form.querySelector('#contact_phone')?.value || '', { required: true }),
+                subject: assertTextRange('Assunto', form.querySelector('#contact_subject')?.value || '', 3, 160),
+                message: assertMultilineText('Mensagem', form.querySelector('#contact_message')?.value || '', 10, 5000),
                 country: location.country,
                 state: location.state,
                 city: location.city,
@@ -1107,20 +1215,25 @@ function bindConsultancySubmit() {
         }
 
         try {
-            const location = resolveLocationValues(form);
+            const location = validateLocationPayload(resolveLocationValues(form));
             const rawStatus = (form.querySelector('#srv_status')?.value || '').trim();
+            const normalizedConflictStatus = rawStatus.toUpperCase();
+            const allowedConflictStatuses = ['AMEACA', 'INVADIDA_PARCIAL', 'INVADIDA_TOTAL', 'PROCESSO', 'OUTROS'];
+            if (!allowedConflictStatuses.includes(normalizedConflictStatus)) {
+                throw new Error('Selecione um status de conflito valido.');
+            }
             const payload = {
-                requesterName: (form.querySelector('#srv_nome')?.value || '').trim(),
-                requesterEmail: (form.querySelector('#srv_email')?.value || '').trim(),
-                requesterPhone: (form.querySelector('#srv_phone')?.value || '').trim(),
-                farmName: (form.querySelector('#srv_fazenda')?.value || '').trim(),
+                requesterName: assertTextRange('Nome completo', form.querySelector('#srv_nome')?.value || '', 3, 120),
+                requesterEmail: assertEmailValue(form.querySelector('#srv_email')?.value || ''),
+                requesterPhone: assertPhoneValue(form.querySelector('#srv_phone')?.value || '', { required: true }),
+                farmName: assertTextRange('Nome da fazenda', form.querySelector('#srv_fazenda')?.value || '', 3, 180),
                 country: location.country || inferCountryByLang(),
                 state: location.state,
                 city: location.city,
                 isManualLocation: location.isManualLocation,
-                conflictStatus: rawStatus.toUpperCase(),
-                involvedGroup: (form.querySelector('#srv_grupo')?.value || '').trim(),
-                caseReport: (form.querySelector('#srv_relato')?.value || '').trim()
+                conflictStatus: normalizedConflictStatus,
+                involvedGroup: assertTextRange('Grupo envolvido', form.querySelector('#srv_grupo')?.value || '', 2, 160),
+                caseReport: assertMultilineText('Relato do caso', form.querySelector('#srv_relato')?.value || '', 20, 8000)
             };
 
             await postJson('/consultancy-requests', payload);
@@ -1145,8 +1258,8 @@ function bindRegisterSubmit() {
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        const password = (form.querySelector('#reg_password')?.value || '').trim();
-        const confirmPassword = (form.querySelector('#reg_confirm_password')?.value || '').trim();
+        const password = String(form.querySelector('#reg_password')?.value || '').trim();
+        const confirmPassword = String(form.querySelector('#reg_confirm_password')?.value || '').trim();
         if (password !== confirmPassword) {
             showFeedback('As senhas nao conferem.', 'warning', 'Verifique os campos');
             return;
@@ -1167,10 +1280,10 @@ function bindRegisterSubmit() {
             }
 
             await supabaseAuth.signUpWithEmail({
-                fullName: (form.querySelector('#reg_fullname')?.value || '').trim(),
-                email,
-                phone: (form.querySelector('#reg_phone')?.value || '').trim(),
-                password
+                fullName: assertTextRange('Nome completo', form.querySelector('#reg_fullname')?.value || '', 3, 120),
+                email: assertEmailValue(email),
+                phone: assertPhoneValue(form.querySelector('#reg_phone')?.value || '', { required: true }),
+                password: assertPasswordValue(password)
             });
 
             showFeedback('Cadastro criado. Enviamos um link de confirmacao para seu e-mail.', 'success', 'Conta criada');
@@ -1268,11 +1381,8 @@ function bindEmailVerificationSubmit() {
         }
 
         try {
-            const email = normalizeEmail(emailInput?.value || '');
+            const email = assertEmailValue(emailInput?.value || '');
             const code = getVerificationCodeValue();
-            if (!email) {
-                throw new Error('Informe um e-mail valido.');
-            }
             if (!/^\d{6}$/.test(code)) {
                 throw new Error('Informe os 6 digitos do codigo.');
             }
@@ -1301,17 +1411,12 @@ function bindResendVerificationCode() {
 
     resendBtn.addEventListener('click', async () => {
         const emailInput = document.getElementById('verify_email');
-        const email = normalizeEmail(emailInput?.value || '');
-        if (!email) {
-            showFeedback('Informe seu e-mail para reenviar o codigo.', 'warning', 'E-mail obrigatorio');
-            return;
-        }
-
         const originalText = resendBtn.textContent;
         resendBtn.disabled = true;
         resendBtn.textContent = 'Reenviando...';
 
         try {
+            const email = assertEmailValue(emailInput?.value || '');
             await postJson('/email-verification/request', { email });
             showFeedback('Codigo reenviado. Verifique sua caixa de entrada.', 'success', 'Envio realizado');
         } catch (error) {
@@ -1340,8 +1445,8 @@ function bindLoginSubmit() {
 
         try {
             const payload = {
-                email: normalizeEmail(form.querySelector('#login_email')?.value),
-                password: (form.querySelector('#login_password')?.value || '').trim(),
+                email: assertEmailValue(form.querySelector('#login_email')?.value),
+                password: assertPasswordValue(form.querySelector('#login_password')?.value || '', { label: 'Senha' }),
                 rememberMe: Boolean(form.querySelector('#remember')?.checked)
             };
 

@@ -39,7 +39,7 @@ import cnFlag from '../assets/img/CNFLAG.png';
                         <label for="login_email" data-i18n="lbl_email">E-mail</label>
                         <div class="input-icon-wrapper">
                             <i class="fas fa-envelope"></i>
-                            <input type="email" id="login_email" name="email" required placeholder="seu@email.com" data-i18n="ph_email">
+                            <input type="email" id="login_email" name="email" required maxlength="180" autocomplete="email" placeholder="seu@email.com" data-i18n="ph_email">
                         </div>
                     </div>
 
@@ -47,7 +47,7 @@ import cnFlag from '../assets/img/CNFLAG.png';
                         <label for="login_password" data-i18n="lbl_password">Senha</label>
                         <div class="input-icon-wrapper">
                             <i class="fas fa-lock"></i>
-                            <input type="password" id="login_password" name="password" required placeholder="********">
+                            <input type="password" id="login_password" name="password" required minlength="8" maxlength="72" autocomplete="current-password" placeholder="********">
                         </div>
                     </div>
 

@@ -1,4 +1,4 @@
-﻿import { Body, Controller, Post, Req, Res, Headers, HttpCode } from '@nestjs/common';
+import { Body, Controller, Headers, HttpCode, Post, Req, Res, UsePipes } from '@nestjs/common';
 import { Request, Response } from 'express';
 import { AuthSessionService } from '../services/auth-session.service';
 import { LoginRequest } from '../dto/login-request.dto';
@@ -7,6 +7,7 @@ import { getEnvFlag } from '../config/env';
 import { getClientIp } from '../utils/client-ip';
 import { SupabaseLoginRequest } from '../dto/supabase-login-request.dto';
 import { AppUserService } from '../services/app-user.service';
+import { STRICT_BODY_VALIDATION_PIPE } from '../validation/strict-body-validation.pipe';
 
 @Controller('api/auth-sessions')
 export class AuthSessionController {
@@ -19,6 +20,7 @@ export class AuthSessionController {
   ) {}
 
   @Post('login')
+  @UsePipes(STRICT_BODY_VALIDATION_PIPE)
   async login(
     @Body() request: LoginRequest,
     @Req() servletRequest: Request,
@@ -51,6 +53,7 @@ export class AuthSessionController {
   }
 
   @Post('supabase')
+  @UsePipes(STRICT_BODY_VALIDATION_PIPE)
   async loginWithSupabase(
     @Body() request: SupabaseLoginRequest,
     @Req() servletRequest: Request,

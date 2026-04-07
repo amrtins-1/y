@@ -1,10 +1,11 @@
-import { Body, Controller, Get, Param, Post, Put, Req } from '@nestjs/common';
+import { Body, Controller, Get, Param, ParseUUIDPipe, Post, Put, Req, UsePipes } from '@nestjs/common';
 import { Request } from 'express';
 import { AppUserService } from '../services/app-user.service';
 import { AuthSessionService } from '../services/auth-session.service';
 import { RegisterRequest } from '../dto/register-request.dto';
 import { ProfileUpdateRequest } from '../dto/profile-update-request.dto';
 import { AppUser } from '../entities/app-user.entity';
+import { STRICT_BODY_VALIDATION_PIPE } from '../validation/strict-body-validation.pipe';
 
 @Controller('api/users')
 export class AppUserController {
@@ -14,12 +15,13 @@ export class AppUserController {
   ) {}
 
   @Post()
+  @UsePipes(STRICT_BODY_VALIDATION_PIPE)
   create(@Body() body: RegisterRequest): Promise<AppUser> {
     return this.appUserService.register(body);
   }
 
   @Get(':id')
-  async getById(@Param('id') id: string, @Req() request: Request): Promise<AppUser> {
+  async getById(@Param('id', new ParseUUIDPipe({ version: '4' })) id: string, @Req() request: Request): Promise<AppUser> {
     const userId = await this.getAuthenticatedUserId(request);
     if (id !== userId) {
       throw new Error('Usuario nao autorizado.');
@@ -28,8 +30,9 @@ export class AppUserController {
   }
 
   @Put(':id/profile')
+  @UsePipes(STRICT_BODY_VALIDATION_PIPE)
   async updateProfile(
-    @Param('id') id: string,
+    @Param('id', new ParseUUIDPipe({ version: '4' })) id: string,
     @Body() requestBody: ProfileUpdateRequest,
     @Req() request: Request,
   ): Promise<AppUser> {

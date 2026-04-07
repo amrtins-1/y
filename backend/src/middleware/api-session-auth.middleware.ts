@@ -12,6 +12,7 @@ export class ApiSessionAuthMiddleware implements NestMiddleware {
   private readonly publicRoutes: RouteRule[] = [
     { pattern: '/api/email-verification/**' },
     { method: 'POST', pattern: '/api/auth-sessions/login' },
+    { method: 'POST', pattern: '/api/auth-sessions/supabase' },
     { method: 'POST', pattern: '/api/users' },
     { method: 'POST', pattern: '/api/contact-messages' },
     { method: 'POST', pattern: '/api/newsletter-subscribers' },
@@ -65,7 +66,7 @@ export class ApiSessionAuthMiddleware implements NestMiddleware {
   constructor(private readonly authSessionService: AuthSessionService) {}
 
   async use(req: Request, res: Response, next: NextFunction) {
-    const path = req.path || req.url;
+    const path = this.normalizeApiPath(req.path || req.url || '/');
     if (!path.startsWith('/api/')) {
       return next();
     }
@@ -109,6 +110,14 @@ export class ApiSessionAuthMiddleware implements NestMiddleware {
       }
     }
     return false;
+  }
+
+  private normalizeApiPath(rawPath: string): string {
+    const normalized = rawPath.startsWith('/') ? rawPath : `/${rawPath}`;
+    if (normalized === '/api' || normalized.startsWith('/api/')) {
+      return normalized;
+    }
+    return `/api${normalized}`;
   }
 
   private matchesPattern(pattern: string, path: string): boolean {
