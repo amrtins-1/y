@@ -113,7 +113,13 @@ export class ApiSessionAuthMiddleware implements NestMiddleware {
   }
 
   private normalizeApiPath(rawPath: string): string {
-    const normalized = rawPath.startsWith('/') ? rawPath : `/${rawPath}`;
+    const withoutQuery = String(rawPath || '/').split('?')[0].split('#')[0] || '/';
+    const withLeadingSlash = withoutQuery.startsWith('/') ? withoutQuery : `/${withoutQuery}`;
+    const normalized =
+      withLeadingSlash.length > 1 && withLeadingSlash.endsWith('/')
+        ? withLeadingSlash.slice(0, -1)
+        : withLeadingSlash;
+
     if (normalized === '/api' || normalized.startsWith('/api/')) {
       return normalized;
     }
