@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, ParseUUIDPipe, Post, Put, UsePipes } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpCode, Param, ParseUUIDPipe, Post, Put, UsePipes } from '@nestjs/common';
 import { AdminReplyRequest } from '../dto/admin-reply-request.dto';
 import { AdminInboxService } from '../services/admin-inbox.service';
 import { STRICT_BODY_VALIDATION_PIPE } from '../validation/strict-body-validation.pipe';
@@ -41,5 +41,17 @@ export class AdminInboxController {
     @Body() body: UpdateTicketStatusRequest,
   ) {
     return this.adminInboxService.updateConsultancyStatus(id, body.status);
+  }
+
+  @Delete('contact-messages/:id')
+  @HttpCode(204)
+  deleteContactMessage(@Param('id', new ParseUUIDPipe({ version: '4' })) id: string) {
+    return this.adminInboxService.deleteContactMessage(id);
+  }
+
+  @Delete('consultancy-requests/:id')
+  @HttpCode(204)
+  deleteConsultancyRequest(@Param('id', new ParseUUIDPipe({ version: '4' })) id: string) {
+    return this.adminInboxService.deleteConsultancyRequest(id);
   }
 }

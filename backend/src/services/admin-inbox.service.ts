@@ -98,6 +98,22 @@ export class AdminInboxService {
     return this.consultancyRequestRepository.save(consultancy);
   }
 
+  async deleteContactMessage(id: string): Promise<void> {
+    const contact = await this.contactMessageRepository.findOne({ where: { id } });
+    if (!contact) {
+      throw new Error('Mensagem de contato nao encontrada.');
+    }
+    await this.contactMessageRepository.remove(contact);
+  }
+
+  async deleteConsultancyRequest(id: string): Promise<void> {
+    const consultancy = await this.consultancyRequestRepository.findOne({ where: { id } });
+    if (!consultancy) {
+      throw new Error('Solicitacao de consultoria nao encontrada.');
+    }
+    await this.consultancyRequestRepository.remove(consultancy);
+  }
+
   private resolveConsultancyUrgency(conflictStatus: ConsultationConflictStatus): 'critical' | 'high' | 'medium' | 'low' {
     switch (conflictStatus) {
       case ConsultationConflictStatus.INVADIDA_TOTAL:

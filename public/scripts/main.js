@@ -251,6 +251,24 @@ async function putJson(path, payload) {
     return response.json();
 }
 
+async function deleteJson(path) {
+    const headers = {
+        ...getAuthHeaders()
+    };
+
+    const response = await performApiFetch(path, {
+        method: 'DELETE',
+        headers
+    });
+    if (!response.ok) {
+        throw new Error(await extractApiErrorMessage(response));
+    }
+    if (response.status === 204) {
+        return null;
+    }
+    return response.json();
+}
+
 async function extractApiErrorMessage(response) {
     try {
         const text = await response.text();
@@ -918,6 +936,10 @@ function renderAdminDetail(item) {
             </div>
             <div class="admin-reply-actions">
                 <button type="submit" class="btn-auth-gold">Enviar resposta</button>
+                <button type="button" class="btn-auth-outline admin-delete-button" id="admin-delete-item">
+                    <i class="fas fa-trash"></i>
+                    <span>Excluir mensagem</span>
+                </button>
             </div>
         </form>
     `;
@@ -1057,6 +1079,55 @@ async function initAdminInboxPage() {
                 submitButton.disabled = false;
                 submitButton.textContent = originalText;
             }
+        }
+    });
+
+    document.addEventListener('click', async (event) => {
+        const deleteButton = event.target.closest('#admin-delete-item');
+        if (!deleteButton) {
+            return;
+        }
+
+        const selected = state.items.find((item) => item.id === state.selectedId);
+        if (!selected) {
+            return;
+        }
+
+        const confirmed = window.confirm(
+            selected.category === 'consultancy'
+                ? 'Tem certeza que deseja excluir este pedido de consultoria? Esta acao apaga o registro do banco de dados.'
+                : 'Tem certeza que deseja excluir esta mensagem de contato? Esta acao apaga o registro do banco de dados.'
+        );
+        if (!confirmed) {
+            return;
+        }
+
+        const originalText = deleteButton.textContent;
+        deleteButton.disabled = true;
+        deleteButton.textContent = 'Excluindo...';
+
+        try {
+            const basePath = selected.category === 'consultancy'
+                ? `/admin/inbox/consultancy-requests/${selected.id}`
+                : `/admin/inbox/contact-messages/${selected.id}`;
+
+            await deleteJson(basePath);
+            state.items = state.items.filter((item) => item.id !== selected.id);
+            state.selectedId = null;
+            updateAdminStats({
+                contactsOpen: state.items.filter((item) => item.category === 'contact' && item.status === 'NOVO').length,
+                consultancyOpen: state.items.filter((item) => item.category === 'consultancy' && item.status === 'NOVO').length,
+                urgentCases: state.items.filter((item) => item.category === 'consultancy' && (item.urgencyLevel === 'critical' || item.urgencyLevel === 'high')).length,
+                awaitingResponse: state.items.filter((item) => item.status !== 'RESPONDIDO' && item.status !== 'ENCERRADO').length,
+            });
+            render();
+            showFeedback('Registro excluido com sucesso.', 'success', 'Exclusao concluida');
+        } catch (error) {
+            console.error('Erro ao excluir item admin:', error);
+            showFeedback(error.message || 'Nao foi possivel excluir o registro.', 'error', 'Falha ao excluir');
+        } finally {
+            deleteButton.disabled = false;
+            deleteButton.textContent = originalText;
         }
     });
 }

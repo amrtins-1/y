@@ -7185,6 +7185,16 @@ body.menu-open {
     margin-bottom: 12px;
 }
 
+.admin-delete-button {
+    border-color: rgba(211, 47, 47, 0.2);
+    color: #b71c1c;
+}
+
+.admin-delete-button:hover {
+    border-color: rgba(211, 47, 47, 0.4);
+    background: rgba(211, 47, 47, 0.06);
+}
+
 @media (max-width: 980px) {
     .admin-toolbar,
     .admin-inbox-grid,
