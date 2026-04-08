@@ -1,6 +1,7 @@
-﻿import { Injectable, NestMiddleware } from '@nestjs/common';
+import { Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
 import { AuthSessionService } from '../services/auth-session.service';
+import { resolveApiPath } from './api-path.util';
 
 interface RouteRule {
   method?: string;
@@ -66,7 +67,7 @@ export class ApiSessionAuthMiddleware implements NestMiddleware {
   constructor(private readonly authSessionService: AuthSessionService) {}
 
   async use(req: Request, res: Response, next: NextFunction) {
-    const path = this.normalizeApiPath(req.path || req.url || '/');
+    const path = resolveApiPath(req);
     if (!path.startsWith('/api/')) {
       return next();
     }
@@ -110,20 +111,6 @@ export class ApiSessionAuthMiddleware implements NestMiddleware {
       }
     }
     return false;
-  }
-
-  private normalizeApiPath(rawPath: string): string {
-    const withoutQuery = String(rawPath || '/').split('?')[0].split('#')[0] || '/';
-    const withLeadingSlash = withoutQuery.startsWith('/') ? withoutQuery : `/${withoutQuery}`;
-    const normalized =
-      withLeadingSlash.length > 1 && withLeadingSlash.endsWith('/')
-        ? withLeadingSlash.slice(0, -1)
-        : withLeadingSlash;
-
-    if (normalized === '/api' || normalized.startsWith('/api/')) {
-      return normalized;
-    }
-    return `/api${normalized}`;
   }
 
   private matchesPattern(pattern: string, path: string): boolean {

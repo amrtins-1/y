@@ -1,11 +1,12 @@
-﻿import { Injectable, NestMiddleware } from '@nestjs/common';
+import { Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
 import { getAllowedOrigins } from '../config/env';
+import { resolveApiPath } from './api-path.util';
 
 @Injectable()
 export class ApiCsrfProtectionMiddleware implements NestMiddleware {
   use(req: Request, res: Response, next: NextFunction) {
-    const path = req.path || req.url;
+    const path = resolveApiPath(req);
     if (!path.startsWith('/api/')) {
       return next();
     }

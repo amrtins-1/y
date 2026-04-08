@@ -1,6 +1,7 @@
-﻿import { Injectable, NestMiddleware } from '@nestjs/common';
+import { Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
 import { getClientIp } from '../utils/client-ip';
+import { resolveApiPath } from './api-path.util';
 
 interface WindowCounter {
   windowStart: number;
@@ -12,6 +13,7 @@ export class PublicApiRateLimitMiddleware implements NestMiddleware {
   private readonly counters = new Map<string, WindowCounter>();
   private readonly protectedRoutes = new Set([
     'POST:/api/auth-sessions/login',
+    'POST:/api/auth-sessions/supabase',
     'POST:/api/users',
     'POST:/api/email-verification/request',
     'POST:/api/email-verification/confirm-code',
@@ -25,7 +27,7 @@ export class PublicApiRateLimitMiddleware implements NestMiddleware {
   private readonly windowSeconds = 60;
 
   use(req: Request, res: Response, next: NextFunction) {
-    const path = req.path || req.url;
+    const path = resolveApiPath(req);
     if (!path.startsWith('/api/')) {
       return next();
     }
