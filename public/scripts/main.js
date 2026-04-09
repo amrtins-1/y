@@ -751,16 +751,30 @@ function initSupabaseDashboardProfile() {
     if (path !== '/painel') return;
 
     const authSession = getAuthSession();
-    if (isAuthSessionValid(authSession)) {
-        return;
-    }
-
     const supabaseSession = getSupabaseAuthSession();
-    if (!isSupabaseAuthSessionValid(supabaseSession)) {
+    const hasLocalSession = isAuthSessionValid(authSession);
+    const hasSupabaseSession = isSupabaseAuthSessionValid(supabaseSession);
+
+    if (!hasLocalSession && !hasSupabaseSession) {
         return;
     }
 
-    const fullName = supabaseSession.user.fullName || supabaseSession.user.email || 'Membro';
+    const fullName = hasLocalSession
+        ? authSession.fullName || authSession.name || authSession.email || 'Membro'
+        : supabaseSession.user.fullName || supabaseSession.user.email || 'Membro';
+    const email = hasLocalSession
+        ? authSession.email || '-'
+        : supabaseSession.user.email || '-';
+    const role = hasLocalSession
+        ? (authSession.role === 'ADMIN' ? 'Administrador' : 'Associado')
+        : 'Associado';
+    const membershipLabel = hasSupabaseSession ? 'Conta sincronizada' : 'Conta ativa';
+    const accessLabel = hasLocalSession && authSession.role === 'ADMIN'
+        ? 'Acesso administrativo'
+        : hasSupabaseSession
+            ? 'Acesso via Supabase'
+            : 'Acesso padrao';
+
     const headerName = document.getElementById('dashboard_user_name');
     if (headerName) {
         headerName.textContent = fullName;
@@ -768,12 +782,41 @@ function initSupabaseDashboardProfile() {
 
     const subtitle = document.getElementById('dashboard_auth_subtitle');
     if (subtitle) {
-        subtitle.textContent = 'Sessao autenticada com Google via Supabase.';
+        subtitle.textContent = hasSupabaseSession && !hasLocalSession
+            ? 'Sessao autenticada com Google via Supabase.'
+            : 'Gerencie suas doacoes, servicos e dados pessoais.';
     }
 
     const bridgeNotice = document.getElementById('dashboard_auth_notice');
-    if (bridgeNotice) {
+    if (bridgeNotice && hasSupabaseSession && !hasLocalSession) {
         bridgeNotice.hidden = false;
+    }
+
+    const glanceRole = document.getElementById('dashboard_glance_role');
+    if (glanceRole) {
+        glanceRole.textContent = role;
+    }
+
+    const glanceEmail = document.getElementById('dashboard_glance_email');
+    if (glanceEmail) {
+        glanceEmail.textContent = email;
+    }
+
+    const glanceMode = document.getElementById('dashboard_glance_mode');
+    if (glanceMode) {
+        glanceMode.textContent = hasLocalSession && authSession.role === 'ADMIN'
+            ? 'Painel com acesso ampliado'
+            : 'Painel pessoal';
+    }
+
+    const membershipChip = document.getElementById('dashboard_membership_chip');
+    if (membershipChip) {
+        membershipChip.textContent = membershipLabel;
+    }
+
+    const accessChip = document.getElementById('dashboard_access_chip');
+    if (accessChip) {
+        accessChip.textContent = accessLabel;
     }
 }
 
@@ -829,6 +872,8 @@ function updateAdminStats(stats) {
         'admin-stat-consultancy': stats.consultancyOpen || 0,
         'admin-stat-urgent': stats.urgentCases || 0,
         'admin-stat-awaiting': stats.awaitingResponse || 0,
+        'admin-hero-active': stats.awaitingResponse || 0,
+        'admin-hero-urgent': stats.urgentCases || 0,
     };
 
     Object.entries(mapping).forEach(([id, value]) => {
@@ -837,6 +882,57 @@ function updateAdminStats(stats) {
             element.textContent = String(value);
         }
     });
+}
+
+function getAdminModalElements() {
+    return {
+        shell: document.getElementById('admin-modal-shell'),
+        detail: document.getElementById('admin-detail-content'),
+    };
+}
+
+function openAdminModal() {
+    const { shell } = getAdminModalElements();
+    if (!shell) return;
+    shell.hidden = false;
+    shell.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('admin-modal-open');
+}
+
+function closeAdminModal() {
+    const { shell } = getAdminModalElements();
+    if (!shell) return;
+    shell.hidden = true;
+    shell.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('admin-modal-open');
+}
+
+function updateAdminBriefing(item) {
+    const title = document.getElementById('admin-briefing-title');
+    const copy = document.getElementById('admin-briefing-copy');
+    const focusName = document.getElementById('admin-focus-name');
+    const focusMeta = document.getElementById('admin-focus-meta');
+
+    if (!item) {
+        if (title) title.textContent = 'Selecione um atendimento';
+        if (copy) copy.textContent = 'Ao clicar em um item da fila, uma janela dedicada abre com contexto, resposta e acoes de limpeza.';
+        if (focusName) focusName.textContent = 'Nenhum item selecionado';
+        if (focusMeta) focusMeta.textContent = 'Escolha uma mensagem na fila para abrir a janela de atendimento.';
+        return;
+    }
+
+    const person = item.requesterName || item.name || 'Contato sem identificacao';
+    const urgency = item.urgencyLabel || 'Sem urgencia';
+    const createdAt = formatAdminDate(item.createdAt);
+
+    if (title) title.textContent = getAdminItemTitle(item);
+    if (copy) {
+        copy.textContent = item.category === 'consultancy'
+            ? 'Pedido pronto para triagem, resposta e atualizacao de status em um fluxo isolado.'
+            : 'Mensagem aberta para leitura completa, resposta por e-mail e limpeza segura da fila.';
+    }
+    if (focusName) focusName.textContent = person;
+    if (focusMeta) focusMeta.textContent = `${urgency} · ${createdAt}`;
 }
 
 function renderAdminInboxList(items, selectedId) {
@@ -870,12 +966,8 @@ function renderAdminInboxList(items, selectedId) {
 }
 
 function renderAdminDetail(item) {
-    const emptyState = document.getElementById('admin-empty-state');
     const detail = document.getElementById('admin-detail-content');
-    if (!detail || !emptyState) return;
-
-    emptyState.hidden = Boolean(item);
-    detail.hidden = !item;
+    if (!detail) return;
     if (!item) {
         detail.innerHTML = '';
         return;
@@ -891,7 +983,7 @@ function renderAdminDetail(item) {
         <div class="admin-detail-header">
             <div>
                 <span class="admin-urgency-badge admin-urgency-${escapeHtml(item.urgencyLevel)}">${escapeHtml(item.urgencyLabel)}</span>
-                <h2>${escapeHtml(getAdminItemTitle(item))}</h2>
+                <h2 id="admin-modal-title">${escapeHtml(getAdminItemTitle(item))}</h2>
                 <p>${escapeHtml(identityName)} · ${escapeHtml(identityEmail)} · ${escapeHtml(identityPhone)}</p>
             </div>
             <div class="admin-detail-meta">
@@ -1003,7 +1095,11 @@ async function initAdminInboxPage() {
         const selected = filtered.find((item) => item.id === state.selectedId) || filtered[0] || null;
         state.selectedId = selected ? selected.id : null;
         renderAdminInboxList(filtered, state.selectedId);
+        updateAdminBriefing(selected);
         renderAdminDetail(selected);
+        if (!selected) {
+            closeAdminModal();
+        }
     };
 
     try {
@@ -1032,6 +1128,19 @@ async function initAdminInboxPage() {
         if (!button) return;
         state.selectedId = button.getAttribute('data-admin-item-id');
         render();
+        openAdminModal();
+    });
+
+    document.addEventListener('click', (event) => {
+        if (event.target.closest('[data-admin-modal-close]')) {
+            closeAdminModal();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeAdminModal();
+        }
     });
 
     document.addEventListener('submit', async (event) => {
@@ -1121,6 +1230,7 @@ async function initAdminInboxPage() {
                 awaitingResponse: state.items.filter((item) => item.status !== 'RESPONDIDO' && item.status !== 'ENCERRADO').length,
             });
             render();
+            closeAdminModal();
             showFeedback('Registro excluido com sucesso.', 'success', 'Exclusao concluida');
         } catch (error) {
             console.error('Erro ao excluir item admin:', error);

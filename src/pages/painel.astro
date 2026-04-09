@@ -2,20 +2,59 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout>
-    <main class="dashboard-sophisticated-wrapper direct-mode">
-        <div class="dashboard-inline-header">
-            <h1 id="dashboard_heading">Ola, <span id="dashboard_user_name">Membro</span></h1>
-            <p id="dashboard_auth_subtitle">Gerencie suas doacoes, servicos e dados pessoais.</p>
-        </div>
+    <main class="dashboard-sophisticated-wrapper direct-mode dashboard-upgraded-shell">
+        <section class="dashboard-hero-panel">
+            <div class="dashboard-hero-copy">
+                <p class="dashboard-overline">Area do associado</p>
+                <h1 id="dashboard_heading">Ola, <span id="dashboard_user_name">Membro</span></h1>
+                <p id="dashboard_auth_subtitle">Gerencie suas doacoes, servicos e dados pessoais.</p>
+                <div class="dashboard-chip-row">
+                    <span class="dashboard-chip" id="dashboard_membership_chip">Conta ativa</span>
+                    <span class="dashboard-chip dashboard-chip-soft" id="dashboard_access_chip">Acesso padrao</span>
+                </div>
+            </div>
+            <div class="dashboard-hero-glance">
+                <article class="dashboard-glance-card">
+                    <span>Conta</span>
+                    <strong id="dashboard_glance_role">Membro</strong>
+                    <small id="dashboard_glance_email">-</small>
+                </article>
+                <article class="dashboard-glance-card dashboard-glance-card-accent">
+                    <span>Ambiente</span>
+                    <strong id="dashboard_glance_mode">Painel pessoal</strong>
+                    <small>Acesso rapido aos seus atalhos principais</small>
+                </article>
+            </div>
+        </section>
 
-        <div class="dashboard-grid-sophisticated">
-            <a href="/admin" class="dashboard-card-sophisticated" id="admin-dashboard-card" hidden style="display: none;" aria-hidden="true" tabindex="-1">
+        <section class="dashboard-metrics-strip">
+            <article class="dashboard-metric-card">
+                <span class="metric-label">Perfil</span>
+                <strong>Atualize seus dados</strong>
+                <small>Mantenha contato e senha em dia</small>
+            </article>
+            <article class="dashboard-metric-card">
+                <span class="metric-label">Doacoes</span>
+                <strong>Historico centralizado</strong>
+                <small>Acompanhe contribuicoes e recibos</small>
+            </article>
+            <article class="dashboard-metric-card">
+                <span class="metric-label">Servicos</span>
+                <strong>Consultorias e pedidos</strong>
+                <small>Visualize o andamento do seu suporte</small>
+            </article>
+        </section>
+
+        <section class="dashboard-grid-sophisticated dashboard-grid-upgraded">
+            <a href="/admin" class="dashboard-card-sophisticated dashboard-card-featured" id="admin-dashboard-card" hidden style="display: none;" aria-hidden="true" tabindex="-1">
+                <div class="card-accent-bar"></div>
                 <div class="icon-circle-gold">
                     <i class="fas fa-user-shield"></i>
                 </div>
                 <div class="card-text">
+                    <span class="dashboard-card-kicker">Acesso elevado</span>
                     <h3>Administracao</h3>
-                    <p>Acesse a caixa de mensagens, consultorias e prioridades do instituto.</p>
+                    <p>Acesse a caixa de mensagens, consultorias, prioridades e a limpeza da fila administrativa.</p>
                 </div>
                 <div class="card-arrow">
                     <i class="fas fa-arrow-right"></i>
@@ -23,12 +62,14 @@ import Layout from '../layouts/Layout.astro';
             </a>
 
             <a href="/info_user" class="dashboard-card-sophisticated">
+                <div class="card-accent-bar"></div>
                 <div class="icon-circle-gold">
                     <i class="fas fa-id-card"></i>
                 </div>
                 <div class="card-text">
+                    <span class="dashboard-card-kicker">Identidade</span>
                     <h3 data-i18n="dash_data_title">Meus Dados</h3>
-                    <p data-i18n="dash_data_desc">Atualize suas informacoes de contato e senha.</p>
+                    <p data-i18n="dash_data_desc">Atualize suas informacoes de contato, seguranca e dados pessoais.</p>
                 </div>
                 <div class="card-arrow">
                     <i class="fas fa-arrow-right"></i>
@@ -36,12 +77,14 @@ import Layout from '../layouts/Layout.astro';
             </a>
 
             <a href="/doacao" class="dashboard-card-sophisticated">
+                <div class="card-accent-bar"></div>
                 <div class="icon-circle-gold">
                     <i class="fas fa-hand-holding-heart"></i>
                 </div>
                 <div class="card-text">
+                    <span class="dashboard-card-kicker">Apoio</span>
                     <h3 data-i18n="dash_donation_title">Doacoes</h3>
-                    <p data-i18n="dash_donation_desc">Visualize seu historico de contribuicoes e recibos.</p>
+                    <p data-i18n="dash_donation_desc">Visualize seu historico de contribuicoes, recibos e futuras integracoes de pagamento.</p>
                 </div>
                 <div class="card-arrow">
                     <i class="fas fa-arrow-right"></i>
@@ -49,12 +92,14 @@ import Layout from '../layouts/Layout.astro';
             </a>
 
             <a href="/servicos" class="dashboard-card-sophisticated">
+                <div class="card-accent-bar"></div>
                 <div class="icon-circle-gold">
                     <i class="fas fa-briefcase"></i>
                 </div>
                 <div class="card-text">
+                    <span class="dashboard-card-kicker">Relacionamento</span>
                     <h3 data-i18n="dash_services_title">Servicos</h3>
-                    <p data-i18n="dash_services_desc">Acompanhe o status das suas solicitacoes de consultoria.</p>
+                    <p data-i18n="dash_services_desc">Acompanhe o status das suas solicitacoes de consultoria e pontos de contato com o instituto.</p>
                 </div>
                 <div class="card-arrow">
                     <i class="fas fa-arrow-right"></i>
@@ -62,17 +107,19 @@ import Layout from '../layouts/Layout.astro';
             </a>
 
             <a href="/" class="dashboard-card-sophisticated logout-card">
+                <div class="card-accent-bar"></div>
                 <div class="icon-circle-red">
                     <i class="fas fa-sign-out-alt"></i>
                 </div>
                 <div class="card-text">
+                    <span class="dashboard-card-kicker">Sessao</span>
                     <h3 data-i18n="dash_logout">Sair</h3>
-                    <p data-i18n="dash_logout_desc">Encerrar a sessao de forma segura.</p>
+                    <p data-i18n="dash_logout_desc">Encerrar a sessao de forma segura e voltar para o site publico.</p>
                 </div>
                 <div class="card-arrow red">
                     <i class="fas fa-power-off"></i>
                 </div>
             </a>
-        </div>
+        </section>
     </main>
 </Layout>
