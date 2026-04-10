@@ -7603,6 +7603,18 @@ body.admin-modal-open {
 .dashboard-glance-card {
     background: rgba(255, 255, 255, 0.72);
     border: 1px solid rgba(99, 73, 43, 0.08);
+    min-width: 0;
+}
+
+.dashboard-glance-card strong {
+    font-size: clamp(1.2rem, 1.7vw, 1.85rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.dashboard-glance-card small {
+    overflow-wrap: anywhere;
 }
 
 .dashboard-glance-card-accent {
