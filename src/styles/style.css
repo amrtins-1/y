@@ -7276,9 +7276,6 @@ body.menu-open {
     font-size: clamp(1.5rem, 2vw, 2.15rem);
     line-height: 1.1;
     color: inherit;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;
 }
 
 .admin-hero-card small,
