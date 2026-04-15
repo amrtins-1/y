@@ -7278,7 +7278,7 @@ body.menu-open {
     color: inherit;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: clip;
 }
 
 .admin-hero-card small,
