@@ -1,5 +1,5 @@
 export const DADOS_MERCADO = {
-    "atualizacao": "03/05/2026 09:23",
+    "atualizacao": "04/05/2026 10:15",
     "raias": {
         "boi": {
             "geral": {
@@ -1751,49 +1751,49 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -1847,13 +1847,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -2758,49 +2758,49 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -2854,13 +2854,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -3541,32 +3541,32 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.210,50",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "7,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.204,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
@@ -3577,13 +3577,13 @@ export const DADOS_MERCADO = {
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.183,25",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "6,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -3637,13 +3637,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -3964,49 +3964,49 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -4060,13 +4060,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -4370,32 +4370,32 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.210,50",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "7,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.204,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
@@ -4406,13 +4406,13 @@ export const DADOS_MERCADO = {
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.183,25",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "6,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -4466,13 +4466,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -4715,32 +4715,32 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.210,50",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "7,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.204,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
@@ -4751,13 +4751,13 @@ export const DADOS_MERCADO = {
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.183,25",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "6,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -4811,13 +4811,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -5036,49 +5036,49 @@ export const DADOS_MERCADO = {
                 "ourinhos": {},
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -5132,13 +5132,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -5306,49 +5306,49 @@ export const DADOS_MERCADO = {
                 "br_163": {},
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -5402,13 +5402,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -5562,32 +5562,32 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.210,50",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "7,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.204,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
@@ -5598,13 +5598,13 @@ export const DADOS_MERCADO = {
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.183,25",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "6,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -5658,13 +5658,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,55",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,76",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -5770,49 +5770,49 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -5866,13 +5866,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -6021,49 +6021,49 @@ export const DADOS_MERCADO = {
                 "semana_referente_de": {},
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -6117,13 +6117,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -6405,49 +6405,49 @@ export const DADOS_MERCADO = {
                 "referencia_marco26": {},
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -6501,13 +6501,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -6674,49 +6674,49 @@ export const DADOS_MERCADO = {
                 "referencia_fevereiro26": {},
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -6770,13 +6770,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -6919,49 +6919,49 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -7015,13 +7015,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -7269,49 +7269,49 @@ export const DADOS_MERCADO = {
                 "sorocaba": {},
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -7365,13 +7365,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -7667,49 +7667,49 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -7763,13 +7763,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -7868,32 +7868,32 @@ export const DADOS_MERCADO = {
                 "sem_pele_kg": {},
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.210,50",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "7,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.204,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
@@ -7904,13 +7904,13 @@ export const DADOS_MERCADO = {
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.183,25",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "6,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -7964,13 +7964,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -8055,32 +8055,32 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.210,50",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "7,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.204,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
@@ -8091,13 +8091,13 @@ export const DADOS_MERCADO = {
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.183,25",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "6,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -8151,13 +8151,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
@@ -8287,49 +8287,49 @@ export const DADOS_MERCADO = {
                 },
                 "may_2026": {
                     "usbu": {
-                        "valor": "1.187,00",
-                        "status": "equal",
+                        "valor": "1.195,50",
+                        "status": "up",
                         "label": "MAY 2026"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "7,75",
+                        "status": "up",
                         "label": "MAY 2026"
                     }
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.201,50",
-                        "status": "equal",
+                        "valor": "1.211,25",
+                        "status": "up",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "6,00",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.196,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "up",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "6,75",
-                        "status": "equal",
+                        "valor": "8,00",
+                        "status": "up",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.175,75",
-                        "status": "equal",
+                        "valor": "1.184,50",
+                        "status": "up",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "7,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
@@ -8383,13 +8383,13 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_jul26": {
                     "preco": {
-                        "valor": "84,24",
-                        "status": "equal",
+                        "valor": "83,56",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     },
                     "var": {
-                        "valor": "0,06",
-                        "status": "equal",
+                        "valor": "-0,75",
+                        "status": "down",
                         "label": "Algodão (Jul26)"
                     }
                 },
