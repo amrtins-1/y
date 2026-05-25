@@ -1,5 +1,5 @@
 export const DADOS_MERCADO = {
-    "atualizacao": "24/05/2026 09:56",
+    "atualizacao": "25/05/2026 11:54",
     "raias": {
         "boi": {
             "geral": {
@@ -1749,70 +1749,22 @@ export const DADOS_MERCADO = {
                         "label": "Vila Rica"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -1835,8 +1787,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -2757,70 +2709,22 @@ export const DADOS_MERCADO = {
                         "label": "Sorriso"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -2843,8 +2747,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -3545,70 +3449,22 @@ export const DADOS_MERCADO = {
                         "label": "Tangará da Serra"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -3631,8 +3487,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -3952,70 +3808,22 @@ export const DADOS_MERCADO = {
                         "label": "Tipo 8"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -4038,8 +3846,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -4358,70 +4166,22 @@ export const DADOS_MERCADO = {
                         "label": "São Paulo/SP"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -4444,8 +4204,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -4703,70 +4463,22 @@ export const DADOS_MERCADO = {
                         "label": "91,50"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -4789,8 +4501,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -5024,70 +4736,22 @@ export const DADOS_MERCADO = {
                 "itapetininga": {},
                 "itapeva": {},
                 "ourinhos": {},
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -5110,8 +4774,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -5283,70 +4947,22 @@ export const DADOS_MERCADO = {
                 "sul": {},
                 "centro_oriental": {},
                 "br_163": {},
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -5369,8 +4985,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -5539,70 +5155,22 @@ export const DADOS_MERCADO = {
                         "label": "Suíno Carcaça Especial (kg)"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -5625,8 +5193,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -5747,70 +5315,22 @@ export const DADOS_MERCADO = {
                         "label": "Frango Atacado"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -5833,8 +5353,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -5993,70 +5513,22 @@ export const DADOS_MERCADO = {
                     }
                 },
                 "semana_referente_de": {},
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -6079,8 +5551,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -6400,70 +5872,22 @@ export const DADOS_MERCADO = {
                     }
                 },
                 "referencia_abril26": {},
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -6486,8 +5910,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -6669,70 +6093,22 @@ export const DADOS_MERCADO = {
                     }
                 },
                 "referencia_marco26": {},
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -6755,8 +6131,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -6914,70 +6290,22 @@ export const DADOS_MERCADO = {
                         "label": "Laranja Pera (13 a 15 DZ)"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -7000,8 +6328,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -7264,70 +6592,22 @@ export const DADOS_MERCADO = {
                 "tupa": {},
                 "pindamonhangaba": {},
                 "sorocaba": {},
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -7350,8 +6630,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -7660,70 +6940,22 @@ export const DADOS_MERCADO = {
                         "label": "Abr/2026 a Jun/2026"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -7746,8 +6978,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -7883,70 +7115,22 @@ export const DADOS_MERCADO = {
                         "label": "Sem pele / Kg"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -7969,8 +7153,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -8070,70 +7254,22 @@ export const DADOS_MERCADO = {
                         "label": "Pará / Kg"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -8156,8 +7292,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
@@ -8302,70 +7438,22 @@ export const DADOS_MERCADO = {
                         "label": "Cândido Mota/SP (Coopermota)"
                     }
                 },
-                "jul_2026": {
-                    "usbu": {
-                        "valor": "1.197,25",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    },
-                    "var": {
-                        "valor": "3,00",
-                        "status": "equal",
-                        "label": "JUL 2026"
-                    }
-                },
-                "aug_2026": {
-                    "usbu": {
-                        "valor": "1.194,75",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    },
-                    "var": {
-                        "valor": "1,25",
-                        "status": "equal",
-                        "label": "AUG 2026"
-                    }
-                },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.180,75",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.188,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "1,50",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
                 "soja_jul_26": {
                     "preco": {
-                        "valor": "26,39",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,30",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (JUL 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "67,25",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
@@ -8388,8 +7476,8 @@ export const DADOS_MERCADO = {
                 },
                 "boi_gordo_mai_26": {
                     "preco": {
-                        "valor": "346,50",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Boi Gordo (MAI 26)"
                     },
                     "var": {
