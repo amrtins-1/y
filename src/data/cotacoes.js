@@ -1,5 +1,5 @@
 export const DADOS_MERCADO = {
-    "atualizacao": "28/06/2026 10:28",
+    "atualizacao": "29/06/2026 12:36",
     "raias": {
         "boi": {
             "geral": {
@@ -1751,146 +1751,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,18",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,43",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,75",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "0,20",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -2744,146 +2744,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.120,00",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-6,25",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.129,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-7,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,75",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-8,75",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-9,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,16",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,29",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,05",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "-0,06",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -3529,146 +3529,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,18",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,43",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,75",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "0,20",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -3960,146 +3960,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,18",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,43",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,75",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "0,20",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -4366,146 +4366,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,18",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,43",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,75",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "0,20",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -4722,146 +4722,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,18",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,43",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,75",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "0,20",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -5043,146 +5043,146 @@ export const DADOS_MERCADO = {
                 "ourinhos": {},
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,38",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,14",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "324,95",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,29",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,22",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,72",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "272,55",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "-0,24",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -5335,146 +5335,146 @@ export const DADOS_MERCADO = {
                 "br_163": {},
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,18",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,43",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,75",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "0,20",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -5591,146 +5591,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,38",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,14",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "324,95",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,29",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,22",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,72",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "272,55",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "-0,24",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -5799,146 +5799,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,38",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,14",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "324,95",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,29",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,22",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,72",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "272,55",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "-0,24",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -6050,146 +6050,146 @@ export const DADOS_MERCADO = {
                 "semana_referente_de": {},
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,18",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,43",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,75",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "0,20",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -6433,146 +6433,146 @@ export const DADOS_MERCADO = {
                 "referencia_maio26": {},
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,22",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,72",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "272,55",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "-0,24",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -6702,146 +6702,146 @@ export const DADOS_MERCADO = {
                 "referencia_abril26": {},
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,18",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,43",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,75",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "0,20",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -6947,146 +6947,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,38",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,14",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "324,95",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,29",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,22",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,72",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "272,55",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "-0,24",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -7303,146 +7303,146 @@ export const DADOS_MERCADO = {
                 "sorocaba": {},
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,38",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,14",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "324,95",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,29",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,22",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,72",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "272,55",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "-0,24",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -7701,146 +7701,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,38",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,14",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "324,95",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,29",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,22",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,72",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "272,55",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "-0,24",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -7914,146 +7914,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,38",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,14",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "324,95",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,29",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,22",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,72",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "272,55",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "-0,24",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -8101,146 +8101,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,18",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,43",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,75",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "0,20",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
@@ -8333,146 +8333,146 @@ export const DADOS_MERCADO = {
                 },
                 "jul_2026": {
                     "usbu": {
-                        "valor": "1.124,00",
-                        "status": "equal",
+                        "valor": "1.118,75",
+                        "status": "down",
                         "label": "JUL 2026"
                     },
                     "var": {
-                        "valor": "-3,50",
-                        "status": "equal",
+                        "valor": "-7,50",
+                        "status": "down",
                         "label": "JUL 2026"
                     }
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.134,25",
-                        "status": "equal",
+                        "valor": "1.128,50",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "-2,75",
-                        "status": "equal",
+                        "valor": "-8,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.139,75",
-                        "status": "equal",
+                        "valor": "1.132,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "-1,50",
-                        "status": "equal",
+                        "valor": "-9,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.155,00",
-                        "status": "equal",
+                        "valor": "1.146,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "-2,00",
-                        "status": "equal",
+                        "valor": "-10,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "soja_ago_26": {
                     "preco": {
-                        "valor": "25,07",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "0,00",
+                        "status": "down",
                         "label": "Soja (AGO 26)"
                     }
                 },
                 "milho_jul_26": {
                     "preco": {
-                        "valor": "64,25",
-                        "status": "equal",
+                        "valor": "64,48",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "0,30",
+                        "status": "up",
                         "label": "Milho (JUL 26)"
                     }
                 },
                 "cafe_set_26": {
                     "preco": {
-                        "valor": "322,05",
-                        "status": "equal",
+                        "valor": "323,00",
+                        "status": "up",
                         "label": "Café (SET 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,31",
+                        "status": "down",
                         "label": "Café (SET 26)"
                     }
                 },
                 "boi_gordo_jun_26": {
                     "preco": {
-                        "valor": "339,30",
-                        "status": "equal",
+                        "valor": "338,50",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     },
                     "var": {
-                        "valor": "0,00",
-                        "status": "equal",
+                        "valor": "-0,24",
+                        "status": "down",
                         "label": "Boi Gordo (JUN 26)"
                     }
                 },
-                "algodao_jul26": {
+                "algodao_oct26": {
                     "preco": {
-                        "valor": "70,66",
+                        "valor": "75,30",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "-3,73",
+                        "valor": "1,17",
                         "status": "equal",
-                        "label": "Algodão (Jul26)"
+                        "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_jul26": {
                     "preco": {
-                        "valor": "14,00",
-                        "status": "equal",
+                        "valor": "14,18",
+                        "status": "up",
                         "label": "Açúcar (Jul26)"
                     },
                     "var": {
-                        "valor": "3,32",
-                        "status": "equal",
+                        "valor": "1,43",
+                        "status": "down",
                         "label": "Açúcar (Jul26)"
                     }
                 },
                 "suco_de_lar_jul26": {
                     "preco": {
-                        "valor": "143,00",
-                        "status": "equal",
+                        "valor": "141,30",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     },
                     "var": {
-                        "valor": "7,24",
-                        "status": "equal",
+                        "valor": "0,28",
+                        "status": "down",
                         "label": "Suco de Lar (Jul26)"
                     }
                 },
-                "cafe_jul26": {
+                "cafe_sep26": {
                     "preco": {
-                        "valor": "285,30",
+                        "valor": "273,75",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "-1,21",
+                        "valor": "0,20",
                         "status": "equal",
-                        "label": "Café (Jul26)"
+                        "label": "Café (Sep26)"
                     }
                 }
             }
