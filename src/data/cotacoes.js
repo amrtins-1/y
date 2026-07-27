@@ -1,5 +1,5 @@
 export const DADOS_MERCADO = {
-    "atualizacao": "26/07/2026 10:00",
+    "atualizacao": "27/07/2026 11:23",
     "raias": {
         "boi": {
             "geral": {
@@ -1751,49 +1751,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -1847,25 +1847,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -1883,13 +1883,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -2777,49 +2777,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -2873,25 +2873,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -2909,13 +2909,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -3570,49 +3570,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,25",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-33,75",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-34,75",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.218,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.232,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-34,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -3666,25 +3666,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,60",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,15",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -3702,13 +3702,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,15",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,66",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -3991,49 +3991,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,25",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-33,75",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-34,75",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.218,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.232,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-34,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -4087,25 +4087,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,60",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,15",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -4123,13 +4123,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,15",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,66",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -4397,49 +4397,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,25",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-33,75",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-34,75",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.218,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.232,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-34,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -4493,25 +4493,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,60",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,15",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -4529,13 +4529,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,15",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,66",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -4753,49 +4753,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -4849,25 +4849,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -4885,13 +4885,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -5074,49 +5074,49 @@ export const DADOS_MERCADO = {
                 "ourinhos": {},
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -5170,25 +5170,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -5206,13 +5206,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -5366,49 +5366,49 @@ export const DADOS_MERCADO = {
                 "br_163": {},
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -5462,25 +5462,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -5498,13 +5498,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -5622,49 +5622,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -5718,25 +5718,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -5754,13 +5754,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -5830,49 +5830,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,25",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-33,75",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-34,75",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.218,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.232,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-34,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -5926,25 +5926,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,60",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,15",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -5962,13 +5962,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,15",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,66",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -6081,49 +6081,49 @@ export const DADOS_MERCADO = {
                 "semana_referente_de": {},
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -6177,25 +6177,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -6213,13 +6213,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -6464,49 +6464,49 @@ export const DADOS_MERCADO = {
                 "referencia_junho26": {},
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -6560,25 +6560,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -6596,13 +6596,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -6733,49 +6733,49 @@ export const DADOS_MERCADO = {
                 "referencia_maio26": {},
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -6829,25 +6829,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -6865,13 +6865,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -6978,49 +6978,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -7074,25 +7074,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -7110,13 +7110,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -7333,49 +7333,49 @@ export const DADOS_MERCADO = {
                 "sorocaba": {},
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,25",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-33,75",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-34,75",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.218,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.232,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-34,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -7429,25 +7429,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,60",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,15",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -7465,13 +7465,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,15",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,66",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -7729,49 +7729,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,25",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-33,75",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-34,75",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.218,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.232,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-34,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -7825,25 +7825,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,60",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,15",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -7861,13 +7861,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,15",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,66",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -7952,49 +7952,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-34,00",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,25",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.217,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.231,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-35,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -8048,25 +8048,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,59",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,22",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -8084,13 +8084,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,40",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,74",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -8141,49 +8141,49 @@ export const DADOS_MERCADO = {
                 "certificado_base_industrias": {},
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,25",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-33,75",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-34,75",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.218,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.232,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-34,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -8237,25 +8237,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,60",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,15",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -8273,13 +8273,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,15",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,66",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
@@ -8373,49 +8373,49 @@ export const DADOS_MERCADO = {
                 },
                 "aug_2026": {
                     "usbu": {
-                        "valor": "1.246,75",
-                        "status": "equal",
+                        "valor": "1.214,25",
+                        "status": "down",
                         "label": "AUG 2026"
                     },
                     "var": {
-                        "valor": "9,25",
-                        "status": "equal",
+                        "valor": "-33,75",
+                        "status": "down",
                         "label": "AUG 2026"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
-                        "valor": "1.239,00",
-                        "status": "equal",
+                        "valor": "1.205,50",
+                        "status": "down",
                         "label": "SEP 2026"
                     },
                     "var": {
-                        "valor": "8,00",
-                        "status": "equal",
+                        "valor": "-34,75",
+                        "status": "down",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.252,50",
-                        "status": "equal",
+                        "valor": "1.218,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "8,75",
-                        "status": "equal",
+                        "valor": "-35,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.265,50",
-                        "status": "equal",
+                        "valor": "1.232,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "8,50",
-                        "status": "equal",
+                        "valor": "-34,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
@@ -8469,25 +8469,25 @@ export const DADOS_MERCADO = {
                 },
                 "algodao_oct26": {
                     "preco": {
-                        "valor": "78,68",
-                        "status": "equal",
+                        "valor": "78,38",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
-                        "valor": "0,17",
-                        "status": "equal",
+                        "valor": "-0,22",
+                        "status": "down",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
-                        "valor": "14,76",
-                        "status": "equal",
+                        "valor": "14,60",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
-                        "valor": "0,48",
-                        "status": "equal",
+                        "valor": "-1,15",
+                        "status": "down",
                         "label": "Açúcar (Oct26)"
                     }
                 },
@@ -8505,13 +8505,13 @@ export const DADOS_MERCADO = {
                 },
                 "cafe_sep26": {
                     "preco": {
-                        "valor": "314,20",
-                        "status": "equal",
+                        "valor": "322,15",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     },
                     "var": {
-                        "valor": "1,55",
-                        "status": "equal",
+                        "valor": "2,66",
+                        "status": "up",
                         "label": "Café (Sep26)"
                     }
                 }
