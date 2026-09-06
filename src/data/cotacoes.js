@@ -1,27 +1,27 @@
 export const DADOS_MERCADO = {
-    "atualizacao": "05/09/2026 11:41",
+    "atualizacao": "06/09/2026 11:59",
     "raias": {
         "boi": {
             "geral": {
                 "": {
                     "a_vista_r": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacao": {
                         "valor": "0,01",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "a_prazo_r": {
                         "valor": "351,65",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "valor_r": {
                         "valor": "3.397,99",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     }
                 },
@@ -29,84 +29,84 @@ export const DADOS_MERCADO = {
                 "setembro2026": {
                     "fechamento_r": {
                         "valor": "358,90",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/2026"
                     },
                     "variacao": {
                         "valor": "0,25",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/2026"
                     }
                 },
                 "outubro2026": {
                     "fechamento_r": {
                         "valor": "373,95",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Outubro/2026"
                     },
                     "variacao": {
                         "valor": "0,59",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Outubro/2026"
                     }
                 },
                 "novembro2026": {
                     "fechamento_r": {
                         "valor": "378,35",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Novembro/2026"
                     },
                     "variacao": {
                         "valor": "0,77",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Novembro/2026"
                     }
                 },
                 "dezembro2026": {
                     "fechamento_r": {
                         "valor": "379,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/2026"
                     },
                     "variacao": {
                         "valor": "0,66",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/2026"
                     }
                 },
                 "janeiro2027": {
                     "fechamento_r": {
                         "valor": "380,80",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Janeiro/2027"
                     },
                     "variacao": {
                         "valor": "0,41",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Janeiro/2027"
                     }
                 },
                 "fevereiro2027": {
                     "fechamento_r": {
                         "valor": "380,25",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Fevereiro/2027"
                     },
                     "variacao": {
                         "valor": "0,41",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Fevereiro/2027"
                     }
                 },
                 "marco2027": {
                     "fechamento_r": {
                         "valor": "380,95",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/2027"
                     },
                     "variacao": {
                         "valor": "0,13",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/2027"
                     }
                 },
@@ -147,7 +147,7 @@ export const DADOS_MERCADO = {
                 "mg_triangulo": {
                     "boi_gordo_r_a_vista": {
                         "valor": "333,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MG Triângulo"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -164,7 +164,7 @@ export const DADOS_MERCADO = {
                 "mg_bhorizonte": {
                     "boi_gordo_r_a_vista": {
                         "valor": "336,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MG B.Horizonte"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -181,7 +181,7 @@ export const DADOS_MERCADO = {
                 "mg_norte": {
                     "boi_gordo_r_a_vista": {
                         "valor": "336,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MG Norte"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -198,7 +198,7 @@ export const DADOS_MERCADO = {
                 "mg_sul": {
                     "boi_gordo_r_a_vista": {
                         "valor": "333,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MG Sul"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -215,12 +215,12 @@ export const DADOS_MERCADO = {
                 "go_goiania": {
                     "boi_gordo_r_a_vista": {
                         "valor": "331,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "GO Goiânia"
                     },
                     "boi_gordo_r_prazo_30_dias": {
                         "valor": "335,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "GO Goiânia"
                     },
                     "vaca_gorda_r_a_vista": {
@@ -232,12 +232,12 @@ export const DADOS_MERCADO = {
                 "go_reg_sul": {
                     "boi_gordo_r_a_vista": {
                         "valor": "328,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "GO Reg. Sul"
                     },
                     "boi_gordo_r_prazo_30_dias": {
                         "valor": "332,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "GO Reg. Sul"
                     },
                     "vaca_gorda_r_a_vista": {
@@ -266,7 +266,7 @@ export const DADOS_MERCADO = {
                 "ms_c_grande": {
                     "boi_gordo_r_a_vista": {
                         "valor": "339,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MS C. Grande"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -276,14 +276,14 @@ export const DADOS_MERCADO = {
                     },
                     "vaca_gorda_r_a_vista": {
                         "valor": "321,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MS C. Grande"
                     }
                 },
                 "ms_tres_lagoas": {
                     "boi_gordo_r_a_vista": {
                         "valor": "336,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MS Três Lagoas"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -334,7 +334,7 @@ export const DADOS_MERCADO = {
                 "ba_sul": {
                     "boi_gordo_r_a_vista": {
                         "valor": "330,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "BA Sul"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -351,7 +351,7 @@ export const DADOS_MERCADO = {
                 "ba_oeste": {
                     "boi_gordo_r_a_vista": {
                         "valor": "331,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "BA Oeste"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -368,7 +368,7 @@ export const DADOS_MERCADO = {
                 "mt_norte": {
                     "boi_gordo_r_a_vista": {
                         "valor": "324,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MT Norte"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -385,7 +385,7 @@ export const DADOS_MERCADO = {
                 "mt_sudoeste": {
                     "boi_gordo_r_a_vista": {
                         "valor": "321,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MT Sudoeste"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -402,7 +402,7 @@ export const DADOS_MERCADO = {
                 "mt_cuiaba": {
                     "boi_gordo_r_a_vista": {
                         "valor": "326,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MT Cuiabá*"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -419,7 +419,7 @@ export const DADOS_MERCADO = {
                 "mt_sudeste": {
                     "boi_gordo_r_a_vista": {
                         "valor": "323,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MT Sudeste"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -436,7 +436,7 @@ export const DADOS_MERCADO = {
                 "pr_noroeste": {
                     "boi_gordo_r_a_vista": {
                         "valor": "354,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "PR Noroeste"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -453,7 +453,7 @@ export const DADOS_MERCADO = {
                 "sc": {
                     "boi_gordo_r_a_vista": {
                         "valor": "356,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "SC"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -485,7 +485,7 @@ export const DADOS_MERCADO = {
                 "ma_oeste": {
                     "boi_gordo_r_a_vista": {
                         "valor": "336,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MA Oeste"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -502,12 +502,12 @@ export const DADOS_MERCADO = {
                 "alagoas": {
                     "boi_gordo_r_a_vista": {
                         "valor": "346,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Alagoas"
                     },
                     "boi_gordo_r_prazo_30_dias": {
                         "valor": "350,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Alagoas"
                     },
                     "vaca_gorda_r_a_vista": {
@@ -519,7 +519,7 @@ export const DADOS_MERCADO = {
                 "pa_maraba": {
                     "boi_gordo_r_a_vista": {
                         "valor": "331,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "PA Marabá"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -536,7 +536,7 @@ export const DADOS_MERCADO = {
                 "pa_redencao": {
                     "boi_gordo_r_a_vista": {
                         "valor": "330,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "PA Redenção"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -553,12 +553,12 @@ export const DADOS_MERCADO = {
                 "pa_paragominas": {
                     "boi_gordo_r_a_vista": {
                         "valor": "341,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "PA Paragominas"
                     },
                     "boi_gordo_r_prazo_30_dias": {
                         "valor": "345,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "PA Paragominas"
                     },
                     "vaca_gorda_r_a_vista": {
@@ -570,7 +570,7 @@ export const DADOS_MERCADO = {
                 "ro_sudeste": {
                     "boi_gordo_r_a_vista": {
                         "valor": "324,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "RO Sudeste"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -580,14 +580,14 @@ export const DADOS_MERCADO = {
                     },
                     "vaca_gorda_r_a_vista": {
                         "valor": "306,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "RO Sudeste"
                     }
                 },
                 "to_sul": {
                     "boi_gordo_r_a_vista": {
                         "valor": "331,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "TO Sul"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -604,7 +604,7 @@ export const DADOS_MERCADO = {
                 "to_norte": {
                     "boi_gordo_r_a_vista": {
                         "valor": "334,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "TO Norte"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -621,7 +621,7 @@ export const DADOS_MERCADO = {
                 "acre": {
                     "boi_gordo_r_a_vista": {
                         "valor": "306,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Acre"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -638,7 +638,7 @@ export const DADOS_MERCADO = {
                 "es": {
                     "boi_gordo_r_a_vista": {
                         "valor": "336,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "ES"
                     },
                     "boi_gordo_r_prazo_30_dias": {
@@ -680,19 +680,19 @@ export const DADOS_MERCADO = {
                     },
                     "troca": {
                         "valor": "4,85",
-                        "status": "down",
+                        "status": "equal",
                         "label": "RJ"
                     }
                 },
                 "roraima": {
                     "boi_gordo_r_a_vista": {
                         "valor": "333,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Roraima"
                     },
                     "boi_gordo_r_prazo_30_dias": {
                         "valor": "337,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Roraima"
                     },
                     "vaca_gorda_r_a_vista": {
@@ -720,17 +720,17 @@ export const DADOS_MERCADO = {
                     },
                     "preco_r": {
                         "valor": "347,22",
-                        "status": "up",
+                        "status": "equal",
                         "label": "SP"
                     },
                     "variacao": {
                         "valor": "0,59",
-                        "status": "up",
+                        "status": "equal",
                         "label": "SP"
                     },
                     "u": {
                         "valor": "64,78",
-                        "status": "up",
+                        "status": "equal",
                         "label": "SP"
                     }
                 },
@@ -752,17 +752,17 @@ export const DADOS_MERCADO = {
                     },
                     "preco_r": {
                         "valor": "349,27",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MG"
                     },
                     "variacao": {
                         "valor": "0,19",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MG"
                     },
                     "u": {
                         "valor": "65,16",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MG"
                     }
                 },
@@ -811,7 +811,7 @@ export const DADOS_MERCADO = {
                     },
                     "troca": {
                         "valor": "6,77",
-                        "status": "up",
+                        "status": "equal",
                         "label": "MS"
                     },
                     "preco_r": {
@@ -821,7 +821,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MS"
                     },
                     "u": {
@@ -843,7 +843,7 @@ export const DADOS_MERCADO = {
                     },
                     "troca": {
                         "valor": "5,44",
-                        "status": "down",
+                        "status": "equal",
                         "label": "BA"
                     }
                 },
@@ -892,7 +892,7 @@ export const DADOS_MERCADO = {
                     },
                     "troca": {
                         "valor": "6,27",
-                        "status": "up",
+                        "status": "equal",
                         "label": "PR"
                     }
                 },
@@ -914,17 +914,17 @@ export const DADOS_MERCADO = {
                     },
                     "preco_r": {
                         "valor": "327,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "PA"
                     },
                     "variacao": {
                         "valor": "-1,27",
-                        "status": "down",
+                        "status": "equal",
                         "label": "PA"
                     },
                     "u": {
                         "valor": "61,07",
-                        "status": "down",
+                        "status": "equal",
                         "label": "PA"
                     }
                 },
@@ -1035,59 +1035,59 @@ export const DADOS_MERCADO = {
                 "bahia": {
                     "r": {
                         "valor": "313,19",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Bahia"
                     },
                     "variacao": {
                         "valor": "-0,44",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Bahia"
                     },
                     "u": {
                         "valor": "61,09",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Bahia"
                     },
                     "preco_r": {
                         "valor": "331,42",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Bahia"
                     },
                     "us": {
                         "valor": "64,64",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Bahia"
                     }
                 },
                 "goias": {
                     "r": {
                         "valor": "321,58",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Goiás"
                     },
                     "variacao": {
                         "valor": "0,27",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Goiás"
                     },
                     "u": {
                         "valor": "62,72",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Goiás"
                     },
                     "desmama": {
                         "valor": "17,64",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Goiás"
                     },
                     "bezerra": {
                         "valor": "14,22",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Goiás"
                     },
                     "novilha": {
                         "valor": "13,19",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Goiás"
                     },
                     "vaca_magra": {
@@ -1097,54 +1097,54 @@ export const DADOS_MERCADO = {
                     },
                     "bezerro": {
                         "valor": "16,89",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Goiás"
                     },
                     "garrote": {
                         "valor": "15,67",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Goiás"
                     },
                     "boi_magro": {
                         "valor": "14,22",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Goiás"
                     },
                     "preco_r": {
                         "valor": "336,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Goiás"
                     },
                     "us": {
                         "valor": "65,68",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Goiás"
                     }
                 },
                 "mato_grosso": {
                     "r": {
                         "valor": "304,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     },
                     "variacao": {
                         "valor": "-0,37",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     },
                     "u": {
                         "valor": "59,40",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     },
                     "desmama": {
                         "valor": "17,51",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     },
                     "bezerra": {
                         "valor": "14,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     },
                     "novilha": {
@@ -1154,74 +1154,74 @@ export const DADOS_MERCADO = {
                     },
                     "vaca_magra": {
                         "valor": "11,88",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     },
                     "bezerro": {
                         "valor": "16,77",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     },
                     "garrote": {
                         "valor": "15,55",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     },
                     "boi_magro": {
                         "valor": "13,17",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     },
                     "preco_r": {
                         "valor": "330,15",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     },
                     "us": {
                         "valor": "64,39",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso"
                     }
                 },
                 "mato_grosso_do_sul": {
                     "r": {
                         "valor": "319,67",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     },
                     "variacao": {
                         "valor": "0,28",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     },
                     "u": {
                         "valor": "62,35",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     },
                     "desmama": {
                         "valor": "17,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     },
                     "bezerra": {
                         "valor": "13,85",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     },
                     "novilha": {
                         "valor": "13,27",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     },
                     "vaca_magra": {
                         "valor": "12,04",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     },
                     "bezerro": {
                         "valor": "17,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     },
                     "garrote": {
@@ -1231,126 +1231,126 @@ export const DADOS_MERCADO = {
                     },
                     "boi_magro": {
                         "valor": "14,31",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     },
                     "preco_r": {
                         "valor": "344,16",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     },
                     "us": {
                         "valor": "67,13",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Mato Grosso do Sul"
                     }
                 },
                 "minas_gerais": {
                     "r": {
                         "valor": "321,92",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "variacao": {
                         "valor": "-0,15",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "u": {
                         "valor": "62,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "desmama": {
                         "valor": "17,34",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "bezerra": {
                         "valor": "13,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "novilha": {
                         "valor": "12,96",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "vaca_magra": {
                         "valor": "11,77",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "bezerro": {
                         "valor": "16,61",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "garrote": {
                         "valor": "15,40",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "boi_magro": {
                         "valor": "13,67",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "preco_r": {
                         "valor": "338,53",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     },
                     "us": {
                         "valor": "66,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Minas Gerais"
                     }
                 },
                 "para": {
                     "r": {
                         "valor": "317,21",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Para"
                     },
                     "variacao": {
                         "valor": "-0,31",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Para"
                     },
                     "u": {
                         "valor": "61,87",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Para"
                     },
                     "desmama": {
                         "valor": "16,68",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Pará"
                     },
                     "bezerra": {
                         "valor": "13,45",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Pará"
                     },
                     "novilha": {
                         "valor": "12,47",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Pará"
                     },
                     "vaca_magra": {
                         "valor": "11,32",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Pará"
                     },
                     "bezerro": {
                         "valor": "15,98",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Pará"
                     },
                     "garrote": {
                         "valor": "14,82",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Pará"
                     },
                     "boi_magro": {
@@ -1360,205 +1360,205 @@ export const DADOS_MERCADO = {
                     },
                     "preco_r": {
                         "valor": "335,14",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Para"
                     },
                     "us": {
                         "valor": "65,37",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Para"
                     }
                 },
                 "rondonia": {
                     "r": {
                         "valor": "306,23",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "variacao": {
                         "valor": "-0,17",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "u": {
                         "valor": "59,73",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "desmama": {
                         "valor": "16,81",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "bezerra": {
                         "valor": "13,56",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "novilha": {
                         "valor": "12,57",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "vaca_magra": {
                         "valor": "11,41",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "bezerro": {
                         "valor": "16,10",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "garrote": {
                         "valor": "14,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "boi_magro": {
                         "valor": "13,55",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "preco_r": {
                         "valor": "328,76",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     },
                     "us": {
                         "valor": "64,12",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondônia"
                     }
                 },
                 "sao_paulo": {
                     "r": {
                         "valor": "319,60",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "variacao": {
                         "valor": "-0,01",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "u": {
                         "valor": "62,34",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "desmama": {
                         "valor": "17,96",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "bezerra": {
                         "valor": "14,48",
-                        "status": "up",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "novilha": {
                         "valor": "13,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "vaca_magra": {
                         "valor": "12,19",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "bezerro": {
                         "valor": "17,20",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "garrote": {
                         "valor": "15,95",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "boi_magro": {
                         "valor": "14,48",
-                        "status": "up",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "preco_r": {
                         "valor": "348,16",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Paulo"
                     },
                     "us": {
                         "valor": "67,91",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Paulo"
                     }
                 },
                 "tocantins": {
                     "r": {
                         "valor": "318,48",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "variacao": {
                         "valor": "-0,15",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "u": {
                         "valor": "62,12",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "desmama": {
                         "valor": "17,34",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "bezerra": {
                         "valor": "13,98",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "novilha": {
                         "valor": "12,96",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "vaca_magra": {
                         "valor": "11,77",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "bezerro": {
                         "valor": "16,61",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "garrote": {
                         "valor": "15,40",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "boi_magro": {
                         "valor": "13,98",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "preco_r": {
                         "valor": "338,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     },
                     "us": {
                         "valor": "66,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tocantins"
                     }
                 },
                 "parana": {
                     "desmama": {
                         "valor": "18,16",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Paraná"
                     },
                     "bezerra": {
@@ -1568,64 +1568,64 @@ export const DADOS_MERCADO = {
                     },
                     "novilha": {
                         "valor": "13,58",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Paraná"
                     },
                     "vaca_magra": {
                         "valor": "12,32",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Paraná"
                     },
                     "bezerro": {
                         "valor": "17,39",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Paraná"
                     },
                     "garrote": {
                         "valor": "16,13",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Paraná"
                     },
                     "boi_magro": {
                         "valor": "14,64",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Paraná"
                     }
                 },
                 "rio_grande_do_sul": {
                     "desmama": {
                         "valor": "17,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rio Grande do Sul"
                     },
                     "bezerra": {
                         "valor": "14,27",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rio Grande do Sul"
                     },
                     "novilha": {
                         "valor": "13,23",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rio Grande do Sul"
                     },
                     "vaca_magra": {
                         "valor": "12,01",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rio Grande do Sul"
                     },
                     "bezerro": {
                         "valor": "16,95",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rio Grande do Sul"
                     },
                     "garrote": {
                         "valor": "15,72",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rio Grande do Sul"
                     },
                     "boi_magro": {
                         "valor": "14,27",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rio Grande do Sul"
                     },
                     "preco_rkg": {
@@ -1635,7 +1635,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rio Grande do Sul"
                     }
                 },
@@ -1650,7 +1650,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Brasil Central"
                     }
                 },
@@ -1679,84 +1679,84 @@ export const DADOS_MERCADO = {
                 "araputanga": {
                     "media_r": {
                         "valor": "320,30",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Araputanga"
                     },
                     "variacao": {
                         "valor": "0,09",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Araputanga"
                     }
                 },
                 "barra_do_garcas": {
                     "media_r": {
                         "valor": "318,30",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Barra do Garças"
                     },
                     "variacao": {
                         "valor": "0,09",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Barra do Garças"
                     }
                 },
                 "cuiaba": {
                     "media_r": {
                         "valor": "321,30",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Cuiabá"
                     },
                     "variacao": {
                         "valor": "0,09",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Cuiabá"
                     }
                 },
                 "juara": {
                     "media_r": {
                         "valor": "320,10",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Juara"
                     },
                     "variacao": {
                         "valor": "0,06",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Juara"
                     }
                 },
                 "matupa": {
                     "media_r": {
                         "valor": "320,10",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Matupá"
                     },
                     "variacao": {
                         "valor": "0,06",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Matupá"
                     }
                 },
                 "rondonopolis": {
                     "media_r": {
                         "valor": "320,10",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rondonópolis"
                     },
                     "variacao": {
                         "valor": "0,08",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondonópolis"
                     }
                 },
                 "sinop": {
                     "media_r": {
                         "valor": "318,95",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Sinop"
                     },
                     "variacao": {
                         "valor": "-0,10",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Sinop"
                     }
                 },
@@ -1768,103 +1768,103 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Vila Rica"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -1883,151 +1883,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -2048,7 +2048,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -2074,17 +2074,17 @@ export const DADOS_MERCADO = {
                 "": {
                     "valor_r": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacao": {
                         "valor": "0,28",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "valor_r_saca_de_60_kg": {
                         "valor": "152,10",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     }
                 },
@@ -2092,12 +2092,12 @@ export const DADOS_MERCADO = {
                 "setembro26": {
                     "fechamento_us_bushel": {
                         "valor": "12,9375",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao_centsbu": {
                         "valor": "-12,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao": {
@@ -2112,12 +2112,12 @@ export const DADOS_MERCADO = {
                     },
                     "fechamento_uston": {
                         "valor": "345,30",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao_centston": {
                         "valor": "0,10",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "ustonelada_curta": {
@@ -2127,12 +2127,12 @@ export const DADOS_MERCADO = {
                     },
                     "fechamento_uslb": {
                         "valor": "0,6878",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao_centslb": {
                         "valor": "-0,72",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "centslb": {
@@ -2144,12 +2144,12 @@ export const DADOS_MERCADO = {
                 "novembro26": {
                     "fechamento_us_bushel": {
                         "valor": "13,0975",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Novembro/26"
                     },
                     "variacao_centsbu": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Novembro/26"
                     },
                     "variacao": {
@@ -2166,54 +2166,54 @@ export const DADOS_MERCADO = {
                 "janeiro27": {
                     "fechamento_us_bushel": {
                         "valor": "13,2500",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/27"
                     },
                     "variacao_centsbu": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/27"
                     },
                     "variacao": {
                         "valor": "-1,13",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/27"
                     },
                     "fechamento_uston": {
                         "valor": "358,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/27"
                     },
                     "variacao_centston": {
                         "valor": "-0,10",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/27"
                     },
                     "fechamento_uslb": {
                         "valor": "0,6943",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/27"
                     },
                     "variacao_centslb": {
                         "valor": "-0,79",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/27"
                     }
                 },
                 "marco27": {
                     "fechamento_us_bushel": {
                         "valor": "13,3025",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "variacao_centsbu": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "variacao": {
                         "valor": "-0,49",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/27"
                     }
                 },
@@ -2225,27 +2225,27 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "-1,06",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Outubro/26"
                     },
                     "fechamento_uston": {
                         "valor": "348,20",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Outubro/26"
                     },
                     "variacao_centston": {
                         "valor": "-0,40",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Outubro/26"
                     },
                     "fechamento_uslb": {
                         "valor": "0,6889",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Outubro/26"
                     },
                     "variacao_centslb": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Outubro/26"
                     }
                 },
@@ -2257,63 +2257,63 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "-1,10",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "fechamento_uston": {
                         "valor": "355,10",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "variacao_centston": {
                         "valor": "-0,40",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "fechamento_uslb": {
                         "valor": "0,6927",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "variacao_centslb": {
                         "valor": "-0,77",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     }
                 },
                 "janeiro2027": {
                     "fechamento_ussc_60_kg": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/2027"
                     },
                     "variacao": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/2027"
                     }
                 },
                 "marco2027": {
                     "fechamento_ussc_60_kg": {
                         "valor": "29,30",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/2027"
                     },
                     "variacao": {
                         "valor": "-0,58",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/2027"
                     }
                 },
                 "maio2027": {
                     "fechamento_ussc_60_kg": {
                         "valor": "29,56",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Maio/2027"
                     },
                     "variacao": {
                         "valor": "0,03",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Maio/2027"
                     }
                 },
@@ -2410,7 +2410,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rondonópolis/MT (Samir Rosa Assessoria Comercial)"
                     }
                 },
@@ -2422,7 +2422,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Primavera do Leste/MT (Samir Rosa Assessoria Comercial)"
                     }
                 },
@@ -2434,7 +2434,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Alto Garças/MT (Samir Rosa Assessoria Comercial)"
                     }
                 },
@@ -2446,7 +2446,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Itiquira/MT (Samir Rosa Assessoria Comercial)"
                     }
                 },
@@ -2477,48 +2477,48 @@ export const DADOS_MERCADO = {
                 "sorrisomt_sindicato": {
                     "preco_rsc_de_60_kg": {
                         "valor": "135,15",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Sorriso/MT (Sindicato)"
                     },
                     "variacao": {
                         "valor": "0,26",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Sorriso/MT (Sindicato)"
                     }
                 },
                 "sao_gabriel_do_oestems_va_corretora_de_cereais": {
                     "preco_rsc_de_60_kg": {
                         "valor": "143,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Gabriel do Oeste/MS (VA Corretora de Cereais)"
                     },
                     "variacao": {
                         "valor": "-1,38",
-                        "status": "down",
+                        "status": "equal",
                         "label": "São Gabriel do Oeste/MS (VA Corretora de Cereais)"
                     }
                 },
                 "maracajums_va_corretora_de_cereais": {
                     "preco_rsc_de_60_kg": {
                         "valor": "145,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Maracaju/MS (VA Corretora de Cereais)"
                     },
                     "variacao": {
                         "valor": "-1,36",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Maracaju/MS (VA Corretora de Cereais)"
                     }
                 },
                 "campo_grandems_va_corretora_de_cereais": {
                     "preco_rsc_de_60_kg": {
                         "valor": "144,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Campo Grande/MS (VA Corretora de Cereais)"
                     },
                     "variacao": {
                         "valor": "-1,37",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Campo Grande/MS (VA Corretora de Cereais)"
                     }
                 },
@@ -2537,36 +2537,36 @@ export const DADOS_MERCADO = {
                 "jataigo_sindicato": {
                     "preco_rsc_de_60_kg": {
                         "valor": "137,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Jataí/GO (Sindicato)"
                     },
                     "variacao": {
                         "valor": "0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Jataí/GO (Sindicato)"
                     }
                 },
                 "rio_verdego_comigo": {
                     "preco_rsc_de_60_kg": {
                         "valor": "137,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rio Verde/GO (Comigo)"
                     },
                     "variacao": {
                         "valor": "0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rio Verde/GO (Comigo)"
                     }
                 },
                 "brasiliadf_coopadf": {
                     "preco_rsc_de_60_kg": {
                         "valor": "146,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Brasília/DF (Coopa-DF)"
                     },
                     "variacao": {
                         "valor": "0,69",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Brasília/DF (Coopa-DF)"
                     }
                 },
@@ -2578,7 +2578,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Oeste da Bahia/BA (AIBA)"
                     }
                 },
@@ -2603,7 +2603,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Cândido Mota/SP (Coopermota)"
                     }
                 },
@@ -2634,12 +2634,12 @@ export const DADOS_MERCADO = {
                 "porto_rio_grande_disponivel_insoy_commodities": {
                     "preco_rsc_de_60_kg": {
                         "valor": "162,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Porto Rio Grande (disponível) (Insoy Commodities)"
                     },
                     "variacao": {
                         "valor": "0,62",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Porto Rio Grande (disponível) (Insoy Commodities)"
                     }
                 },
@@ -2658,12 +2658,12 @@ export const DADOS_MERCADO = {
                 "porto_santossp_dellagro": {
                     "preco_rsc_de_60_kg": {
                         "valor": "155,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Porto Santos/SP (Dellagro)"
                     },
                     "variacao": {
                         "valor": "-1,27",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Porto Santos/SP (Dellagro)"
                     }
                 },
@@ -2682,12 +2682,12 @@ export const DADOS_MERCADO = {
                 "mato_grosso_imea": {
                     "cotacao_atual_rt": {
                         "valor": "1.875,45",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mato Grosso (IMEA)"
                     },
                     "variacao": {
                         "valor": "4,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mato Grosso (IMEA)"
                     }
                 },
@@ -2826,132 +2826,132 @@ export const DADOS_MERCADO = {
                 "alto_araguaia": {
                     "preco_rsc_de_60_kg": {
                         "valor": "142,60",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Alto Araguaia"
                     },
                     "variacao": {
                         "valor": "0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Alto Araguaia"
                     }
                 },
                 "campo_verde": {
                     "preco_rsc_de_60_kg": {
                         "valor": "141,80",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Campo Verde"
                     },
                     "variacao": {
                         "valor": "0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Campo Verde"
                     }
                 },
                 "canarana": {
                     "preco_rsc_de_60_kg": {
                         "valor": "130,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Canarana"
                     },
                     "variacao": {
                         "valor": "0,54",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Canarana"
                     }
                 },
                 "diamantino": {
                     "preco_rsc_de_60_kg": {
                         "valor": "134,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Diamantino"
                     },
                     "variacao": {
                         "valor": "0,37",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Diamantino"
                     }
                 },
                 "lucas_do_rio_verde": {
                     "preco_rsc_de_60_kg": {
                         "valor": "135,55",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Lucas do Rio Verde"
                     },
                     "variacao": {
                         "valor": "0,26",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Lucas do Rio Verde"
                     }
                 },
                 "primavera_do_leste": {
                     "preco_rsc_de_60_kg": {
                         "valor": "142,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Primavera do Leste"
                     },
                     "variacao": {
                         "valor": "0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Primavera do Leste"
                     }
                 },
                 "rondonopolis": {
                     "preco_rsc_de_60_kg": {
                         "valor": "143,40",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rondonópolis"
                     },
                     "variacao": {
                         "valor": "0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondonópolis"
                     }
                 },
                 "sorriso": {
                     "preco_rsc_de_60_kg": {
                         "valor": "135,15",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Sorriso"
                     },
                     "variacao": {
                         "valor": "0,26",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Sorriso"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
@@ -2970,48 +2970,48 @@ export const DADOS_MERCADO = {
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -3030,151 +3030,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -3195,7 +3195,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -3221,12 +3221,12 @@ export const DADOS_MERCADO = {
                 "": {
                     "valor_rsc_60_kg": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacao": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     }
                 },
@@ -3234,60 +3234,60 @@ export const DADOS_MERCADO = {
                 "setembro2026": {
                     "fechamento_rsc_60_kg": {
                         "valor": "71,80",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/2026"
                     },
                     "variacao": {
                         "valor": "-0,07",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/2026"
                     }
                 },
                 "janeiro2027": {
                     "fechamento_rsc_60_kg": {
                         "valor": "81,10",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/2027"
                     },
                     "variacao": {
                         "valor": "-0,37",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Janeiro/2027"
                     }
                 },
                 "marco2027": {
                     "fechamento_rsc_60_kg": {
                         "valor": "83,16",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/2027"
                     },
                     "variacao": {
                         "valor": "-0,28",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/2027"
                     }
                 },
                 "maio2027": {
                     "fechamento_rsc_60_kg": {
                         "valor": "81,40",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Maio/2027"
                     },
                     "variacao": {
                         "valor": "0,02",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Maio/2027"
                     }
                 },
                 "julho2027": {
                     "fechamento_rsc_60_kg": {
                         "valor": "79,52",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Julho/2027"
                     },
                     "variacao": {
                         "valor": "0,05",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Julho/2027"
                     }
                 },
@@ -3299,7 +3299,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/2027"
                     }
                 },
@@ -3307,68 +3307,68 @@ export const DADOS_MERCADO = {
                 "setembro26": {
                     "fechamento_us_bushel": {
                         "valor": "5,1200",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao_centsbu": {
                         "valor": "-3,25",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao": {
                         "valor": "-0,63",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/26"
                     }
                 },
                 "dezembro26": {
                     "fechamento_us_bushel": {
                         "valor": "5,3675",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "variacao_centsbu": {
                         "valor": "-4,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "variacao": {
                         "valor": "-0,74",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     }
                 },
                 "marco27": {
                     "fechamento_us_bushel": {
                         "valor": "5,5225",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "variacao_centsbu": {
                         "valor": "-3,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "variacao": {
                         "valor": "-0,67",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/27"
                     }
                 },
                 "maio27": {
                     "fechamento_us_bushel": {
                         "valor": "5,5975",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Maio/27"
                     },
                     "variacao_centsbu": {
                         "valor": "-3,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Maio/27"
                     },
                     "variacao": {
                         "valor": "-0,62",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Maio/27"
                     }
                 },
@@ -3381,7 +3381,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Nonoai/RS (Coopertradição)"
                     }
                 },
@@ -3465,7 +3465,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rondonópolis/MT (Samir Rosa Assessoria Comercial)"
                     }
                 },
@@ -3477,7 +3477,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Primavera do Leste/MT (Samir Rosa Assessoria Comercial)"
                     }
                 },
@@ -3489,7 +3489,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Alto Garças/MT (Samir Rosa Assessoria Comercial)"
                     }
                 },
@@ -3501,7 +3501,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Itiquira/MT (Samir Rosa Assessoria Comercial)"
                     }
                 },
@@ -3532,12 +3532,12 @@ export const DADOS_MERCADO = {
                 "sorrisomt_sindicato": {
                     "preco_rsc_de_60_kg": {
                         "valor": "49,40",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Sorriso/MT (Sindicato)"
                     },
                     "variacao": {
                         "valor": "2,07",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Sorriso/MT (Sindicato)"
                     }
                 },
@@ -3549,7 +3549,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Jataí/GO (Sindicato)"
                     }
                 },
@@ -3561,7 +3561,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rio Verde/GO (Comigo)"
                     }
                 },
@@ -3652,12 +3652,12 @@ export const DADOS_MERCADO = {
                 "machadomg_coopama": {
                     "preco_rsc_de_60_kg": {
                         "valor": "65,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Machado/MG (Coopama)"
                     },
                     "variacao": {
                         "valor": "4,84",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Machado/MG (Coopama)"
                     }
                 },
@@ -3717,7 +3717,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Porto Santos/SP (Set/Out) (Dellagro)"
                     }
                 },
@@ -3820,180 +3820,180 @@ export const DADOS_MERCADO = {
                 "campo_verde": {
                     "preco_rsc_de_60_kg": {
                         "valor": "50,80",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Campo Verde"
                     },
                     "variacao": {
                         "valor": "0,99",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Campo Verde"
                     }
                 },
                 "canarana": {
                     "preco_rsc_de_60_kg": {
                         "valor": "47,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Canarana"
                     },
                     "variacao": {
                         "valor": "1,07",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Canarana"
                     }
                 },
                 "lucas_do_rio_verde": {
                     "preco_rsc_de_60_kg": {
                         "valor": "48,40",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Lucas do Rio Verde"
                     },
                     "variacao": {
                         "valor": "0,41",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Lucas do Rio Verde"
                     }
                 },
                 "primavera_do_leste": {
                     "preco_rsc_de_60_kg": {
                         "valor": "51,30",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Primavera do Leste"
                     },
                     "variacao": {
                         "valor": "0,98",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Primavera do Leste"
                     }
                 },
                 "rondonopolis": {
                     "preco_rsc_de_60_kg": {
                         "valor": "52,30",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rondonópolis"
                     },
                     "variacao": {
                         "valor": "0,97",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rondonópolis"
                     }
                 },
                 "sapezal": {
                     "preco_rsc_de_60_kg": {
                         "valor": "48,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Sapezal"
                     },
                     "variacao": {
                         "valor": "0,63",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Sapezal"
                     }
                 },
                 "tangara_da_serra": {
                     "preco_rsc_de_60_kg": {
                         "valor": "46,90",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Tangará da Serra"
                     },
                     "variacao": {
                         "valor": "0,86",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tangará da Serra"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -4012,151 +4012,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -4177,7 +4177,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -4203,12 +4203,12 @@ export const DADOS_MERCADO = {
                 "": {
                     "valor_r": {
                         "valor": "976,71",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacao": {
                         "valor": "-0,34",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     }
                 },
@@ -4216,61 +4216,61 @@ export const DADOS_MERCADO = {
                 "setembro26": {
                     "fech_investing_lb": {
                         "valor": "324,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "fechamento_rsc_de_60_kg": {
                         "valor": "2.196,06",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao_pontos": {
                         "valor": "-0,10",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "fechamento_us_ton": {
                         "valor": "3.400,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/26"
                     }
                 },
                 "dezembro26": {
                     "fech_investing_lb": {
                         "valor": "295,60",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "fechamento_rsc_de_60_kg": {
                         "valor": "2.002,02",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "variacao_pontos": {
                         "valor": "0,25",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     }
                 },
                 "marco27": {
                     "fech_investing_lb": {
                         "valor": "287,40",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "fechamento_rsc_de_60_kg": {
                         "valor": "1.946,48",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "variacao_pontos": {
                         "valor": "2,35",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "fechamento_us_ton": {
                         "valor": "3.396,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/27"
                     }
                 },
@@ -4278,50 +4278,50 @@ export const DADOS_MERCADO = {
                 "dezembro2026": {
                     "fechamento_ussc_60_kg": {
                         "valor": "362,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/2026"
                     },
                     "variacao": {
                         "valor": "0,86",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/2026"
                     }
                 },
                 "marco2027": {
                     "fechamento_ussc_60_kg": {
                         "valor": "357,05",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/2027"
                     },
                     "variacao": {
                         "valor": "0,61",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/2027"
                     }
                 },
                 "novembro26": {
                     "fechamento_us_ton": {
                         "valor": "3.430,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Novembro/26"
                     }
                 },
                 "janeiro27": {
                     "fechamento_us_ton": {
                         "valor": "3.415,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Janeiro/27"
                     }
                 },
                 "guaxupemg_cooxupe": {
                     "preco_rsc_de_60_kg": {
                         "valor": "1.749,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Guaxupé/MG (Cooxupé)"
                     },
                     "variacao": {
                         "valor": "2,04",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Guaxupé/MG (Cooxupé)"
                     }
                 },
@@ -4335,12 +4335,12 @@ export const DADOS_MERCADO = {
                 "patrociniomg_expocaccer": {
                     "preco_rsc_de_60_kg": {
                         "valor": "1.750,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Patrocínio/MG (Expocaccer)"
                     },
                     "variacao": {
                         "valor": "1,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Patrocínio/MG (Expocaccer)"
                     }
                 },
@@ -4352,31 +4352,31 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Varginha/MG (Minasul)"
                     }
                 },
                 "machadomg_coopama": {
                     "preco_rsc_de_60_kg": {
                         "valor": "1.680,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Machado/MG (Coopama)"
                     },
                     "variacao": {
                         "valor": "-0,59",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Machado/MG (Coopama)"
                     }
                 },
                 "campos_geraismg_coopercam": {
                     "preco_rsc_de_60_kg": {
                         "valor": "1.766,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Campos Gerais/MG (Coopercam)"
                     },
                     "variacao": {
                         "valor": "0,40",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Campos Gerais/MG (Coopercam)"
                     }
                 },
@@ -4388,7 +4388,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Franca/SP (Cocapec)"
                     }
                 },
@@ -4414,12 +4414,12 @@ export const DADOS_MERCADO = {
                 "oeste_da_bahia_aiba": {
                     "preco_rsc_de_60_kg": {
                         "valor": "1.560,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Oeste da Bahia (AIBA)"
                     },
                     "variacao": {
                         "valor": "-0,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Oeste da Bahia (AIBA)"
                     }
                 },
@@ -4427,12 +4427,12 @@ export const DADOS_MERCADO = {
                 "tipo_com_ate_13_de_umidade_e_ate_5_de_broca": {
                     "preco_rsc_de_60_kg": {
                         "valor": "926,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tipo 7/8 (com até 13% de umidade e até 5% de broca)"
                     },
                     "variacao": {
                         "valor": "-1,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Tipo 7/8 (com até 13% de umidade e até 5% de broca)"
                     }
                 },
@@ -4445,7 +4445,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Tipo 7"
                     }
                 },
@@ -4457,103 +4457,103 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Tipo 8"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -4572,151 +4572,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -4737,7 +4737,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -4763,12 +4763,12 @@ export const DADOS_MERCADO = {
                 "": {
                     "valor_r_saca_de_50_kg": {
                         "valor": "79,07",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacao": {
                         "valor": "0,13",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     }
                 },
@@ -5022,96 +5022,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -5130,151 +5130,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -5295,7 +5295,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -5321,12 +5321,12 @@ export const DADOS_MERCADO = {
                 "": {
                     "valor_8_dias_centrlb": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacao_diaria": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     }
                 },
@@ -5334,51 +5334,51 @@ export const DADOS_MERCADO = {
                 "outubro26": {
                     "investing_lb": {
                         "valor": "82,42",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Outubro/26"
                     },
                     "r": {
                         "valor": "139,55",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Outubro/26"
                     },
                     "variacao_pontos": {
                         "valor": "-0,94",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Outubro/26"
                     }
                 },
                 "dezembro26": {
                     "investing_lb": {
                         "valor": "86,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "r": {
                         "valor": "146,17",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "variacao_pontos": {
                         "valor": "-0,12",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     }
                 },
                 "marco27": {
                     "investing_lb": {
                         "valor": "88,62",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "r": {
                         "valor": "150,05",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "variacao_pontos": {
                         "valor": "-0,18",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/27"
                     }
                 },
@@ -5386,19 +5386,19 @@ export const DADOS_MERCADO = {
                 "sorrisomt_sindicato": {
                     "preco_r": {
                         "valor": "137,56",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Sorriso/MT (Sindicato)"
                     },
                     "variacao": {
                         "valor": "-0,94",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Sorriso/MT (Sindicato)"
                     }
                 },
                 "oeste_da_bahia_aiba": {
                     "preco_r": {
                         "valor": "143,67",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Oeste da Bahia (AIBA)"
                     },
                     "variacao": {
@@ -5427,96 +5427,96 @@ export const DADOS_MERCADO = {
                 "alto_garcas": {
                     "preco_compra_r": {
                         "valor": "140,44",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Alto Garças"
                     },
                     "variacao": {
                         "valor": "-0,92",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Alto Garças"
                     }
                 },
                 "campo_novo_do_parecis": {
                     "preco_compra_r": {
                         "valor": "138,48",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Campo Novo do Parecis"
                     },
                     "variacao": {
                         "valor": "-0,94",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Campo Novo do Parecis"
                     }
                 },
                 "campo_verde": {
                     "preco_compra_r": {
                         "valor": "139,16",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Campo Verde"
                     },
                     "variacao": {
                         "valor": "-0,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Campo Verde"
                     }
                 },
                 "diamantino": {
                     "preco_compra_r": {
                         "valor": "138,51",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Diamantino"
                     },
                     "variacao": {
                         "valor": "-0,94",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Diamantino"
                     }
                 },
                 "itiquira": {
                     "preco_compra_r": {
                         "valor": "139,30",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Itiquira"
                     },
                     "variacao": {
                         "valor": "-0,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Itiquira"
                     }
                 },
                 "nova_mutum": {
                     "preco_compra_r": {
                         "valor": "138,19",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Nova Mutum"
                     },
                     "variacao": {
                         "valor": "-0,94",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Nova Mutum"
                     }
                 },
                 "rondonopolis": {
                     "preco_compra_r": {
                         "valor": "139,77",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondonópolis"
                     },
                     "variacao": {
                         "valor": "-0,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Rondonópolis"
                     }
                 },
                 "sorriso": {
                     "preco_compra_r": {
                         "valor": "137,56",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Sorriso"
                     },
                     "variacao": {
                         "valor": "-0,94",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Sorriso"
                     }
                 },
@@ -5530,96 +5530,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -5638,151 +5638,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -5803,7 +5803,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -5829,17 +5829,17 @@ export const DADOS_MERCADO = {
                 "": {
                     "rt": {
                         "valor": "1.355,06",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacao": {
                         "valor": "0,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "rsc": {
                         "valor": "78,66",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     }
                 },
@@ -5847,41 +5847,41 @@ export const DADOS_MERCADO = {
                 "setembro26": {
                     "fechamento_us_bushel": {
                         "valor": "7,1600",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao_centsbu": {
                         "valor": "-20,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao": {
                         "valor": "-2,72",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/26"
                     }
                 },
                 "dezembro26": {
                     "fechamento_us_bushel": {
                         "valor": "7,3400",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "variacao_centsbu": {
                         "valor": "-20,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "variacao": {
                         "valor": "-2,68",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     }
                 },
                 "marco27": {
                     "fechamento_us_bushel": {
                         "valor": "7,4925",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "variacao_centsbu": {
@@ -5891,14 +5891,14 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "-2,69",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Março/27"
                     }
                 },
                 "maio27": {
                     "fechamento_us_bushel": {
                         "valor": "7,5675",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Maio/27"
                     },
                     "variacao_centsbu": {
@@ -5908,7 +5908,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "-2,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Maio/27"
                     }
                 },
@@ -5928,36 +5928,36 @@ export const DADOS_MERCADO = {
                 "ubiratapr_coagru": {
                     "preco_rsc": {
                         "valor": "78,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Ubiratã/PR (Coagru)"
                     },
                     "variacao": {
                         "valor": "1,30",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Ubiratã/PR (Coagru)"
                     }
                 },
                 "castropr": {
                     "preco_rsc": {
                         "valor": "79,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Castro/PR"
                     },
                     "variacao": {
                         "valor": "1,54",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Castro/PR"
                     }
                 },
                 "marechal_candido_rondonpr_copagril": {
                     "preco_rsc": {
                         "valor": "78,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Marechal Cândido Rondon/PR (Copagril)"
                     },
                     "variacao": {
                         "valor": "1,30",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Marechal Cândido Rondon/PR (Copagril)"
                     }
                 },
@@ -5992,96 +5992,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -6100,151 +6100,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -6265,7 +6265,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -6296,43 +6296,43 @@ export const DADOS_MERCADO = {
                     },
                     "vardia": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Curitiba"
                     }
                 },
                 "itapeva": {
                     "valor_rsc": {
                         "valor": "303,40",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Itapeva"
                     },
                     "vardia": {
                         "valor": "1,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Itapeva"
                     }
                 },
                 "leste_goiano": {
                     "valor_rsc": {
                         "valor": "275,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Leste Goiano"
                     },
                     "vardia": {
                         "valor": "-0,01",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Leste Goiano"
                     }
                 },
                 "noroeste_de_minas": {
                     "valor_rsc": {
                         "valor": "282,04",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Noroeste de Minas"
                     },
                     "vardia": {
                         "valor": "1,22",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Noroeste de Minas"
                     }
                 },
@@ -6363,12 +6363,12 @@ export const DADOS_MERCADO = {
                 "triang_mineiroalto_paranaiba": {
                     "valor_rsc": {
                         "valor": "295,56",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Triâng. Mineiro/Alto Paranaíba"
                     },
                     "vardia": {
                         "valor": "-0,65",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Triâng. Mineiro/Alto Paranaíba"
                     }
                 },
@@ -6395,24 +6395,24 @@ export const DADOS_MERCADO = {
                 "metade_sul_do_parana": {
                     "valor_rsc": {
                         "valor": "223,23",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Metade Sul do Paraná"
                     },
                     "vardia": {
                         "valor": "-0,04",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Metade Sul do Paraná"
                     }
                 },
                 "triangmineiroalto_paranaiba": {
                     "valor_rsc": {
                         "valor": "273,10",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Triâng.Mineiro/Alto Paranaíba"
                     },
                     "vardia": {
                         "valor": "0,27",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Triâng.Mineiro/Alto Paranaíba"
                     }
                 },
@@ -6425,7 +6425,7 @@ export const DADOS_MERCADO = {
                     },
                     "vardia": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Oeste Catarinense"
                     }
                 },
@@ -6437,7 +6437,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Feijão Carioca tipo 1"
                     }
                 },
@@ -6449,7 +6449,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Feijão preto tipo 1"
                     }
                 },
@@ -6464,96 +6464,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -6572,151 +6572,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -6737,7 +6737,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -6867,96 +6867,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -6975,151 +6975,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -7140,7 +7140,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -7166,12 +7166,12 @@ export const DADOS_MERCADO = {
                 "": {
                     "rkg": {
                         "valor": "7,61",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacao": {
                         "valor": "0,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     }
                 },
@@ -7179,12 +7179,12 @@ export const DADOS_MERCADO = {
                 "parana": {
                     "preco_rkg": {
                         "valor": "4,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Paraná"
                     },
                     "variacao": {
                         "valor": "3,23",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Paraná"
                     }
                 },
@@ -7208,115 +7208,115 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Frango Granja"
                     }
                 },
                 "frango_atacado": {
                     "preco_r_kg": {
                         "valor": "7,10",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Frango Atacado"
                     },
                     "variacao": {
                         "valor": "2,90",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Frango Atacado"
                     }
                 },
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -7335,151 +7335,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -7500,7 +7500,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -7527,12 +7527,12 @@ export const DADOS_MERCADO = {
                 "": {
                     "r30_dz": {
                         "valor": "147,74",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacaosemana": {
                         "valor": "-0,22",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     }
                 },
@@ -7546,7 +7546,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Branco - Grande"
                     }
                 },
@@ -7625,96 +7625,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -7733,151 +7733,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -7898,7 +7898,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -7924,12 +7924,12 @@ export const DADOS_MERCADO = {
                 "": {
                     "rsaca_de_50_kg": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacao_diaria": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "valor_r5kg": {
@@ -7957,19 +7957,19 @@ export const DADOS_MERCADO = {
                     },
                     "variacaopontos": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Outubro/26"
                     }
                 },
                 "marco27": {
                     "fechamento_cuslibra_peso": {
                         "valor": "19,05",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "variacaopontos": {
                         "valor": "0,01",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/27"
                     }
                 },
@@ -7981,14 +7981,14 @@ export const DADOS_MERCADO = {
                     },
                     "variacaopontos": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Maio/27"
                     }
                 },
                 "set26": {
                     "fechamento_usgal": {
                         "valor": "2,0975",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Set/26"
                     },
                     "variacao_centsgal": {
@@ -8005,58 +8005,58 @@ export const DADOS_MERCADO = {
                 "out26": {
                     "fechamento_usgal": {
                         "valor": "2,0800",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Out/26"
                     },
                     "variacao_centsgal": {
                         "valor": "-1,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Out/26"
                     }
                 },
                 "nov26": {
                     "fechamento_usgal": {
                         "valor": "2,0625",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Nov/26"
                     },
                     "variacao_centsgal": {
                         "valor": "1,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Nov/26"
                     },
                     "variacao": {
                         "valor": "0,49",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Nov/26"
                     }
                 },
                 "dez26": {
                     "fechamento_usgal": {
                         "valor": "2,0175",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dez/26"
                     },
                     "variacao_centsgal": {
                         "valor": "0,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dez/26"
                     },
                     "variacao": {
                         "valor": "0,37",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dez/26"
                     }
                 },
                 "outubro2026": {
                     "fechamento_rm3": {
                         "valor": "2.565,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Outubro/2026"
                     },
                     "variacao": {
                         "valor": "-0,58",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Outubro/2026"
                     }
                 },
@@ -8075,12 +8075,12 @@ export const DADOS_MERCADO = {
                 "dezembro2026": {
                     "fechamento_rm3": {
                         "valor": "2.640,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/2026"
                     },
                     "variacao": {
                         "valor": "-0,19",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/2026"
                     }
                 },
@@ -8092,7 +8092,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/2027"
                     }
                 },
@@ -8180,96 +8180,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -8288,151 +8288,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -8453,7 +8453,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -8601,36 +8601,36 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
@@ -8649,48 +8649,48 @@ export const DADOS_MERCADO = {
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -8709,151 +8709,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -8874,7 +8874,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -8900,12 +8900,12 @@ export const DADOS_MERCADO = {
                 "": {
                     "r_a_prazocaixa_408_kg": {
                         "valor": "30,73",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "variacao": {
                         "valor": "-1,82",
-                        "status": "down",
+                        "status": "equal",
                         "label": "04/09/2026"
                     },
                     "r_caixa_408_kg": {
@@ -8915,7 +8915,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao_dia": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "04/09/2026"
                     }
                 },
@@ -8923,36 +8923,36 @@ export const DADOS_MERCADO = {
                 "setembro26": {
                     "fechamento_cuslibra_peso": {
                         "valor": "138,15",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao_pontos": {
                         "valor": "0,40",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Setembro/26"
                     }
                 },
                 "novembro26": {
                     "fechamento_cuslibra_peso": {
                         "valor": "156,15",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Novembro/26"
                     },
                     "variacao_pontos": {
                         "valor": "0,40",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Novembro/26"
                     }
                 },
                 "janeiro27": {
                     "fechamento_cuslibra_peso": {
                         "valor": "159,40",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Janeiro/27"
                     },
                     "variacao_pontos": {
                         "valor": "0,90",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Janeiro/27"
                     }
                 },
@@ -8998,36 +8998,36 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
@@ -9046,48 +9046,48 @@ export const DADOS_MERCADO = {
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -9106,151 +9106,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -9271,7 +9271,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -9366,7 +9366,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Graúda"
                     }
                 },
@@ -9378,7 +9378,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Miuda"
                     }
                 },
@@ -9497,12 +9497,12 @@ export const DADOS_MERCADO = {
                 "mogi_mirim": {
                     "preco_rcx_23_kg": {
                         "valor": "23,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mogi Mirim"
                     },
                     "variacao": {
                         "valor": "25,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Mogi Mirim"
                     }
                 },
@@ -9514,96 +9514,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -9622,151 +9622,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -9787,7 +9787,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -9813,72 +9813,72 @@ export const DADOS_MERCADO = {
                 "ibovespa": {
                     "valor": {
                         "valor": "185.147,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Ibovespa"
                     },
                     "variacao": {
                         "valor": "-0,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Ibovespa"
                     }
                 },
                 "nasdaq": {
                     "valor": {
                         "valor": "26.506,99",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Nasdaq"
                     },
                     "variacao": {
                         "valor": "-0,29",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Nasdaq"
                     }
                 },
                 "dax": {
                     "valor": {
                         "valor": "26.046,40",
-                        "status": "up",
+                        "status": "equal",
                         "label": "DAX"
                     },
                     "variacao": {
                         "valor": "0,17",
-                        "status": "down",
+                        "status": "equal",
                         "label": "DAX"
                     }
                 },
                 "ftse": {
                     "valor": {
                         "valor": "10.831,09",
-                        "status": "down",
+                        "status": "equal",
                         "label": "FTSE"
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "FTSE"
                     }
                 },
                 "nikkei": {
                     "valor": {
                         "valor": "65.020,94",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Nikkei"
                     },
                     "variacao": {
                         "valor": "1,26",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Nikkei"
                     }
                 },
                 "hong_kong": {
                     "valor": {
                         "valor": "25.650,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Hong Kong"
                     },
                     "variacao": {
                         "valor": "1,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Hong Kong"
                     }
                 },
@@ -9886,162 +9886,162 @@ export const DADOS_MERCADO = {
                 "dolar": {
                     "valor_r": {
                         "valor": "5,1253",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar"
                     },
                     "variacao": {
                         "valor": "0,57",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar"
                     }
                 },
                 "60315": {
                     "valor_r": {
                         "valor": "5,9546",
-                        "status": "up",
+                        "status": "equal",
                         "label": "6,0315"
                     },
                     "variacao": {
                         "valor": "0,53",
-                        "status": "up",
+                        "status": "equal",
                         "label": "6,0315"
                     }
                 },
                 "outubro26": {
                     "fechamento_rus": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Outubro/26"
                     },
                     "variacao": {
                         "valor": "-0,09",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Outubro/26"
                     },
                     "fechamento_r": {
                         "valor": "6.002,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Outubro/26"
                     },
                     "taxa_efetiva": {
                         "valor": "13,714",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Outubro/26"
                     }
                 },
                 "novembro26": {
                     "fechamento_rus": {
                         "valor": "5.164,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Novembro/26"
                     },
                     "variacao": {
                         "valor": "0,25",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Novembro/26"
                     },
                     "fechamento_r": {
                         "valor": "6.041,90",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Novembro/26"
                     },
                     "taxa_efetiva": {
                         "valor": "13,766",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Novembro/26"
                     }
                 },
                 "setembro26": {
                     "valor": {
                         "valor": "99,150",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/26"
                     },
                     "variacao_pontos": {
                         "valor": "0,270",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Setembro/26"
                     }
                 },
                 "dezembro26": {
                     "valor": {
                         "valor": "98,895",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "variacao_pontos": {
                         "valor": "0,273",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "variacao": {
                         "valor": "-0,13",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     },
                     "taxa_efetiva": {
                         "valor": "13,635",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Dezembro/26"
                     }
                 },
                 "marco27": {
                     "valor": {
                         "valor": "98,670",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/27"
                     },
                     "variacao_pontos": {
                         "valor": "0,273",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Março/27"
                     }
                 },
                 "dolar_usdr": {
                     "valor": {
                         "valor": "5,1249",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar (USD/R$)"
                     },
                     "variacao": {
                         "valor": "0,35",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar (USD/R$)"
                     }
                 },
                 "euro_eurusd": {
                     "valor": {
                         "valor": "1,1614",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Euro (EUR/USD)"
                     },
                     "variacao": {
                         "valor": "-0,10",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Euro (EUR/USD)"
                     }
                 },
                 "libra_esterlina_gbpusd": {
                     "valor": {
                         "valor": "1,3517",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Libra Esterlina (GBP/USD)"
                     },
                     "variacao": {
                         "valor": "-0,07",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Libra Esterlina (GBP/USD)"
                     }
                 },
                 "rupia_da_india_inrusd": {
                     "valor": {
                         "valor": "1,0597",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rúpia da Índia (INR/USD)"
                     },
                     "variacao": {
                         "valor": "0,16",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Rúpia da Índia (INR/USD)"
                     }
                 },
@@ -10062,36 +10062,36 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
@@ -10110,48 +10110,48 @@ export const DADOS_MERCADO = {
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -10170,151 +10170,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -10335,7 +10335,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -10417,7 +10417,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Com pele / Kg"
                     }
                 },
@@ -10429,7 +10429,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Sem pele / Kg"
                     }
                 },
@@ -10437,96 +10437,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -10545,151 +10545,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -10710,7 +10710,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -10746,19 +10746,19 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,91",
-                        "status": "up",
+                        "status": "equal",
                         "label": "BA"
                     }
                 },
                 "es": {
                     "preco_r": {
                         "valor": "1.448,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "ES"
                     },
                     "variacao": {
                         "valor": "0,91",
-                        "status": "up",
+                        "status": "equal",
                         "label": "ES"
                     }
                 },
@@ -10770,7 +10770,7 @@ export const DADOS_MERCADO = {
                     },
                     "variacao": {
                         "valor": "0,91",
-                        "status": "up",
+                        "status": "equal",
                         "label": "PA"
                     }
                 },
@@ -10778,96 +10778,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -10886,151 +10886,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -11051,7 +11051,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
@@ -11151,96 +11151,96 @@ export const DADOS_MERCADO = {
                 "sep_2026": {
                     "usbu": {
                         "valor": "1.294,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     },
                     "var": {
                         "valor": "-12,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "SEP 2026"
                     }
                 },
                 "nov_2026": {
                     "usbu": {
                         "valor": "1.310,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     },
                     "var": {
                         "valor": "-6,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
                         "valor": "1.325,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     },
                     "var": {
                         "valor": "-6,50",
-                        "status": "down",
+                        "status": "equal",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
                         "valor": "1.331,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     },
                     "var": {
                         "valor": "-5,75",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
                         "valor": "1.335,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     },
                     "var": {
                         "valor": "-6,25",
-                        "status": "down",
+                        "status": "equal",
                         "label": "MAY 2027"
                     }
                 },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Algodão (Oct26)"
                     }
                 },
                 "acucar_oct26": {
                     "preco": {
                         "valor": "18,02",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     },
                     "var": {
                         "valor": "-0,28",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar (Oct26)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
                         "valor": "155,05",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
                         "valor": "-0,70",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
@@ -11259,151 +11259,151 @@ export const DADOS_MERCADO = {
                 "petroleo_wti_oct26": {
                     "preco": {
                         "valor": "91,38",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
                         "valor": "-0,11",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
                 "soja_jan_27": {
                     "preco": {
                         "valor": "29,24",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     },
                     "var": {
                         "valor": "-0,54",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Soja (JAN 27)"
                     }
                 },
                 "milho_set_26": {
                     "preco": {
                         "valor": "71,66",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (SET 26)"
                     }
                 },
                 "cafe_dez_26": {
                     "preco": {
                         "valor": "361,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café (DEZ 26)"
                     }
                 },
                 "boi_gordo_set_26": {
                     "preco": {
                         "valor": "359,20",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     },
                     "var": {
                         "valor": "0,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (SET 26)"
                     }
                 },
                 "dolar_fut_out_26": {
                     "preco": {
                         "valor": "5.153,50",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     },
                     "var": {
                         "valor": "0,43",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Dólar Fut (OUT 26)"
                     }
                 },
                 "boi_gordo_media_sp": {
                     "preco": {
                         "valor": "347,70",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     },
                     "var": {
                         "valor": "0,03",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Boi Gordo (média SP/@)"
                     }
                 },
                 "cafe_arabica_sc_60kg": {
                     "preco": {
                         "valor": "1.659,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,74",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Café Arábica (sc. 60Kg)"
                     }
                 },
                 "soja_pr_sc_60kg": {
                     "preco": {
                         "valor": "160,87",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     },
                     "var": {
                         "valor": "0,46",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (PR/ sc. 60Kg)"
                     }
                 },
                 "milho_sc_60kg": {
                     "preco": {
                         "valor": "70,93",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     },
                     "var": {
                         "valor": "-0,18",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Milho (sc. 60Kg)"
                     }
                 },
                 "algodao_librapeso": {
                     "preco": {
                         "valor": "439,98",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     },
                     "var": {
                         "valor": "0,44",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Algodão (libra-peso)"
                     }
                 },
                 "acucar_cristal_sc_50kg": {
                     "preco": {
                         "valor": "116,79",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     },
                     "var": {
                         "valor": "0,59",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Açúcar Cristal (sc. 50Kg)"
                     }
                 },
                 "soja_soja_fob_abelardo_luzsc_r60kg": {
                     "preco": {
                         "valor": "157,00",
-                        "status": "up",
+                        "status": "equal",
                         "label": "Soja (Soja Fob Abelardo Luz/Sc R$/60Kg)"
                     }
                 },
@@ -11424,7 +11424,7 @@ export const DADOS_MERCADO = {
                 "cafe_cafe_conilon_tipo_vitoriaes_r_60kg": {
                     "preco": {
                         "valor": "960,00",
-                        "status": "down",
+                        "status": "equal",
                         "label": "Café (Cafe Conilon Tipo 7/8 Vitoria-Es - R$ 60Kg)"
                     }
                 },
