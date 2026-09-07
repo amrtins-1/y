@@ -1,5 +1,5 @@
 export const DADOS_MERCADO = {
-    "atualizacao": "06/09/2026 11:59",
+    "atualizacao": "07/09/2026 14:02",
     "raias": {
         "boi": {
             "geral": {
@@ -1772,66 +1772,6 @@ export const DADOS_MERCADO = {
                         "label": "Vila Rica"
                     }
                 },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -1882,13 +1822,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,54",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,16",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -2919,66 +2859,6 @@ export const DADOS_MERCADO = {
                         "label": "Sorriso"
                     }
                 },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -3029,13 +2909,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -3901,66 +3781,6 @@ export const DADOS_MERCADO = {
                         "label": "Tangará da Serra"
                     }
                 },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -4011,13 +3831,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -4461,66 +4281,6 @@ export const DADOS_MERCADO = {
                         "label": "Tipo 8"
                     }
                 },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -4571,13 +4331,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -5019,66 +4779,6 @@ export const DADOS_MERCADO = {
                         "label": "São Paulo/SP"
                     }
                 },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -5129,13 +4829,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -5527,66 +5227,6 @@ export const DADOS_MERCADO = {
                         "label": "98,25"
                     }
                 },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -5637,13 +5277,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -5989,66 +5629,6 @@ export const DADOS_MERCADO = {
                 "itapetininga": {},
                 "itapeva": {},
                 "ourinhos": {},
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -6099,13 +5679,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,54",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,16",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -6461,66 +6041,6 @@ export const DADOS_MERCADO = {
                 "sul": {},
                 "centro_oriental": {},
                 "br_163": {},
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -6571,13 +6091,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -6864,66 +6384,6 @@ export const DADOS_MERCADO = {
                         "label": "Suíno Carcaça Especial (kg)"
                     }
                 },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -6974,13 +6434,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -7224,66 +6684,6 @@ export const DADOS_MERCADO = {
                         "label": "Frango Atacado"
                     }
                 },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -7334,13 +6734,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -7622,66 +7022,6 @@ export const DADOS_MERCADO = {
                 },
                 "sao_paulo": {},
                 "semana_referente_de": {},
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -7732,13 +7072,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -8177,66 +7517,6 @@ export const DADOS_MERCADO = {
                     }
                 },
                 "referencia_agosto26": {},
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -8287,13 +7567,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -8598,66 +7878,6 @@ export const DADOS_MERCADO = {
                 },
                 "referencia_julho26": {},
                 "atualizado_em": {},
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -8708,13 +7928,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -8995,66 +8215,6 @@ export const DADOS_MERCADO = {
                         "label": "Laranja Pera (13 a 15 DZ)"
                     }
                 },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -9105,13 +8265,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -9511,66 +8671,6 @@ export const DADOS_MERCADO = {
                 "tupa": {},
                 "pindamonhangaba": {},
                 "sorocaba": {},
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -9621,13 +8721,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -10059,66 +9159,6 @@ export const DADOS_MERCADO = {
                         "label": "Jul/2026 a Set/2026"
                     }
                 },
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -10169,13 +9209,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -10434,66 +9474,6 @@ export const DADOS_MERCADO = {
                     }
                 },
                 "atualizado_em": {},
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -10544,13 +9524,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,54",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,16",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -10775,66 +9755,6 @@ export const DADOS_MERCADO = {
                     }
                 },
                 "certificado_base_industrias": {},
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -10885,13 +9805,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
@@ -11148,66 +10068,6 @@ export const DADOS_MERCADO = {
                     }
                 },
                 "atualizado_em": {},
-                "sep_2026": {
-                    "usbu": {
-                        "valor": "1.294,25",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    },
-                    "var": {
-                        "valor": "-12,00",
-                        "status": "equal",
-                        "label": "SEP 2026"
-                    }
-                },
-                "nov_2026": {
-                    "usbu": {
-                        "valor": "1.310,25",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    },
-                    "var": {
-                        "valor": "-6,00",
-                        "status": "equal",
-                        "label": "NOV 2026"
-                    }
-                },
-                "jan_2027": {
-                    "usbu": {
-                        "valor": "1.325,00",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    },
-                    "var": {
-                        "valor": "-6,50",
-                        "status": "equal",
-                        "label": "JAN 2027"
-                    }
-                },
-                "mar_2027": {
-                    "usbu": {
-                        "valor": "1.331,00",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    },
-                    "var": {
-                        "valor": "-5,75",
-                        "status": "equal",
-                        "label": "MAR 2027"
-                    }
-                },
-                "may_2027": {
-                    "usbu": {
-                        "valor": "1.335,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    },
-                    "var": {
-                        "valor": "-6,25",
-                        "status": "equal",
-                        "label": "MAY 2027"
-                    }
-                },
                 "algodao_oct26": {
                     "preco": {
                         "valor": "82,33",
@@ -11258,13 +10118,13 @@ export const DADOS_MERCADO = {
                 },
                 "petroleo_wti_oct26": {
                     "preco": {
-                        "valor": "91,38",
-                        "status": "equal",
+                        "valor": "92,40",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     },
                     "var": {
-                        "valor": "-0,11",
-                        "status": "equal",
+                        "valor": "1,01",
+                        "status": "up",
                         "label": "Petróleo WTI (Oct26)"
                     }
                 },
