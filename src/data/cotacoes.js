@@ -1,5 +1,5 @@
 export const DADOS_MERCADO = {
-    "atualizacao": "11/10/2026 14:43",
+    "atualizacao": "12/10/2026 17:28",
     "raias": {
         "boi": {
             "geral": {
@@ -1762,121 +1762,121 @@ export const DADOS_MERCADO = {
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-6,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,25",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,75",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.327,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,59",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "0,06",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "150,80",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,41",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,65",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,94",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,85",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,18",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -2848,121 +2848,121 @@ export const DADOS_MERCADO = {
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-6,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,25",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,75",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.327,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -3757,121 +3757,121 @@ export const DADOS_MERCADO = {
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-6,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,25",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,75",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.327,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,59",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "0,06",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "150,80",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,41",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,65",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,94",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,85",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,18",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -4306,121 +4306,121 @@ export const DADOS_MERCADO = {
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.323,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.328,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -4864,121 +4864,121 @@ export const DADOS_MERCADO = {
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.323,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.328,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -5372,121 +5372,121 @@ export const DADOS_MERCADO = {
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-6,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,25",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,75",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.327,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,59",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "0,06",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "150,80",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,41",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,65",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,94",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,85",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,18",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -5818,121 +5818,121 @@ export const DADOS_MERCADO = {
                 "ourinhos": {},
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-6,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,25",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,75",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.327,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,59",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "0,06",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "150,80",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,41",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,65",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,94",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,85",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,18",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -6273,121 +6273,121 @@ export const DADOS_MERCADO = {
                 "br_163": {},
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,25",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,50",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,50",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,50",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.328,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-4,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,59",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "0,06",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "150,80",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,41",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,65",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,94",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,85",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,18",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -6681,121 +6681,121 @@ export const DADOS_MERCADO = {
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-6,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,25",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,75",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.327,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,59",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "0,06",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "150,80",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,41",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,65",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,94",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,85",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,18",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -7041,121 +7041,121 @@ export const DADOS_MERCADO = {
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-6,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,25",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,75",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.327,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -7450,121 +7450,121 @@ export const DADOS_MERCADO = {
                 "semana_referente_de": {},
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.323,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.328,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -7981,121 +7981,121 @@ export const DADOS_MERCADO = {
                 "referencia_setembro26": {},
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.323,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.328,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -8391,121 +8391,121 @@ export const DADOS_MERCADO = {
                 "atualizado_em": {},
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-6,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,25",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,75",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.327,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,59",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "0,06",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "150,80",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,41",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,65",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,94",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,85",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,18",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -8788,121 +8788,121 @@ export const DADOS_MERCADO = {
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.285,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-6,50",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.302,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-6,25",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.312,50",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-6,25",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.321,75",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.327,25",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -9309,121 +9309,121 @@ export const DADOS_MERCADO = {
                 "sorocaba": {},
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-6,00",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,25",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,75",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.327,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -9857,121 +9857,121 @@ export const DADOS_MERCADO = {
                 },
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-5,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,25",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,50",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,50",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.322,50",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,50",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.328,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-4,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,59",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "0,06",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "150,80",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,41",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,65",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,94",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,85",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,18",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -10232,121 +10232,121 @@ export const DADOS_MERCADO = {
                 "atualizado_em": {},
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.323,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.328,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -10573,121 +10573,121 @@ export const DADOS_MERCADO = {
                 "certificado_base_industrias": {},
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.323,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.328,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
@@ -10957,121 +10957,121 @@ export const DADOS_MERCADO = {
                 "atualizado_em": {},
                 "nov_2026": {
                     "usbu": {
-                        "valor": "1.292,25",
-                        "status": "equal",
+                        "valor": "1.286,75",
+                        "status": "down",
                         "label": "NOV 2026"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-5,25",
+                        "status": "down",
                         "label": "NOV 2026"
                     }
                 },
                 "jan_2027": {
                     "usbu": {
-                        "valor": "1.309,25",
-                        "status": "equal",
+                        "valor": "1.303,75",
+                        "status": "down",
                         "label": "JAN 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "JAN 2027"
                     }
                 },
                 "mar_2027": {
                     "usbu": {
-                        "valor": "1.319,00",
-                        "status": "equal",
+                        "valor": "1.313,75",
+                        "status": "down",
                         "label": "MAR 2027"
                     },
                     "var": {
-                        "valor": "5,00",
-                        "status": "equal",
+                        "valor": "-5,00",
+                        "status": "down",
                         "label": "MAR 2027"
                     }
                 },
                 "may_2027": {
                     "usbu": {
-                        "valor": "1.327,75",
-                        "status": "equal",
+                        "valor": "1.323,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     },
                     "var": {
-                        "valor": "4,75",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "MAY 2027"
                     }
                 },
                 "jul_2027": {
                     "usbu": {
-                        "valor": "1.333,25",
-                        "status": "equal",
+                        "valor": "1.328,50",
+                        "status": "down",
                         "label": "JUL 2027"
                     },
                     "var": {
-                        "valor": "4,50",
-                        "status": "equal",
+                        "valor": "-4,00",
+                        "status": "down",
                         "label": "JUL 2027"
                     }
                 },
                 "algodao_dec26": {
                     "preco": {
-                        "valor": "80,39",
-                        "status": "equal",
+                        "valor": "80,48",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     },
                     "var": {
-                        "valor": "-0,19",
-                        "status": "equal",
+                        "valor": "-0,07",
+                        "status": "up",
                         "label": "Algodão (Dec26)"
                     }
                 },
                 "acucar_mar27": {
                     "preco": {
-                        "valor": "20,27",
-                        "status": "equal",
+                        "valor": "20,86",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     },
                     "var": {
-                        "valor": "0,60",
-                        "status": "equal",
+                        "valor": "3,01",
+                        "status": "up",
                         "label": "Açúcar (Mar27)"
                     }
                 },
                 "suco_de_lar_nov26": {
                     "preco": {
-                        "valor": "146,70",
-                        "status": "equal",
+                        "valor": "151,55",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "1,92",
+                        "status": "up",
                         "label": "Suco de Lar (Nov26)"
                     }
                 },
                 "cafe_dec26": {
                     "preco": {
-                        "valor": "285,15",
-                        "status": "equal",
+                        "valor": "289,45",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     },
                     "var": {
-                        "valor": "-1,35",
-                        "status": "equal",
+                        "valor": "0,87",
+                        "status": "up",
                         "label": "Café (Dec26)"
                     }
                 },
                 "petroleo_wti_nov26": {
                     "preco": {
-                        "valor": "91,64",
-                        "status": "equal",
+                        "valor": "93,91",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     },
                     "var": {
-                        "valor": "-0,23",
-                        "status": "equal",
+                        "valor": "2,24",
+                        "status": "up",
                         "label": "Petróleo WTI (Nov26)"
                     }
                 },
