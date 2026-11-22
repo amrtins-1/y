@@ -1,5 +1,5 @@
 export const DADOS_MERCADO = {
-    "atualizacao": "21/11/2026 15:56",
+    "atualizacao": "22/11/2026 15:59",
     "raias": {
         "boi": {},
         "soja": {},
